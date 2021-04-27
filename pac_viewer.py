@@ -262,6 +262,7 @@ def print_new_types(instructions: List[Union[Instruction, Tuple[int, bytearray]]
         print(string)
 
 
+# instructions_set = get_instruction_set("p1_instruction_set.csv")
 # instructions_set = get_instruction_set("p2_instruction_set.csv")
 instructions_set = get_instruction_set("p3_instruction_set.csv")
 
