@@ -594,8 +594,20 @@ def pac(
                             ).split("\x00")
                             outfile.write(f"{offset:08X}  STRING_LIST {text}\n")
                         except UnicodeDecodeError:
-                            bytes_str = " ".join([f"{b:02X}" for b in inst[1]])
-                            outfile.write(f"{offset:08X}  RAW_BYTES {bytes_str}\n")
+                            try:
+                                chunks = [
+                                    inst[1][i : i + 4]
+                                    for i in range(0, len(inst[1]), 4)
+                                ]
+                                bytes_str = ""
+                                for chunk_count, chunk in enumerate(chunks):
+                                    if chunk_count != 0:
+                                        bytes_str += ", "
+                                    bytes_str += f"{unpack('I', chunk)[0]:X}"
+                                outfile.write(f"{offset:08X}  RAW_BYTES {bytes_str}\n")
+                            except Exception:
+                                bytes_str = " ".join([f"{b:02X}" for b in inst[1]])
+                                outfile.write(f"{offset:08X}  RAW_BYTES {bytes_str}\n")
                     else:
                         bytes_str = " ".join([f"{b:02X}" for b in inst[1]])
                         outfile.write(f"{offset:08X}  RAW_BYTES {bytes_str}\n")
