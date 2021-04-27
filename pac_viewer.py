@@ -139,24 +139,32 @@ def get_inst_raw_bytes(infile, last_offset: int) -> bytearray:
     if infile.tell() < last_offset:
         raw_4_bytes = infile.read(4)
         inst_magic, inst_id, inst_subid = unpack("BBH", raw_4_bytes)
-        # i = 1
-        # while inst_magic != 0x25 and inst_subid != 0x00 and infile.tell() < last_offset:
-        while infile.tell() < last_offset:
-            # print(f"{i}")
-            # i += 1
-            # TODO First get size looking at instructions_set.csv
-            # TODO fix addResultInfoValueMessage offset 0x21820 in DATA_CMN\actor\mission\missionid_10430.bnd\missiondata.bnd\missionscript.pac
-            if inst_magic == 0x25 and inst_id < 0x20 and inst_subid != 0x00:
-                break
+        if infile.tell() == last_offset:
             raw_bytes.extend(raw_4_bytes)
-            raw_4_bytes = infile.read(4)
-            inst_magic, inst_id, inst_subid = unpack("BBH", raw_4_bytes)
-        # if infile.tell() == last_offset:
-        #     raw_bytes.extend(raw_4_bytes)
-        # else:
-        # if len(raw_bytes) > 4:
-        infile.seek(infile.tell() - 4)
-        # print (f"{infile.tell():08X}")
+        else:
+            # i = 1
+            # while inst_magic != 0x25 and inst_subid != 0x00 and infile.tell() < last_offset:
+            while infile.tell() < last_offset:
+                # print(f"{i}")
+                # i += 1
+                # TODO First get size looking at instructions_set.csv
+                # TODO fix addResultInfoValueMessage offset 0x21820 in DATA_CMN\actor\mission\missionid_10430.bnd\missiondata.bnd\missionscript.pac
+                if (
+                    inst_magic == 0x25
+                    and inst_id < 0x22
+                    and inst_subid != 0x00
+                    and inst_subid < 0x2400
+                ):
+                    break
+                raw_bytes.extend(raw_4_bytes)
+                raw_4_bytes = infile.read(4)
+                inst_magic, inst_id, inst_subid = unpack("BBH", raw_4_bytes)
+            # if infile.tell() == last_offset:
+            #     raw_bytes.extend(raw_4_bytes)
+            # else:
+            # if len(raw_bytes) > 4:
+            infile.seek(infile.tell() - 4)
+            # print (f"{infile.tell():08X}")
     # print (" ".join([f"{b:02X}" for b in raw_bytes]))
     return raw_bytes
 
@@ -167,12 +175,12 @@ def get_str_params(params: List[InstParam]) -> str:
     for p in params:
         if p.type_str.startswith("T_"):
             continue
-        str_params += ", " if str_params != "" else ""
-
         if InstType.COUNT in p.type:
             # str_params += f"{p.name_var}={p.value:X}"
-            pass
-        elif InstType.INT in p.type or InstType.UINT in p.type:
+            continue
+        str_params += ", " if str_params != "" else ""
+
+        if InstType.INT in p.type or InstType.UINT in p.type:
             str_params += f"{p.name_var}={p.value:X}"
         elif InstType.KEYBIND_ID in p.type:
             try:
@@ -254,7 +262,8 @@ def print_new_types(instructions: List[Union[Instruction, Tuple[int, bytearray]]
         print(string)
 
 
-instructions_set = get_instruction_set()
+# instructions_set = get_instruction_set("p2_instruction_set.csv")
+instructions_set = get_instruction_set("p3_instruction_set.csv")
 
 app = typer.Typer()
 
@@ -275,7 +284,8 @@ def pac(
         pac_list.append(input)
     else:
         # pac_list.extend(list(input.glob("**/stagescript.pac")))
-        pac_list.extend(list(input.glob("**/missionscript.pac")))
+        # pac_list.extend(list(input.glob("**/missionscript.pac")))
+        pac_list.extend(list(input.glob("**/*.pac")))
     for input in pac_list:
         output = input.parent.joinpath(f"{input.stem}.txt")
         # print(f'Reading "{input}"')
@@ -393,7 +403,18 @@ def pac(
                                     + " ".join([f"{b:02X}" for b in b"".join(chunks)])
                                     + "}"
                                 )
-                            param.value = text
+                        else:
+                            # Read padding
+                            if params_io.tell() % 4 != 0:
+                                padding_size = (
+                                    (params_io.tell() // 4) + 1
+                                ) * 4 - params_io.tell()
+                                padding = params_io.read(padding_size)
+                                if padding != b"\x00" * len(padding):
+                                    print("Error. Expecting padding")
+                                    exit()
+
+                        param.value = text
                         # break
                     elif param.type == InstType.T:
                         param.value = unpack(f"I", params_io.read(4))[0]
@@ -467,7 +488,7 @@ def pac(
                             sub_param = InstParam()
                             sub_param.type = sub_param_type
                             sub_param.type_str = sub_param_type_str
-                            sub_param.name = f"Count {c}"
+                            sub_param.name = f"Count {c+1}"
                             if sub_param_type == InstType.UINT:
                                 sub_param.value = unpack(f"I", params_io.read(4))[0]
                             elif sub_param_type == InstType.INT:
@@ -487,6 +508,7 @@ def pac(
                             param.value = unpack(f"I", params_io.read(4))[0]
                         except Exception as e:
                             print(e)
+                            print(output)
                             print(inst)
                             exit()
                     elif InstType.INT in param.type:
