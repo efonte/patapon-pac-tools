@@ -168,29 +168,29 @@
 00A7;Tsukigiri
 00A8;Spear
 00A9;Critical Spear
-00AA;[St]
-00AB;[G]
-00AC;[De]
-00AD;[H]
-00AE;[Sl]
-00AF;[Fl]
-00B0;[Po]
+00AA;Critical Spear [St]
+00AB;Critical Spear [G]
+00AC;Critical Spear [De]
+00AD;Critical Spear [H]
+00AE;Critical Spear [Sl]
+00AF;Critical Spear [Fl]
+00B0;Critical Spear [Po]
 00B1;Repel Spear
-00B2;[St]
-00B3;[G]
-00B4;[De]
-00B5;[H]
-00B6;[Sl]
-00B7;[Fl]
-00B8;[Po]
+00B2;Repel Spear [St]
+00B3;Repel Spear [G]
+00B4;Repel Spear [De]
+00B5;Repel Spear [H]
+00B6;Repel Spear [Sl]
+00B7;Repel Spear [Fl]
+00B8;Repel Spear [Po]
 00B9;Flame Spear
-00BA;[St]
-00BB;[G]
-00BC;[De]
-00BD;[H]
-00BE;[Sl]
-00BF;[Fl]
-00C0;[Po]
+00BA;Flame Spear [St]
+00BB;Flame Spear [G]
+00BC;Flame Spear [De]
+00BD;Flame Spear [H]
+00BE;Flame Spear [Sl]
+00BF;Flame Spear [Fl]
+00C0;Flame Spear [Po]
 00C1;Gesundbeit
 00C2;Yumspar
 00C3;Palkyria's Flight
@@ -199,50 +199,50 @@
 00C6;Yaripon's Spear
 00C7;Pike
 00C8;Ice Pike
-00C9;[St]
-00CA;[G]
-00CB;[De]
-00CC;[H]
-00CD;[Sl]
-00CE;[Fl]
-00CF;[Po]
+00C9;Ice Pike [St]
+00CA;Ice Pike [G]
+00CB;Ice Pike [De]
+00CC;Ice Pike [H]
+00CD;Ice Pike [Sl]
+00CE;Ice Pike [Fl]
+00CF;Ice Pike [Po]
 00D0;Stagger Pike
-00D1;[St]
-00D2;[G]
-00D3;[De]
-00D4;[H]
-00D5;[Sl]
-00D6;[Fl]
-00D7;[Po]
+00D1;Stagger Pike [St]
+00D2;Stagger Pike [G]
+00D3;Stagger Pike [De]
+00D4;Stagger Pike [H]
+00D5;Stagger Pike [Sl]
+00D6;Stagger Pike [Fl]
+00D7;Stagger Pike [Po]
 00D8;Goldora
 00D9;Pointidon
 00DA;Super Cedar Log
 00DB;Lance of Asuwish
 00DC;Halberd
 00DD;Fire Lance
-00DE;[St]
-00DF;[G]
-00E0;[De]
-00E1;[H]
-00E2;[Sl]
-00E3;[Fl]
-00E4;[Po]
+00DE;Fire Lance [St]
+00DF;Fire Lance [G]
+00E0;Fire Lance [De]
+00E1;Fire Lance [H]
+00E2;Fire Lance [Sl]
+00E3;Fire Lance [Fl]
+00E4;Fire Lance [Po]
 00E5;Ice Lance
-00E6;[St]
-00E7;[G]
-00E8;[De]
-00E9;[H]
-00EA;[Sl]
-00EB;[Fl]
-00EC;[Po]
+00E6;Ice Lance [St]
+00E7;Ice Lance [G]
+00E8;Ice Lance [De]
+00E9;Ice Lance [H]
+00EA;Ice Lance [Sl]
+00EB;Ice Lance [Fl]
+00EC;Ice Lance [Po]
 00ED;Stagger Lance
-00EE;[St]
-00EF;[G]
-00F0;[De]
-00F1;[H]
-00F2;[Sl]
-00F3;[Fl]
-00F4;[Po]
+00EE;Stagger Lance [St]
+00EF;Stagger Lance [G]
+00F0;Stagger Lance [De]
+00F1;Stagger Lance [H]
+00F2;Stagger Lance [Sl]
+00F3;Stagger Lance [Fl]
+00F4;Stagger Lance [Po]
 00F5;Romulus' Halberd
 00F6;Incensar
 00F7;Gugnir
@@ -251,29 +251,29 @@
 00FA;Hotenpon's Halberd
 00FB;Arm
 00FC;Repel Arm
-00FD;[St]
-00FE;[G]
-00FF;[De]
-0100;[H]
-0101;[Sl]
-0102;[Fl]
-0103;[Po]
+00FD;Repel Arm [St]
+00FE;Repel Arm [G]
+00FF;Repel Arm [De]
+0100;Repel Arm [H]
+0101;Repel Arm [Sl]
+0102;Repel Arm [Fl]
+0103;Repel Arm [Po]
 0104;Ice Arm
-0105;[St]
-0106;[G]
-0107;[De]
-0108;[H]
-0109;[Sl]
-010A;[Fl]
-010B;[Po]
+0105;Ice Arm [St]
+0106;Ice Arm [G]
+0107;Ice Arm [De]
+0108;Ice Arm [H]
+0109;Ice Arm [Sl]
+010A;Ice Arm [Fl]
+010B;Ice Arm [Po]
 010C;Sleepy Arm
-010D;[St]
-010E;[G]
-010F;[De]
-0110;[H]
-0111;[Sl]
-0112;[Fl]
-0113;[Po]
+010D;Sleepy Arm [St]
+010E;Sleepy Arm [G]
+010F;Sleepy Arm [De]
+0110;Sleepy Arm [H]
+0111;Sleepy Arm [Sl]
+0112;Sleepy Arm [Fl]
+0113;Sleepy Arm [Po]
 0114;Deathwringer
 0115;Great Golem Arm
 0116;Piringar Zingar
@@ -282,272 +282,272 @@
 0119;Super Megadogu Arm
 011A;Dagger
 011B;Critical Dagger
-011C;[St]
-011D;[G]
-011E;[De]
-011F;[H]
-0120;[Sl]
-0121;[Fl]
-0122;[Po]
+011C;Critical Dagger [St]
+011D;Critical Dagger [G]
+011E;Critical Dagger [De]
+011F;Critical Dagger [H]
+0120;Critical Dagger [Sl]
+0121;Critical Dagger [Fl]
+0122;Critical Dagger [Po]
 0123;Sleepy Dagger
-0124;[St]
-0125;[G]
-0126;[De]
-0127;[H]
-0128;[Sl]
-0129;[Fl]
-012A;[Po]
+0124;Sleepy Dagger [St]
+0125;Sleepy Dagger [G]
+0126;Sleepy Dagger [De]
+0127;Sleepy Dagger [H]
+0128;Sleepy Dagger [Sl]
+0129;Sleepy Dagger [Fl]
+012A;Sleepy Dagger [Po]
 012B;Crablessa
 012C;Feisho
 012D;Krauser
 012E;Shiv
 012F;Poison Shiv
-0130;[St]
-0131;[G]
-0132;[De]
-0133;[H]
-0134;[Sl]
-0135;[Fl]
-0136;[Po]
+0130;Poison Shiv [St]
+0131;Poison Shiv [G]
+0132;Poison Shiv [De]
+0133;Poison Shiv [H]
+0134;Poison Shiv [Sl]
+0135;Poison Shiv [Fl]
+0136;Poison Shiv [Po]
 0137;Heltopay's Kiss
 014C;Goliamon's Shiv
 014D;Holymadda Shiv
 014E;Pain of Pentavus
 014F;Greatsword
 0150;Critical Greatsword
-0151;[St]
-0152;[G]
-0153;[De]
-0140;[H]
-0141;[Sl]
-0142;[Fl]
-0143;[Po]
+0151;Critical Greatsword [St]
+0152;Critical Greatsword [G]
+0153;Critical Greatsword [De]
+0140;Critical Greatsword [H]
+0141;Critical Greatsword [Sl]
+0142;Critical Greatsword [Fl]
+0143;Critical Greatsword [Po]
 0144;Ice Greatsword
-0145;[St]
-0146;[G]
-0147;[De]
-0148;[H]
-0149;[Sl]
-014A;[Fl]
-014B;[Po]
+0145;Ice Greatsword [St]
+0146;Ice Greatsword [G]
+0147;Ice Greatsword [De]
+0148;Ice Greatsword [H]
+0149;Ice Greatsword [Sl]
+014A;Ice Greatsword [Fl]
+014B;Ice Greatsword [Po]
 014C;Excalipon
 014D;Quagar
 014E;Serberker
 014F;Caladbong
 0150;Greatblade
 0151;Flame Greatblade
-0152;[St]
-0153;[G]
-0154;[De]
-0155;[H]
-0156;[Sl]
-0157;[Fl]
-0158;[Po]
+0152;Flame Greatblade [St]
+0153;Flame Greatblade [G]
+0154;Flame Greatblade [De]
+0155;Flame Greatblade [H]
+0156;Flame Greatblade [Sl]
+0157;Flame Greatblade [Fl]
+0158;Flame Greatblade [Po]
 0159;Sleepy Greatblade
-015A;[St]
-015B;[G]
-015C;[De]
-015D;[H]
-015E;[Sl]
-015F;[Fl]
-0160;[Po]
+015A;Sleepy Greatblade [St]
+015B;Sleepy Greatblade [G]
+015C;Sleepy Greatblade [De]
+015D;Sleepy Greatblade [H]
+015E;Sleepy Greatblade [Sl]
+015F;Sleepy Greatblade [Fl]
+0160;Sleepy Greatblade [Po]
 0161;Mono Hoshibo
 0162;Onigiri's Greatblade
 0163;Murasamune
 0164;Kusanakin
 0165;Axe
 0166;Stagger Axe
-0167;[St]
-0168;[G]
-0169;[De]
-016A;[H]
-016B;[Sl]
-016C;[Fl]
-016D;[Po]
+0167;Stagger Axe [St]
+0168;Stagger Axe [G]
+0169;Stagger Axe [De]
+016A;Stagger Axe [H]
+016B;Stagger Axe [Sl]
+016C;Stagger Axe [Fl]
+016D;Stagger Axe [Po]
 016E;Poison Axe
-016F;[St]
-0170;[G]
-0171;[De]
-0172;[H]
-0173;[Sl]
-0174;[Fl]
-0175;[Po]
+016F;Poison Axe [St]
+0170;Poison Axe [G]
+0171;Poison Axe [De]
+0172;Poison Axe [H]
+0173;Poison Axe [Sl]
+0174;Poison Axe [Fl]
+0175;Poison Axe [Po]
 0176;Hilkinga's Chillaxe
 0177;Susurapon
 0178;Axe of Hannoob
 0179;Bumpalion Axe
 017A;Club
 017B;Lightning Club
-017C;[St]
-017D;[G]
-017E;[De]
-017F;[H]
-0180;[Sl]
-0181;[Fl]
-0182;[Po]
+017C;Lightning Club [St]
+017D;Lightning Club [G]
+017E;Lightning Club [De]
+017F;Lightning Club [H]
+0180;Lightning Club [Sl]
+0181;Lightning Club [Fl]
+0182;Lightning Club [Po]
 0183;Dreamweaver
-0184;[St]
-0185;[G]
-0186;[De]
-0187;[H]
-0188;[Sl]
-0189;[Fl]
-018A;[Po]
+0184;Dreamweaver [St]
+0185;Dreamweaver [G]
+0186;Dreamweaver [De]
+0187;Dreamweaver [H]
+0188;Dreamweaver [Sl]
+0189;Dreamweaver [Fl]
+018A;Dreamweaver [Po]
 018B;Genmaru
 018C;Mjollnir
 018D;Thor
 018E;Humthor's Harm
 018F;Bow
 0190;Flame Bow
-0191;[St]
-0192;[G]
-0193;[De]
-0194;[H]
-0195;[Sl]
-0196;[Fl]
-0197;[Po]
+0191;Flame Bow [St]
+0192;Flame Bow [G]
+0193;Flame Bow [De]
+0194;Flame Bow [H]
+0195;Flame Bow [Sl]
+0196;Flame Bow [Fl]
+0197;Flame Bow [Po]
 0198;Sleepy Bow
-0199;[St]
-01B8;[G]
-019B;[De]
-01BA;[H]
-01B1;[Sl]
-01BC;[Fl]
-01BD;[Po]
+0199;Sleepy Bow [St]
+01B8;Sleepy Bow [G]
+019B;Sleepy Bow [De]
+01BA;Sleepy Bow [H]
+01B1;Sleepy Bow [Sl]
+01BC;Sleepy Bow [Fl]
+01BD;Sleepy Bow [Po]
 01BE;Bow of Apollopon
 01BF;Yamibashiri
 01C0;Raijinpon's Bow
 01C1;Yumipon's Bow
 01A4;Longbow
 01A5;Poison Longbow
-01A6;[St]
-01A7;[G]
-01A8;[De]
-01A9;[H]
-01AA;[Sl]
-01AB;[Fl]
-01AC;[Po]
+01A6;Poison Longbow [St]
+01A7;Poison Longbow [G]
+01A8;Poison Longbow [De]
+01A9;Poison Longbow [H]
+01AA;Poison Longbow [Sl]
+01AB;Poison Longbow [Fl]
+01AC;Poison Longbow [Po]
 01AD;Stagger Longbow
-01B8;[St]
-01B9;[G]
-01BA;[De]
-01B1;[H]
-01BC;[Sl]
-01BD;[Fl]
-01BE;[Po]
+01B8;Stagger Longbow [St]
+01B9;Stagger Longbow [G]
+01BA;Stagger Longbow [De]
+01B1;Stagger Longbow [H]
+01BC;Stagger Longbow [Sl]
+01BD;Stagger Longbow [Fl]
+01BE;Stagger Longbow [Po]
 01BF;Crossbow of Faible
 01C0;Krakabom Crossbow
 01C1;Yoichiro
 01B8;Dekiramos's Crossbow
 01B9;Crossbow
 01BA;Ice Crossbow
-01BB;[St]
-01BC;[G]
-01BD;[De]
-01BE;[H]
-01BF;[Sl]
-01C0;[Fl]
-01C1;[Po]
+01BB;Ice Crossbow [St]
+01BC;Ice Crossbow [G]
+01BD;Ice Crossbow [De]
+01BE;Ice Crossbow [H]
+01BF;Ice Crossbow [Sl]
+01C0;Ice Crossbow [Fl]
+01C1;Ice Crossbow [Po]
 01C2;Repel Crossbow
-01C3;[St]
-01C4;[G]
-01C5;[De]
-01C6;[H]
-01C7;[Sl]
-01C8;[Fl]
-01C9;[Po]
+01C3;Repel Crossbow [St]
+01C4;Repel Crossbow [G]
+01C5;Repel Crossbow [De]
+01C6;Repel Crossbow [H]
+01C7;Repel Crossbow [Sl]
+01C8;Repel Crossbow [Fl]
+01C9;Repel Crossbow [Po]
 01CA;The Machinator
 01CB;Illiamtel's Overture
 01CC;Teskatori Shooter
 01CD;Goweecha Gun
 01CE;Tuba
 01CF;Flame Horn
-01D0;[St]
-01D1;[G]
-01D2;[De]
-01D3;[H]
-01D4;[Sl]
-01D5;[Fl]
-01D6;[Po]
+01D0;Flame Horn [St]
+01D1;Flame Horn [G]
+01D2;Flame Horn [De]
+01D3;Flame Horn [H]
+01D4;Flame Horn [Sl]
+01D5;Flame Horn [Fl]
+01D6;Flame Horn [Po]
 01D7;Ice Horn
-01D8;[St]
-01D9;[G]
-01DA;[De]
-01DB;[H]
-01DC;[Sl]
-01DD;[Fl]
-01DE;[Po]
+01D8;Ice Horn [St]
+01D9;Ice Horn [G]
+01DA;Ice Horn [De]
+01DB;Ice Horn [H]
+01DC;Ice Horn [Sl]
+01DD;Ice Horn [Fl]
+01DE;Ice Horn [Po]
 01DF;Healixir Tuba
 01E0;Dragonap Tuba
 01E1;Sonic Demonslayer
 01E2;Tuba of Panchunan
 01E3;Horn
 01E4;Sleepy Longhorn
-01E5;[St]
-01E6;[G]
-01E7;[De]
-01E8;[H]
-01E9;[Sl]
-01EA;[Fl]
-01EB;[Po]
+01E5;Sleepy Longhorn [St]
+01E6;Sleepy Longhorn [G]
+01E7;Sleepy Longhorn [De]
+01E8;Sleepy Longhorn [H]
+01E9;Sleepy Longhorn [Sl]
+01EA;Sleepy Longhorn [Fl]
+01EB;Sleepy Longhorn [Po]
 01EC;Stagger Longhorn
-01ED;[St]
-01EE;[G]
-01EF;[De]
-01F0;[H]
-01F1;[Sl]
-01F2;[Fl]
-01F3;[Po]
+01ED;Stagger Longhorn [St]
+01EE;Stagger Longhorn [G]
+01EF;Stagger Longhorn [De]
+01F0;Stagger Longhorn [H]
+01F1;Stagger Longhorn [Sl]
+01F2;Stagger Longhorn [Fl]
+01F3;Stagger Longhorn [Po]
 01F4;Horn of Homugai
 01F5;Megaslayer
 01F6;Great Howl
 01F7;Bellophone
 01F8;Twinhorn
 01F9;Lightning Twinhorn
-01FA;[St]
-01FB;[G]
-01FC;[De]
-01FD;[H]
-01FE;[Sl]
-01FF;[Fl]
-0200;[Po]
+01FA;Lightning Twinhorn [St]
+01FB;Lightning Twinhorn [G]
+01FC;Lightning Twinhorn [De]
+01FD;Lightning Twinhorn [H]
+01FE;Lightning Twinhorn [Sl]
+01FF;Lightning Twinhorn [Fl]
+0200;Lightning Twinhorn [Po]
 0201;Poison Twinhorn
-0202;[St]
-0203;[G]
-0204;[De]
-0205;`
-0206;[Sl]
-0207;[Fl]
-0208;[Po]
+0202;Poison Twinhorn [St]
+0203;Poison Twinhorn [G]
+0204;Poison Twinhorn [De]
+0205;Poison Twinhorn [H]
+0206;Poison Twinhorn [Sl]
+0207;Poison Twinhorn [Fl]
+0208;Poison Twinhorn [Po]
 0209;Horns of Hamlin
 020A;Siren's Song
 020B;Spriggan's Song
 020C;Gjallarborn
 020D;Staff
 020E;Fireball Staff
-020F;[St]
-0210;[G]
-0211;[De]
-0212;[H]
-0213;[Sl]
-0214;[Fl]
-0215;[Po]
+020F;Fireball Staff [St]
+0210;Fireball Staff [G]
+0211;Fireball Staff [De]
+0212;Fireball Staff [H]
+0213;Fireball Staff [Sl]
+0214;Fireball Staff [Fl]
+0215;Fireball Staff [Po]
 0216;Firewall Staff
-0217;[St]
-0218;[G]
-0219;[De]
-021A;[H]
-021B;[Sl]
-021C;[Fl]
-021D;[Po]
+0217;Firewall Staff [St]
+0218;Firewall Staff [G]
+0219;Firewall Staff [De]
+021A;Firewall Staff [H]
+021B;Firewall Staff [Sl]
+021C;Firewall Staff [Fl]
+021D;Firewall Staff [Po]
 021E;Lightning Staff
-021F;[St]
-0220;[G]
-0221;[De]
-0222;[H]
-0223;[Sl]
-0224;[Fl]
-0225;[Po]
+021F;Lightning Staff [St]
+0220;Lightning Staff [G]
+0221;Lightning Staff [De]
+0222;Lightning Staff [H]
+0223;Lightning Staff [Sl]
+0224;Lightning Staff [Fl]
+0225;Lightning Staff [Po]
 0226;Thunderstorm Staff
 0227;Flamesea Staff
 0228;Holymist Staff
@@ -556,29 +556,29 @@
 022B;Phoenix Ultimate Staff
 022C;Scepter
 022D;Defense Scepter
-022E;[St]
-022F;[G]
-0230;[De]
-0231;[H]
-0232;[Sl]
-0233;[Fl]
-0234;[Po]
+022E;Defense Scepter [St]
+022F;Defense Scepter [G]
+0230;Defense Scepter [De]
+0231;Defense Scepter [H]
+0232;Defense Scepter [Sl]
+0233;Defense Scepter [Fl]
+0234;Defense Scepter [Po]
 0235;Purity Scepter
-0236;[St]
-0237;[G]
-0238;[De]
-0239;[H]
-023A;[Sl]
-023B;[Fl]
-023C;[Po]
+0236;Purity Scepter [St]
+0237;Purity Scepter [G]
+0238;Purity Scepter [De]
+0239;Purity Scepter [H]
+023A;Purity Scepter [Sl]
+023B;Purity Scepter [Fl]
+023C;Purity Scepter [Po]
 023D;Healing Scepter
-023E;[St]
-023F;[G]
-0240;[De]
-0241;[H]
-0242;[Sl]
-0243;[Fl]
-0244;[Po]
+023E;Healing Scepter [St]
+023F;Healing Scepter [G]
+0240;Healing Scepter [De]
+0241;Healing Scepter [H]
+0242;Healing Scepter [Sl]
+0243;Healing Scepter [Fl]
+0244;Healing Scepter [Po]
 0245;Firefighter Scepter
 0246;Defrost Scepter
 0247;Antivenom Scepter
@@ -587,65 +587,65 @@
 024A;Scepter of Rahmon
 024B;Cannon
 024C;Flame Cannon
-024D;[St]
-024E;[G]
-024F;[De]
-0250;[H]
-0251;[Sl]
-0252;[Fl]
-0253;[Po]
+024D;Flame Cannon [St]
+024E;Flame Cannon [G]
+024F;Flame Cannon [De]
+0250;Flame Cannon [H]
+0251;Flame Cannon [Sl]
+0252;Flame Cannon [Fl]
+0253;Flame Cannon [Po]
 0254;Bonkadonk Cannon
 0255;Lullablight
 0256;Universatile Cannon
 0257;Howitzer
 0258;Ice Howitzer
-0259;[St]
-025A;[G]
-025B;[De]
-025C;[H]
-025D;[Sl]
-025E;[Fl]
-025F;[Po]
+0259;Ice Howitzer [St]
+025A;Ice Howitzer [G]
+025B;Ice Howitzer [De]
+025C;Ice Howitzer [H]
+025D;Ice Howitzer [Sl]
+025E;Ice Howitzer [Fl]
+025F;Ice Howitzer [Po]
 0260;Euryalus
 0261;Dreadmare
 0262;Eisaiho
 0263;Laser
 0264;Critical Laser
-0265;[St]
-0266;[G]
-0267;[De]
-0268;[H]
-0269;[Sl]
-026A;[Fl]
-026B;[Po]
+0265;Critical Laser [St]
+0266;Critical Laser [G]
+0267;Critical Laser [De]
+0268;Critical Laser [H]
+0269;Critical Laser [Sl]
+026A;Critical Laser [Fl]
+026B;Critical Laser [Po]
 026C;Hoirenho
 026D;Ichigeki
 026E;Sunflare Laser
 026F;Helm
 0270;Lightning Helm
-0271;[St]
-0272;[G]
-0273;[De]
-0274;[H]
-0275;[Sl]
-0276;[Fl]
-0277;[Po]
+0271;Lightning Helm [St]
+0272;Lightning Helm [G]
+0273;Lightning Helm [De]
+0274;Lightning Helm [H]
+0275;Lightning Helm [Sl]
+0276;Lightning Helm [Fl]
+0277;Lightning Helm [Po]
 0278;Flame Helm
-0279;[St]
-027A;[G]
-027B;[De]
-027C;[H]
-027D;[Sl]
-027E;[Fl]
-027F;[Po]
+0279;Flame Helm [St]
+027A;Flame Helm [G]
+027B;Flame Helm [De]
+027C;Flame Helm [H]
+027D;Flame Helm [Sl]
+027E;Flame Helm [Fl]
+027F;Flame Helm [Po]
 0280;Ice Helm
-0281;[St]
-0282;[G]
-0283;[De]
-0284;[H]
-0285;[Sl]
-0286;[Fl]
-0287;[Po]
+0281;Ice Helm [St]
+0282;Ice Helm [G]
+0283;Ice Helm [De]
+0284;Ice Helm [H]
+0285;Ice Helm [Sl]
+0286;Ice Helm [Fl]
+0287;Ice Helm [Po]
 0288;Tahla Helm
 0289;Bunny Hood
 028A;Tebenos Helm
@@ -993,11 +993,11 @@
 03E0;03E0
 03E1;03E1
 03E2;03E2
-03E3;DLC Helm
-03E4;DLC Helm
-03E5;DLC Helm
-03E6;DLC Helm
-03E7;DLC Helm
-03E8;DLC Helm
-03E9;DLC Helm
+03E3;DLC Helm 03E3
+03E4;DLC Helm 03E4
+03E5;DLC Helm 03E5
+03E6;DLC Helm 03E6
+03E7;DLC Helm 03E7
+03E8;DLC Helm 03E8
+03E9;DLC Helm 03E9
 03EA;Shubaba Gale Kabuto
