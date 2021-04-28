@@ -61,9 +61,21 @@ class Instruction:
     offset: int = None
 
 
+def get_ids(csv_path: Path) -> Dict[int, str]:
+    ids: Dict[int, str] = {}
+    with open(csv_path, newline="", encoding="utf-8") as csvfile:
+        r = csv.reader(csvfile, delimiter=";")
+        for (
+            id_col,
+            name_col,
+        ) in r:
+            ids[int(id_col, 16)] = name_col.replace(" ", "_").upper()
+    return ids
+
+
 def get_instruction_set(file_path="p2_instruction_set.csv") -> List[Instruction]:
     instructions_set: List[Instruction] = []
-    with open(file_path, newline="") as csvfile:
+    with open(file_path, newline="", encoding="utf-8") as csvfile:
         r = csv.reader(csvfile, delimiter=";")
         for (
             type_id_col,
@@ -184,28 +196,27 @@ def get_str_params(params: List[InstParam]) -> str:
             str_params += f"{p.name_var}={p.value:X}"
         elif InstType.KEYBIND_ID in p.type:
             try:
-                # str_params += f"KB_{keybinds[p.value]}"
-                str_params += f"{p.name_var}=KB_{p.value:08X}"
+                str_params += f"KB_{keybinds[p.value]}"
             except KeyError:
-                str_params += f"{p.name_var}=KB_{p.value:08X}"
+                str_params += f"{p.name_var}=KB_{p.value:X}"
         elif InstType.ENTITY_ID in p.type:
             try:
                 # str_params += f"ENT_{entities[p.value]}"
-                str_params += f"{p.name_var}=ENT_{p.value:08X}"
+                str_params += f"{p.name_var}=ENT_{p.value:X}"
             except KeyError:
-                str_params += f"{p.name_var}=ENT_{p.value:08X}"
+                str_params += f"{p.name_var}=ENT_{p.value:X}"
         elif InstType.EQUIP_ID in p.type:
             try:
                 # str_params += f"EQP_{equipment[p.value]}"
-                str_params += f"{p.name_var}=EQP_{p.value:08X}"
+                str_params += f"{p.name_var}=EQP_{p.value:X}"
             except KeyError:
-                str_params += f"{p.name_var}=EQP_{p.value:08X}"
+                str_params += f"{p.name_var}=EQP_{p.value:X}"
         elif InstType.LOOT_ID in p.type:
             try:
-                # str_params += f"ENT_{loot[p.value]}"
-                str_params += f"{p.name_var}=ENT_{p.value:08X}"
+                str_params += f"LOOT_{loot[p.value]}"
+                # str_params += f"{p.name_var}=LOOT_{p.value:X}"
             except KeyError:
-                str_params += f"{p.name_var}=ENT_{p.value:08X}"
+                str_params += f"{p.name_var}=LOOT_{p.value:X}"
         elif InstType.FLOAT in p.type:
             # str_params += f"{p.value:3f}"
             str_params += f"{p.name_var}={p.value}"
@@ -263,8 +274,11 @@ def print_new_types(instructions: List[Union[Instruction, Tuple[int, bytearray]]
 
 
 # instructions_set = get_instruction_set("p1_instruction_set.csv")
-# instructions_set = get_instruction_set("p2_instruction_set.csv")
-instructions_set = get_instruction_set("p3_instruction_set.csv")
+instructions_set = get_instruction_set("p2_instruction_set.csv")
+# instructions_set = get_instruction_set("p3_instruction_set.csv")
+
+keybinds = get_ids(Path("./keybinds.csv"))
+loot = get_ids(Path("./p2_loot.csv"))
 
 app = typer.Typer()
 
@@ -429,7 +443,7 @@ def pac(
                                     inst.params[j].type |= InstType.INT
                                 elif param.value == 0x20:  # int, short, uint, ushort?
                                     inst.params[j].type |= InstType.UINT
-                                else:  # 0x4, 0x8
+                                else:  # 0x4, 0x8, 0x40
                                     inst.params[j].type |= InstType.INT
                                     # TODO
                                     # print(

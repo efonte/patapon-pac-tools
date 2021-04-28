@@ -6,8 +6,8 @@ from rich import print
 
 
 functions = {}
-# with open("[P2] - PAC Instruction Dump.txt", "r", encoding="utf-8") as infile:
-with open("[P3] - PAC Instruction Dump.txt", "r", encoding="utf-8") as infile:
+# with open("[P3] - PAC Instruction Dump.txt", "r", encoding="utf-8") as infile:
+with open("[P2] - PAC Instruction Dump.txt", "r", encoding="utf-8") as infile:
     for line in infile.readlines():
         category, id, offset, func_name = line.rstrip("\n").split(", ")
         # category = int(category[2:], 16)
@@ -16,10 +16,10 @@ with open("[P3] - PAC Instruction Dump.txt", "r", encoding="utf-8") as infile:
         # print(f"{category:02X} {id:04X} {func_name}")
         functions[f"{category}_{id:04X}"] = (category, id, func_name)
 
-# outfile = open("p2_instruction_set_new.csv", "w", encoding="utf-8")
-# with open("p2_instruction_set.csv", "r", encoding="utf-8") as infile:
-outfile = open("p3_instruction_set_new.csv", "w", encoding="utf-8")
-with open("p3_instruction_set.csv", "r", encoding="utf-8") as infile:
+# outfile = open("p3_instruction_set_new.csv", "w", encoding="utf-8")
+# with open("p3_instruction_set.csv", "r", encoding="utf-8") as infile:
+outfile = open("p2_instruction_set_new.csv", "w", encoding="utf-8")
+with open("p2_instruction_set.csv", "r", encoding="utf-8") as infile:
     for line in infile.readlines():
         category, id, func_name, desc, params = line.rstrip("\n").split(";")
         try:

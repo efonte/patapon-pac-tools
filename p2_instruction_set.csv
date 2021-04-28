@@ -1,9 +1,9 @@
 00;0001;cmd_end;Unk;
 00;0002;cmd_jmp;Unk;Jump destination: uint_P
-00;0003;cmd_call;Unk;Unk1: uint
-00;0004;cmd_result;Unk;Unk1: uint, Unk2: uint
-00;0005;cmd_resJmp;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-00;0006;cmd_resCall;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+00;0003;cmd_call;Unk;Jump destination: uint_P
+00;0004;cmd_result;Unk;Data pointer: uint, Data offset: uint
+00;0005;cmd_resJmp;Unk;Data pointer: uint, Data offset: uint, Jump destination: uint_P
+00;0006;cmd_resCall;Unk;Data pointer: uint, Data offset: uint, Jump destination: uint_P
 00;0007;cmd_mov;Unk;Memory pointer: uint, Memory offset: uint, Value type: T_1, Saved value: V_1
 00;0008;cmd_add;Unk;Memory pointer: uint, Memory offset: uint, Value type: T_1, Value: V_1
 00;0009;cmd_sub;Unk;Memory pointer: uint, Memory offset: uint, Value type: T_1, Value: V_1
@@ -17,13 +17,13 @@
 00;0012;cmd_iand;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0013;cmd_ior;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0014;cmd_ixor;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-00;0015;cmd_ifEQ;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Jump destination: uint
-00;0016;cmd_ifNE;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-00;0017;cmd_ifLSE;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-00;0018;cmd_ifLBE;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-00;0019;cmd_ifLS;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-00;001A;cmd_ifLB;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-00;001B;cmd_ifAND;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
+00;0015;cmd_ifEQ;Unk;Value A pointer: uint, Value A offset: uint, Value B type: T_1, Value B: V_1, Jump destination: uint_P
+00;0016;cmd_ifNE;Unk;Value A pointer: uint, Value A offset: uint, Value B type: T_1, Value B: V_1, Jump destination: uint_P
+00;0017;cmd_ifLSE;Unk;Value A pointer: uint, Value A offset: uint, Value B type: T_1, Value B: V_1,  Jump destination: uint_P
+00;0018;cmd_ifLBE;Unk;Value A pointer: uint, Value A offset: uint, Value B type: T_1, Value B: V_1,  Jump destination: uint_P
+00;0019;cmd_ifLS;Unk;Value A pointer: uint, Value A offset: uint, Value B type: T_1, Value B: V_1,  Jump destination: uint_P
+00;001A;cmd_ifLB;Unk;Value A pointer: uint, Value A offset: uint, Value B type: T_1, Value B: V_1,  Jump destination: uint_P
+00;001B;cmd_ifAND;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Key pressed: KEYBIND_ID, Jump destination: uint_P
 00;001D;cmd_ifCallEQ;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;001E;cmd_ifCallNE;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;001F;cmd_ifCallLSE;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
@@ -31,8 +31,8 @@
 00;0021;cmd_ifCallLS;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;0022;cmd_ifCallLB;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;0023;cmd_ifCallAND;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-00;0025;cmd_flgSet;Unk;Unk1: uint, Unk2: uint
-00;0026;cmd_flgClr;Unk;Unk1: uint, Unk2: uint
+00;0025;cmd_flgSet;Unk;Unk1: COUNT_uint
+00;0026;cmd_flgClr;Unk;Unk1: COUNT_uint
 00;002A;cmd_flgAND;Unk;Unk1: uint, Unk2: uint, Unk3: uint
 00;002B;cmd_flgOR;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;002C;cmd_flgZERO;Unk;Unk1: uint, Unk2: uint, Unk3: uint
@@ -70,7 +70,7 @@
 01;0013;getGimmickPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 01;0014;gimmickFlipEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 01;0015;setGimmickRenderPriority;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0016;killGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+01;0016;killGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: T_1, Unk4: V_1, Unk5: T_2, Unk6: V_2
 01;0017;setGimmickCollisionEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 01;0018;gimmickAttachEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Text: str
 01;001A;gimmickKillAttachEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
@@ -80,13 +80,13 @@
 01;0020;addSquad;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 01;0021;killSquad;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 01;0022;setSquadRenderPriority;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0026;changeWeather;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0027;setWindDirection;Unk;Unk1: uint, Unk2: uint
-01;0028;setWindLevel;Unk;Unk1: uint, Unk2: uint
-01;0029;setRainyLevel;Unk;Unk1: uint, Unk2: uint
-01;002B;setThunderLevel;Unk;Unk1: uint, Unk2: uint
-01;002C;setSnowyLevel;Unk;Unk1: uint, Unk2: uint
-01;002D;itemAdd;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+01;0026;changeWeather;Unk;Unk1: T_1, Unk2: V_1, Unk3: T_2, Unk4: V_2
+01;0027;setWindDirection;Unk;Unk1: T_1, direction: V_1
+01;0028;setWindLevel;Unk;Unk1: uint, level: uint
+01;0029;setRainyLevel;Unk;Unk1: uint, level: uint
+01;002B;setThunderLevel;Unk;Unk1: uint, level: uint
+01;002C;setSnowyLevel;Unk;Unk1: uint, level: uint
+01;002D;itemAdd;Unk;Unk1: uint, item: LOOT_ID, Unk3: uint, Unk4: uint
 01;002F;itemGetTemporaryNum;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 01;0030;getGimmickMotionEndFrame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 01;0031;gimmickGetNodePositionFromName;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, name: str
@@ -278,9 +278,9 @@
 0C;0029;0C_0029;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 0C;002A;0C_002A;Unk;Unk1: uint, Unk2: uint
 0C;002C;0C_002C;Unk;Unk1: uint, Unk2: uint
-0D;0001;0D_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0D;0002;0D_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0D;0004;0D_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0D;0001;playSE;Unk;Unk1: uint, Time: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0D;0002;stopSE;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0D;0004;changeVolumeSE;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0F;0001;0F_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint
 0F;0003;0F_0003;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0F;0004;0F_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint

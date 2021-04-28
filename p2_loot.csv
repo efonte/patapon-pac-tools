@@ -1,0 +1,868 @@
+0000;Pon Drum
+0001;Pata Drum
+0002;Chaka Drum
+0003;Don Drum
+0004;Rain JuJu
+0005;Tailwind JuJu
+0006;Storm JuJu
+0007;Earthquake JuJu
+0008;Siberian JuJu
+0009;Shock 'n' Awe Juju
+000A;Duck 'n' Cover Juju
+000B;予備のミラクル
+000C;Blank Map
+000D;Bent Compass
+000E;Cloudy Crystal
+000F;Broken Sign
+0010;Black Star
+0011;Mud-stained Map
+0012;Soft Lithograph
+0013;Unopenable Box
+0014;Sealed Scroll
+0015;おもい羽
+0016;Square Wheel
+0017;よごれたレンズ
+0018;Grey Rainbow
+0019;針のない羅針盤
+001A;Mater Sprout
+001B;Patapata Song
+001C;Ponpon Song
+001D;Chakachaka Song
+001E;Ponpata Song
+001F;Ponchaka Song
+0020;Dondon Song
+0021;Donchaka Song
+0022;Yaripon's Memory
+0023;Tatepon's Memory
+0024;Yumipon's Memory
+0025;Kibapon's Memory
+0026;Dekapon's Memory
+0027;Megapon's Memory
+0028;Toripon's Memory
+0029;Robopon's Memory
+002A;Mahopon's Memory
+002B;Cap
+002C;Pakapon Cap
+002D;Kinpon Cap
+002E;Zakpon Cap
+002F;Kampon Cap
+0030;Gashapon Cap
+0031;Yapon Cap
+0032;Tsukupon Cap
+0033;Ka-ching
+0034;Potion
+0035;Cafeteria Meat
+0036;Tender Meat
+0037;Succulent Meat
+0038;Mystery Meat
+0039;Demon Meat
+003A;Berara Hide
+003B;Gotsutsu Hide
+003C;Subebe Hide
+003D;Mezura Hide
+003E;Demon Hide
+003F;Kuneri Fang
+0040;Itete Fang
+0041;Gizaza Fang
+0042;Nazozo Fang
+0043;Demon Fang
+0044;Mudada Bone
+0045;Gashirin Bone
+0046;Dodeka Bone
+0047;Ottama Bone
+0048;Demon Bone
+0049;Stone
+004A;Hard Iron
+004B;Titanium Ore
+004C;Mithril
+004D;Adamantine
+004E;Leaf
+004F;Wood Branch
+0050;Cherry Tree
+0051;Hinoki
+0052;Super Cedar
+0053;Bowtie Tree
+0054;Eyeball Cabbage
+0055;Blood Carrot
+0056;Predator Pumpkin
+0057;Moor Morel
+0058;Guddorian
+0059;Kasu Seed
+005A;Yoka Seed
+005B;Deka Seed
+005C;Bibi Seed
+005D;Mater Seed
+005E;Blunt Alloy
+005F;Hard Alloy
+0060;Awesome Alloy
+0061;Magic Alloy
+0062;Demon's Ore
+0063;Familiar Juice
+0064;Hot Juice
+0065;Cold Juice
+0066;Rainbow Juice
+0067;Demon Juice
+0068;Gruel Stew
+0069;Tasty Stew
+006A;King's Stew
+006B;Divine Stew
+006C;Demon Stew
+006E;Wooden Spear
+006F;Iron Spear
+0070;Steel Spear
+0071;Scorching Spear
+0072;Dokaknel's Fang
+0073;Ancient Spear
+0074;"Giant ""Bullet"" Spear"
+0075;Divine Spear <N0>
+0076;Spear of Protection
+0077;Ice Spear
+0078;Dream Spear
+0079;Thunder Spear
+007A;Great Fire Spear
+007B;Great Ice Spear
+007C;Great Thunder Spear
+007D;Heaven Spear
+007E;Magic Spear Brugnuk
+007F;Friendship Spear
+0080;予備槍１
+0081;予備槍２
+0082;Tin Axe
+0083;Iron Sword
+0084;Steel Axe
+0085;Zleep Zword Z
+0086;Fire Sword
+0087;Ancient Axe
+0088;The Butcher
+0089;Divine Sword <N0>
+008A;Gong's Scythe
+008B;Ice Sword
+008C;Thunder Sword
+008D;Great Fire Axe
+008E;Great Ice Axe
+008F;Great Thunder Axe
+0090;Heaven Sword
+0091;Magic Axe Labrys
+0092;Friendship Sword
+0093;The Great Mighty Armor
+0094;予備剣１
+0095;Sword of the late Tatepon
+0096;Wood Shield
+0097;Iron Shield
+0098;Steel Shield
+0099;Ice Shield
+009A;Ultra Heavy Shield
+009B;Ancient Shield
+009C;Giant Shield
+009D;Divine Shield <N0>
+009E;Fire Shield
+009F;Thunder Shield
+00A0;Wing Shield
+00A1;Lightning Shield
+00A2;Magma Shield
+00A3;Dragon Shield
+00A4;Heaven Shield
+00A5;Magic Shield Algos
+00A6;Friendship Shield
+00A7;予備盾１
+00A8;予備盾２
+00A9;予備盾３
+00AA;Wooden Bow
+00AB;Iron Bow
+00AC;Steel Bow
+00AD;Fire Bow
+00AE;Piercing Bow
+00AF;Ancient Bow
+00B0;"Giant Bow ""Failnaught"""
+00B1;Divine Bow <N0>
+00B2;Ice Bow
+00B3;Dream Bow
+00B4;Thunder Bow
+00B5;Great Fire Bow
+00B6;Great Ice Bow
+00B7;Great Thunder Bow
+00B8;Heaven Bow
+00B9;Magic Bow Flein
+00BA;Friendship Bow
+00BB;予備弓１
+00BC;予備弓２
+00BD;Bow of the late Yumipon
+00BE;Wooden Halberd
+00BF;Iron Halberd
+00C0;Steel Halberd
+00C1;Deflecting Halberd
+00C2;Fire Halberd
+00C3;Ancient Halberd
+00C4;"Giant Halberd ""Grizzly"""
+00C5;Divine Halberd <N0>
+00C6;Ice Halberd
+00C7;Dream Halberd
+00C8;Thunder Halberd
+00C9;Great Fire Halberd
+00CA;Great Ice Halberd
+00CB;Great Thunder Halberd
+00CC;Heaven Halberd
+00CD;Magic Halberd Gugnir
+00CE;Friendship Halberd
+00CF;Spare Slot 1
+00D0;Spare Slot 2
+00D1;Spare Slot 3
+00D2;Horse
+00D3;Fast Horse
+00D4;Tough Horse
+00D5;Strong Horse
+00D6;Crimson Horse
+00D7;Ancient Horse
+00D8;Deep Impact
+00D9;Divine Horse <N0>
+00DA;Blue Horse
+00DB;Yellow Horse
+00DC;Burning Horse
+00DD;Lightning Horse
+00DE;Ice Horse
+00DF;Dragon Horse
+00E0;Heaven Horse
+00E1;Magic Horse Sleipnir
+00E2;Friendship Horse
+00E3;Spare Slot 1
+00E4;Spare Slot 2
+00E5;Spare Slot 3
+00E6;Club
+00E7;Iron Hammer
+00E8;Steel Mace
+00E9;Nail Studded Bat
+00EA;Dream Weaver
+00EB;Ancient Hammer
+00EC;"Morning Star ""Giganto"""
+00ED;Divine Axe <N0>
+00EE;Fire Club
+00EF;Ice Club
+00F0;Thunder Club
+00F1;Great Fire Club
+00F2;Great Ice Club
+00F3;Great Thunder Club
+00F4;Heaven Club
+00F5;Magic Club Thor
+00F6;Friendship Club
+00F7;Spare Slot 1
+00F8;Spare Slot 2
+00F9;Spare Slot 3
+00FA;Leather Shoulder
+00FB;Iron Shoulder
+00FC;Steel Shoulder
+00FD;Wind Shoulder
+00FE;Heavy Shoulder
+00FF;Ancient Shoulder
+0100;Great Shoulder Gigas
+0101;Divine Shoulder <N0>
+0102;Fire Shoulder
+0103;Thunder Shoulder
+0104;Snow Shoulder
+0105;Lightning Shoulder
+0106;Sun Shoulder
+0107;Dragon Shoulder
+0108;Heaven Shoulder
+0109;Magic Shoulder Chronos
+010A;Friendship Shoulder
+010B;Spare Slot 1
+010C;Spare Slot 2
+010D;Spare Slot 3
+010E;Wood Horn
+010F;Iron Horn
+0110;Steel Horn
+0111;Dogaeen's Horn
+0112;Cioking's Horn
+0113;Shookle's Horn
+0114;Ancient Horn
+0115;Divine Horn <N0>
+0116;Fire Horn
+0117;Ice Horn
+0118;Thunder Horn
+0119;Great Fire Horn
+011A;Great Ice Horn
+011B;Great Thunder Horn
+011C;Heaven Horn
+011D;Magic Horn Hamelin
+011E;Friendship Horn
+011F;Spare Slot 1
+0120;Spare Slot 2
+0121;Spare Slot 3
+0122;Cotton Cape
+0123;Leather Cape
+0124;Silk Cape
+0125;Wind Mantle
+0126;Cape of Strength
+0127;Wing Cape
+0128;Ancient Mantle
+0129;Mighty Pata Mantle <N0>
+012A;Fire Mantle
+012B;Thunder Mantle
+012C;Snow Mantle
+012D;Lightning Mantle
+012E;Sun Mantle
+012F;Dragon Mantle
+0130;Heaven Mantle
+0131;Magic Clothes Vamp
+0132;Friendship Mantle
+0133;Spare Slot 1
+0134;Spare Slot 2
+0135;Spare Slot 3
+0136;Wood Javelin
+0137;Iron Javelin
+0138;Steel Javelin
+0139;Fire Javelin
+013A;Piercing Javelin
+013B;Ancient Javelin
+013C;Giant Javelin
+013D;Mighty Pata Javelin <N0>
+013E;Ice Javelin
+013F;Dream Javelin
+0140;Thunder Javelin
+0141;Great Fire Javelin
+0142;Great Ice Javelin
+0143;Great Thunder Javelin
+0144;Heaven Javelin
+0145;Magic Javelin Gaebolg
+0146;Friendship Javelin
+0147;Spare Slot 1
+0148;Spare Slot 2
+0149;Spare Slot 3
+014A;Bird
+014B;Fast Bird
+014C;Tough Bird
+014D;Strong Bird
+014E;Red Bird
+014F;Ancient Bird
+0150;Garuda
+0151;Mighty Pata Bird <N0>
+0152;Blue Bird
+0153;Yellow Bird
+0154;Flame Bird
+0155;Thunderbird
+0156;Ice Bird
+0157;Dragon Bird
+0158;Heaven Bird
+0159;Magic Bird Onmoraki
+015A;Friendship Bird
+015B;Spare Slot 1
+015C;Spare Slot 2
+015D;Spare Slot 3
+015E;Brick Arm
+015F;Iron Arm
+0160;Steel Arm
+0161;Burst Arm
+0162;Fire Arm
+0163;Ancient Arm
+0164;Great Golem Arm
+0165;Divine Fist <N0>
+0166;Ice Arm
+0167;Dream Arm
+0168;Thunder Arm
+0169;Great Fire Arm
+016A;Great Ice Arm
+016B;Great Thunder Arm
+016C;Heaven Arm
+016D;Magic Arm Quill
+016E;Friendship Arm
+016F;予備腕１
+0170;予備腕２
+0171;予備腕３
+0172;未使用１
+0173;未使用２
+0174;未使用３
+0175;未使用４
+0176;未使用５
+0177;未使用６
+0178;未使用７
+0179;未使用８
+017A;未使用９
+017B;未使用１０
+017C;未使用１１
+017D;未使用１２
+017E;未使用１３
+017F;未使用１４
+0180;未使用１５
+0181;未使用１６
+0182;予備１
+0183;予備２
+0184;予備３
+0185;予備４
+0186;Wood Staff
+0187;Iron Staff
+0188;Silver Staff
+0189;Defense Staff
+018A;Fire Staff
+018B;Soothing Staff
+018C;Ancient Staff
+018D;Mighty Pata Staff <N0>
+018E;Ice Staff
+018F;Healing Staff
+0190;Thunder Staff
+0191;Great Fire Staff
+0192;Great Ice Staff
+0193;Great Thunder Staff
+0194;Heaven Staff
+0195;Magic Staff Rune
+0196;Friendship Staff
+0197;Spare Slot 1
+0198;Spare Slot 2
+0199;Spare Slot 3
+019A;Wood Shoes
+019B;Leather Sandals
+019C;Glass Shoes
+019D;Wind Shoes
+019E;Boots of Strength
+019F;Wing Boots
+01A0;Ancient Shoes
+01A1;Mighty Pata Shoes <N0>
+01A2;Fire Shoes
+01A3;Thunder Shoes
+01A4;Snow Shoes
+01A5;Lightning Shoes
+01A6;Sun Shoes
+01A7;Dragon Shoes
+01A8;Heaven Shoes
+01A9;Magic Shoes Lilith
+01AA;Friendship Shoes
+01AB;Spare Slot 1
+01AC;Spare Slot 2
+01AD;Spare Slot 3
+01AE;Wooden Helm
+01AF;Iron Helm
+01B0;Steel Helm
+01B1;Wind Helm
+01B2;Strength Helm
+01B3;Ancient Helm
+01B4;"Giant ""Turtle"" Helm"
+01B5;Divine Helm <N0>
+01B6;Bunny Head
+01B7;Scorpiton Helm
+01B8;Spiderton Helm
+01B9;Stagton Helm
+01BA;Gong's Helm
+01BB;Fire Helm
+01BC;Thunder Helm
+01BD;Snow Helm
+01BE;Lightning Helm
+01BF;Sun Helm
+01C0;Dragon Helm
+01C1;Wing Helm
+01C2;Hell's Kitchen Hat
+01C3;Jeweled Tiara
+01C4;Samurai Head
+01C5;Heaven Helm
+01C6;Magic Helm Hades
+01C7;Friendship Helm
+01C8;Great Mighty Helmet
+01C9;Lordly Hairpiece
+01CA;予備ヘルム１
+01CB;予備ヘルム２
+01CC;Dekapon Helm【Lv1】
+01CD;Dekapon Helm【Lv5】
+01CE;Dekapon Helm【Lv10】
+01CF;Megapon Helm【Lv1】
+01D0;Megapon Helm【Lv5】
+01D1;Megapon Helm【Lv10】
+01D2;Mahopon Helm【Lv1】
+01D3;Mahopon Helm【Lv5】
+01D4;Mahopon Helm【Lv10】
+01D5;Rarepon Helm【Pyokola Lv1】
+01D6;Rarepon Helm【Pyokola Lv5】
+01D7;Rarepon Helm【Pyokola Lv10】
+01D8;Rarepon Helm【Gekolos Lv1】
+01D9;Rarepon Helm【Gekolos Lv5】
+01DA;Rarepon Helm【Gekolos Lv10】
+01DB;Rarepon Helm【Mofeel Lv1】
+01DC;Rarepon Helm【Mofeel Lv5】
+01DD;Rarepon Helm【Mofeel Lv10】
+01DE;Rarepon Helm【Tikulee Lv1】
+01DF;Rarepon Helm【Tikulee Lv5】
+01E0;Rarepon Helm【Tikulee Lv10】
+01E1;Rarepon Helm【Mogyun Lv1】
+01E2;Rarepon Helm【Mogyun Lv5】
+01E3;Rarepon Helm【Mogyun Lv10】
+01E4;Rarepon Helm【Basara Lv1】
+01E5;Rarepon Helm【Basara Lv5】
+01E6;Rarepon Helm【Basara Lv10】
+01E7;Rarepon Helm【Pig Lv1】
+01E8;Rarepon Helm【Pig Lv5】
+01E9;Rarepon Helm【Pig Lv10】
+01EA;Rarepon Helm【Cat Lv1】
+01EB;Rarepon Helm【Cat Lv5】
+01EC;Rarepon Helm【Cat Lv10】
+01ED;Rarepon Helm【Dog Lv1】
+01EE;Rarepon Helm【Dog Lv5】
+01EF;Rarepon Helm【Dog Lv10】
+01F0;Rarepon Helm【Tree Lv1】
+01F1;Rarepon Helm【Tree Lv5】
+01F2;Rarepon Helm【Tree Lv10】
+01F3;Rarepon Helm【Fish Lv1】
+01F4;Rarepon Helm【Fish Lv5】
+01F5;Rarepon Helm【Fish Lv10】
+01F6;Rarepon Helm【Monkey Lv1】
+01F7;Rarepon Helm【Monkey Lv5】
+01F8;Rarepon Helm【Monkey Lv10】
+01F9;Rarepon Helm【Mushroom Lv1】
+01FA;Rarepon Helm【Mushroom Lv5】
+01FB;Rarepon Helm【Mushroom Lv10】
+01FC;Rarepon Helm【Penguin Lv1】
+01FD;Rarepon Helm【Penguin Lv5】
+01FE;Rarepon Helm【Penguin Lv10】
+01FF;Rarepon Helm【Deer Lv1】
+0200;Rarepon Helm【Deer Lv5】
+0201;Rarepon Helm【Deer Lv10】
+0202;Rarepon Helm【Dragon Lv1】
+0203;Rarepon Helm【Dragon Lv5】
+0204;Rarepon Helm【Dragon Lv10】
+0205;Rarepon Helm【Pyokola Lv1】
+0206;Rarepon Helm【Pyokola Lv5】
+0207;Rarepon Helm【Pyokola Lv10】
+0208;Rarepon Helm【Gekolos Lv1】
+0209;Rarepon Helm【Gekolos Lv5】
+020A;Rarepon Helm【Gekolos Lv10】
+020B;Rarepon Helm【Mofeel Lv1】
+020C;Rarepon Helm【Mofeel Lv5】
+020D;Rarepon Helm【Mofeel Lv10】
+020E;Rarepon Helm【Tikulee Lv1】
+020F;Rarepon Helm【Tikulee Lv5】
+0210;Rarepon Helm【Tikulee Lv10】
+0211;Rarepon Helm【Mogyun Lv1】
+0212;Rarepon Helm【Mogyun Lv5】
+0213;Rarepon Helm【Mogyun Lv10】
+0214;Rarepon Helm【Basara Lv1】
+0215;Rarepon Helm【Basara Lv5】
+0216;Rarepon Helm【Basara Lv10】
+0217;Rarepon Helm【Pig Lv1】
+0218;Rarepon Helm【Pig Lv5】
+0219;Rarepon Helm【Pig Lv10】
+021A;Rarepon Helm【Cat Lv1】
+021B;Rarepon Helm【Cat Lv5】
+021C;Rarepon Helm【Cat Lv10】
+021D;Rarepon Helm【Dog Lv1】
+021E;Rarepon Helm【Dog Lv5】
+021F;Rarepon Helm【Dog Lv10】
+0220;Rarepon Helm【Tree Lv1】
+0221;Rarepon Helm【Tree Lv5】
+0222;Rarepon Helm【Tree Lv10】
+0223;Rarepon Helm【Fish Lv1】
+0224;Rarepon Helm【Fish Lv5】
+0225;Rarepon Helm【Fish Lv10】
+0226;Rarepon Helm【Monkey Lv1】
+0227;Rarepon Helm【Monkey Lv5】
+0228;Rarepon Helm【Monkey Lv10】
+0229;Rarepon Helm【Mushroom Lv1】
+022A;Rarepon Helm【Mushroom Lv5】
+022B;Rarepon Helm【Mushroom Lv10】
+022C;Rarepon Helm【Penguin Lv1】
+022D;Rarepon Helm【Penguin Lv5】
+022E;Rarepon Helm【Penguin Lv10】
+022F;Rarepon Helm【Deer Lv1】
+0230;Rarepon Helm【Deer Lv5】
+0231;Rarepon Helm【Deer Lv10】
+0232;Rarepon Helm【Dragon Lv1】
+0233;Rarepon Helm【Dragon Lv5】
+0234;Rarepon Helm【Dragon Lv10】
+0235;Sutata
+0236;Suttata
+0237;Sutatattan
+0238;Sutatanooo
+0239;Gashishi
+023A;Gasshin
+023B;Zugashi
+023C;Gasshingaa
+023D;Gochichi
+023E;Gocchin
+023F;Gocchinko
+0240;Gochigachidesu
+0241;Shuba
+0242;Shubaba
+0243;Shubabiya
+0244;Shubabassa
+0245;Bishiri
+0246;Bisharin
+0247;Donpisha
+0248;Dopishana
+0249;Gurara
+024A;Guraran
+024B;Guranguran
+024C;Gurarandaa
+024D;Ototo
+024E;Ottoto
+024F;Ottototo
+0250;Ototodokko
+0251;Merara
+0252;Meracchi
+0253;Meraachichi
+0254;Meraachiize
+0255;Kachichi
+0256;Kachikochi
+0257;Kachinkon
+0258;Kacchikochin
+0259;Neokoro
+025A;Nenkoro
+025B;Nenkorori
+025C;Nekororinyo
+025D;Kakin
+025E;Kakikoki
+025F;Kakkinko
+0260;Kakkokingu
+0261;Hirara
+0262;Hirarin
+0263;Hiraratto
+0264;Hirarinmaru
+0265;Biyoyo
+0266;Biyoyon
+0267;Byororon
+0268;Babyobyon
+0269;Doshishi
+026A;Dosshiri
+026B;Zundoshiri
+026C;Doshirittan
+026D;Shitoto
+026E;Shitton
+026F;Shittoriyo
+0270;Shittoriine
+0271;Meranya
+0272;Nameranya
+0273;Dameranya
+0274;Dameranyan
+0275;Popoka
+0276;Pokapoka
+0277;Popopokka
+0278;Poppkaana
+0279;Nonburu
+027A;Nonbururu
+027B;Nonnooburu
+027C;Nonburussa
+027D;Babiri
+027E;Babirira
+027F;Babiriino
+0280;Babinonnon
+0281;Jirin
+0282;Jiririn
+0283;Jinjirin
+0284;Jiririntan
+0285;Zubaba
+0286;Zubizuba
+0287;Zunzubiba
+0288;Zubizubabaya
+0289;Kachiko
+028A;Kachikochi
+028B;Kacchinko
+028C;Kachinkocchi
+028D;Myuu
+028E;Myuuto
+028F;Myuutan
+0290;Myuutaron
+0291;Dogyuun
+0292;Dongyugyu
+0293;Dodongyuu
+0294;Zuddongyu
+0295;Subasara
+0296;Rabasara
+0297;Rabarassa
+0298;Rabasarana
+0299;Sutata
+029A;Suttata
+029B;Sutatattan
+029C;Sutatanooo
+029D;Gashishi
+029E;Gasshin
+029F;Zugashi
+02A0;Gasshingaa
+02A1;Gochichi
+02A2;Gocchin
+02A3;Gocchinko
+02A4;Gochigachidesu
+02A5;Shuba
+02A6;Shubaba
+02A7;Shubabiya
+02A8;Shubabassa
+02A9;Bishiri
+02AA;Bisharin
+02AB;Donpisha
+02AC;Dopishana
+02AD;Gurara
+02AE;Guraran
+02AF;Guranguran
+02B0;Gurarandaa
+02B1;Ototo
+02B2;Ottoto
+02B3;Ottototo
+02B4;Ototodokko
+02B5;Merara
+02B6;Meracchi
+02B7;Meraachichi
+02B8;Meraachiize
+02B9;Kachichi
+02BA;Kachikochi
+02BB;Kachinkon
+02BC;Kacchikochin
+02BD;Neokoro
+02BE;Nenkoro
+02BF;Nenkorori
+02C0;Nekororinyo
+02C1;Kakin
+02C2;Kakikoki
+02C3;Kakkinko
+02C4;Kakkokingu
+02C5;Hirara
+02C6;Hirarin
+02C7;Hiraratto
+02C8;Hirarinmaru
+02C9;Biyoyo
+02CA;Biyoyon
+02CB;Byororon
+02CC;Babyobyon
+02CD;Doshishi
+02CE;Dosshiri
+02CF;Zundoshiri
+02D0;Doshirittan
+02D1;Shitoto
+02D2;Shitton
+02D3;Shittoriyo
+02D4;Shittoriine
+02D5;Meranya
+02D6;Nameranya
+02D7;Dameranya
+02D8;Dameranyan
+02D9;Popoka
+02DA;Pokapoka
+02DB;Popopokka
+02DC;Poppkaana
+02DD;Nonburu
+02DE;Nonbururu
+02DF;Nonnooburu
+02E0;Nonburussa
+02E1;Babiri
+02E2;Babirira
+02E3;Babiriino
+02E4;Babinonnon
+02E5;Jirin
+02E6;Jiririn
+02E7;Jinjirin
+02E8;Jiririntan
+02E9;Zubaba
+02EA;Zubizuba
+02EB;Zunzubiba
+02EC;Zubizubabaya
+02ED;Kachiko
+02EE;Kachikochi
+02EF;Kacchinko
+02F0;Kachinkocchi
+02F1;Myuu
+02F2;Myuuto
+02F3;Myuutan
+02F4;Myuutaron
+02F5;Dogyuun
+02F6;Dongyugyu
+02F7;Dodongyuu
+02F8;Zuddongyu
+02F9;Subasara
+02FA;Rabasara
+02FB;Rabarassa
+02FC;Rabasarana
+02FD;Head of Dodonga
+02FE;Head of Majidonga
+02FF;Head of Zaknel
+0300;Head of Dokaknel
+0301;Head of Gaeen
+0302;Head of Dogaeen
+0303;Ciokina's Pincer
+0304;Cioking's Pincer
+0305;Head of Shookle
+0306;Head of Shooshookle
+0307;Head of Gorl
+0308;Head of Mochichi
+0309;Head of Momoti
+030A;Head of Motsitsi
+030B;Kacheek
+030C;Picheek
+030D;Parcheek
+030E;Poocheek
+030F;Gancheek
+0310;Kacheek (sand)
+0311;Kacheek (swamp)
+0312;Kacheek (stone)
+0313;Goruru Head
+0314;Mochichichi Head
+0315;Fenicci Head
+0316;Manboth Fang
+0317;Manboroth Fang
+0318;Centura Head
+0319;Darantula Head
+031A;Kanogias Cannon
+031B;Ganodiath Cannon
+031C;Dettankarmen Head
+031D;Zuttankarmen Head
+031E;Babato
+031F;Zubatto
+0320;Dobatto
+0321;Rappapa
+0322;Pekkora
+0323;Pekkorako
+0324;Uji
+0325;Uji
+0326;Kacchindonga Head
+0327;Kacheek (Snow)
+0328;Dodonga Egg Lv.<N11>
+0329;Majidonga Egg Lv.<N12>
+032A;Zaknel Egg Lv.<N13>
+032B;Dokaknel Egg Lv.<N14>
+032C;Gaeen Egg Lv.<N15>
+032D;Dogaeen Egg Lv.<N16>
+032E;Ciokina Egg Lv.<N17>
+032F;Cioking Egg Lv.<N18>
+0330;Shookle Egg Lv.<N19>
+0331;Shooshookle Egg Lv.<N20>
+0332;Goruru Egg Lv.<N21>
+0333;Garuru Egg Lv.<N22>
+0334;Mochichichi Egg Lv.<N23>
+0335;Fenicci Egg Lv.<N24>
+0336;Manboth Egg Lv.<N25>
+0337;Manboroth Egg Lv.<N26>
+0338;Centura Egg Lv.<N27>
+0339;Darantula Egg Lv.<N28>
+033A;Kanogias Egg Lv.<N29>
+033B;Ganodias Egg Lv.<N30>
+033C;Dettankarmen Egg Lv.<N31>
+033D;Zuttankarmen Egg Lv.<N32>
+033E;Kacchindonga Egg Lv.<N33>
+033F;Karmen Egg Lv. <N34>
+0340;Sword Summit Egg Lv. <N35>
+0341;Pharamatara Egg Lv.<N36>
+0342;Ice Fortress Egg Lv.<N37>
+0343;Oasis Egg Lv. <N38>
+0344;Karmen Gate Egg Lv. <N39>
+0345;Underworld Egg Lv. <N40>
+0346;不思議な卵31 Lv.<N41>
+0347;不思議な卵32 Lv.<N42>
+0348;不思議な卵33 Lv.<N43>
+0349;不思議な卵34 Lv.<N44>
+034A;不思議な卵35 Lv.<N45>
+034B;不思議な卵36 Lv.<N46>
+034C;(Yaripon) Okishi
+034D;(Tatepon) Kabon
+034E;(Yumipon) Lutecci
+034F;(Kibapon) Silba
+0350;(Dekapon) Buruch
+0351;(Megapon) Natolie
+0352;(Yaripon) Moribu
+0353;(Tatepon) Kyuro
+0354;(Yumipon) Hassh
+0355;(Kibapon) Ladodon
+0356;(Dekapon) Germa
+0357;(Megapon) Rolent
+0358;(Toripon) Neoja
+0359;(Robopon) Seren
+035A;(Mahopon) Rantan
+035B;(Yaripon) Pondere
+035C;(Tatepon) Bakun
+035D;(Yumipon) Markyu
+035E;(Kibapon) Magmag
+035F;(Dekapon) Goldon
+0360;(Megapon) Serime
+0361;(Toripon) Sibou
+0362;(Robopon) Baryun
+0363;(Mahopon) Prati
+0364;(Toripon) Artom
