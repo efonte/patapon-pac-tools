@@ -1,0 +1,1003 @@
+0000;None
+0001;Pon Drum
+0002;Pata Drum
+0003;Chaka Drum
+0004;Don Drum
+0005;Patapata Song
+0006;Ponpon Song
+0007;Chakachaka Song
+0008;Ponpata Song
+0009;Ponchaka Song
+000A;Dondon Song
+000B;Donchaka Song
+000C;Yarigami's Sutra
+000D;Tategami's Sutra
+000E;Soragami's Sutra
+000F;Yamagami's Sutra
+0010;Moegami's Sutra
+0011;Super Yarigami's Sutra
+0012;Super Tategami's Sutra
+0013;Super Soragami's Sutra
+0014;Super Yarigami's Sutra
+0015;Map 1
+0016;Map 2
+0017;Map 3
+0018;Map 4
+0019;Map 5
+001A;Map 6
+001B;Map 7
+001C;Map 8
+001D;Yarida L1's Memory
+001E;~'s Memory 2
+001F;~'s Memory 3
+0020;~'s Memory 4
+0021;~'s Memory 5
+0022;~'s Memory 6
+0023;~'s Memory 7
+0024;~'s Memory 8
+0025;~'s Memory 9
+0026;~'s Memory 10
+0027;~'s Memory 11
+0028;~'s Memory 12
+0029;~'s Memory 13
+002A;~'s Memory 14
+002B;~'s Memory 15
+002C;~'s Memory 16
+002D;~'s Memory 17
+002E;~'s Memory 18
+002F;~'s Memory 19
+0030;~'s Memory 20
+0031;Key
+0032;Ka-ching
+0033;Potion
+0034;Purple Potion
+0035;Blue Orb
+0036;Red Orb
+0037;Green Orb (Unused)
+0038;Cafeteria Meat
+0039;Tender Meat
+003A;Succulent Meat
+003B;Mystery Meat
+003C;Demon Meat
+003D;Berara Hide
+003E;Gotsutsu Hide
+003F;Subebe Hide
+0040;Mezura Hide
+0041;Demon Hide
+0042;Kuneri Fang
+0043;Itete Fang
+0044;Gizaza Fang
+0045;Nazozo Fang
+0046;Demon Fang
+0047;Mudada Bone
+0048;Gashirin Bone
+0049;Dodeka Bone
+004A;Ottama Bone
+004B;Demon Bone
+004C;Stone
+004D;Hard Iron
+004E;Titanium Ore
+004F;Mithril
+0050;Adamantine
+0051;Leaf
+0052;Wood Branch
+0053;Cherry Tree
+0054;Hinoki
+0055;Super Cedar
+0056;Bowtie Tree
+0057;Eyeball Cabbage
+0058;Blood Carrot
+0059;Predator Pumpkin
+005A;Moor Morel
+005B;Guddorian
+005C;Kasu Seed
+005D;Yoka Seed
+005E;Deka Seed
+005F;Bibi Seed
+0060;Mater Seed
+0061;Blunt Alloy
+0062;Hard Alloy
+0063;Awesome Alloy
+0064;Magic Alloy
+0065;Demon's Ore
+0066;Familiar Juice
+0067;Hot Juice
+0068;Cold Juice
+0069;Rainbow Juice
+006A;Demon Juice
+006B;Dekapon Hat 1
+006C;Dekapon Hat 2
+006D;Dekapon Hat 3
+006E;Megapon Hat 1
+006F;Megapon Hat 2
+0070;Megapon Hat 3
+0071;Mahopon Hat 1
+0072;Mahopon Hat 2
+0073;Mahopon Hat 3
+0074;Sword
+0075;Flame Sword
+0076;Flame Sword [St]
+0077;Flame Sword [G]
+0078;Flame Sword [De]
+0079;Flame Sword [H]
+007A;Flame Sword [Sl]
+007B;Flame Sword [Fl]
+007C;Flame Sword [Po]
+007D;Ice Sword
+007E;Ice Sword [St]
+007F;Ice Sword [G]
+0080;Ice Sword [De]
+0081;Ice Sword [H]
+0082;Ice Sword [Sl]
+0083;Ice Sword [Fl]
+0084;Ice Sword [Po]
+0085;Sleepy Sword
+0086;Sleepy Sword [St]
+0087;Sleepy Sword [G]
+0088;Sleepy Sword [De]
+0089;Sleepy Sword [H]
+008A;Sleepy Sword [Sl]
+008B;Sleepy Sword [Fl]
+008C;Sleepy Sword [Po]
+008D;Flangil
+008E;Drigonlay
+008F;Fendus
+0090;Castram
+0091;The Butcher
+0092;Tatepon Sword
+0093;Blade
+0094;Critical Blade
+0095;Critical Blade [St]
+0096;Critical Blade [G]
+0097;Critical Blade [De]
+0098;Critical Blade [H]
+0099;Critical Blade [Sl]
+009A;Critical Blade [Fl]
+009B;Critical Blade [Po]
+009C;Lightning Blade
+009D;Lightning Blade [St]
+009E;Lightning Blade [G]
+009F;Lightning Blade [De]
+00A0;Lightning Blade [H]
+00A1;Lightning Blade [Sl]
+00A2;Lightning Blade [Fl]
+00A3;Lightning Blade [Po]
+00A4;Tsuyugiri
+00A5;Murapata
+00A6;Blade of Astria
+00A7;Tsukigiri
+00A8;Spear
+00A9;Critical Spear
+00AA;[St]
+00AB;[G]
+00AC;[De]
+00AD;[H]
+00AE;[Sl]
+00AF;[Fl]
+00B0;[Po]
+00B1;Repel Spear
+00B2;[St]
+00B3;[G]
+00B4;[De]
+00B5;[H]
+00B6;[Sl]
+00B7;[Fl]
+00B8;[Po]
+00B9;Flame Spear
+00BA;[St]
+00BB;[G]
+00BC;[De]
+00BD;[H]
+00BE;[Sl]
+00BF;[Fl]
+00C0;[Po]
+00C1;Gesundbeit
+00C2;Yumspar
+00C3;Palkyria's Flight
+00C4;Dokaknel's Fang
+00C5;Poseipon's Trident
+00C6;Yaripon's Spear
+00C7;Pike
+00C8;Ice Pike
+00C9;[St]
+00CA;[G]
+00CB;[De]
+00CC;[H]
+00CD;[Sl]
+00CE;[Fl]
+00CF;[Po]
+00D0;Stagger Pike
+00D1;[St]
+00D2;[G]
+00D3;[De]
+00D4;[H]
+00D5;[Sl]
+00D6;[Fl]
+00D7;[Po]
+00D8;Goldora
+00D9;Pointidon
+00DA;Super Cedar Log
+00DB;Lance of Asuwish
+00DC;Halberd
+00DD;Fire Lance
+00DE;[St]
+00DF;[G]
+00E0;[De]
+00E1;[H]
+00E2;[Sl]
+00E3;[Fl]
+00E4;[Po]
+00E5;Ice Lance
+00E6;[St]
+00E7;[G]
+00E8;[De]
+00E9;[H]
+00EA;[Sl]
+00EB;[Fl]
+00EC;[Po]
+00ED;Stagger Lance
+00EE;[St]
+00EF;[G]
+00F0;[De]
+00F1;[H]
+00F2;[Sl]
+00F3;[Fl]
+00F4;[Po]
+00F5;Romulus' Halberd
+00F6;Incensar
+00F7;Gugnir
+00F8;Battachin
+00F9;Murakumon
+00FA;Hotenpon's Halberd
+00FB;Arm
+00FC;Repel Arm
+00FD;[St]
+00FE;[G]
+00FF;[De]
+0100;[H]
+0101;[Sl]
+0102;[Fl]
+0103;[Po]
+0104;Ice Arm
+0105;[St]
+0106;[G]
+0107;[De]
+0108;[H]
+0109;[Sl]
+010A;[Fl]
+010B;[Po]
+010C;Sleepy Arm
+010D;[St]
+010E;[G]
+010F;[De]
+0110;[H]
+0111;[Sl]
+0112;[Fl]
+0113;[Po]
+0114;Deathwringer
+0115;Great Golem Arm
+0116;Piringar Zingar
+0117;Chosan's Arm
+0118;Natura's Touch
+0119;Super Megadogu Arm
+011A;Dagger
+011B;Critical Dagger
+011C;[St]
+011D;[G]
+011E;[De]
+011F;[H]
+0120;[Sl]
+0121;[Fl]
+0122;[Po]
+0123;Sleepy Dagger
+0124;[St]
+0125;[G]
+0126;[De]
+0127;[H]
+0128;[Sl]
+0129;[Fl]
+012A;[Po]
+012B;Crablessa
+012C;Feisho
+012D;Krauser
+012E;Shiv
+012F;Poison Shiv
+0130;[St]
+0131;[G]
+0132;[De]
+0133;[H]
+0134;[Sl]
+0135;[Fl]
+0136;[Po]
+0137;Heltopay's Kiss
+014C;Goliamon's Shiv
+014D;Holymadda Shiv
+014E;Pain of Pentavus
+014F;Greatsword
+0150;Critical Greatsword
+0151;[St]
+0152;[G]
+0153;[De]
+0140;[H]
+0141;[Sl]
+0142;[Fl]
+0143;[Po]
+0144;Ice Greatsword
+0145;[St]
+0146;[G]
+0147;[De]
+0148;[H]
+0149;[Sl]
+014A;[Fl]
+014B;[Po]
+014C;Excalipon
+014D;Quagar
+014E;Serberker
+014F;Caladbong
+0150;Greatblade
+0151;Flame Greatblade
+0152;[St]
+0153;[G]
+0154;[De]
+0155;[H]
+0156;[Sl]
+0157;[Fl]
+0158;[Po]
+0159;Sleepy Greatblade
+015A;[St]
+015B;[G]
+015C;[De]
+015D;[H]
+015E;[Sl]
+015F;[Fl]
+0160;[Po]
+0161;Mono Hoshibo
+0162;Onigiri's Greatblade
+0163;Murasamune
+0164;Kusanakin
+0165;Axe
+0166;Stagger Axe
+0167;[St]
+0168;[G]
+0169;[De]
+016A;[H]
+016B;[Sl]
+016C;[Fl]
+016D;[Po]
+016E;Poison Axe
+016F;[St]
+0170;[G]
+0171;[De]
+0172;[H]
+0173;[Sl]
+0174;[Fl]
+0175;[Po]
+0176;Hilkinga's Chillaxe
+0177;Susurapon
+0178;Axe of Hannoob
+0179;Bumpalion Axe
+017A;Club
+017B;Lightning Club
+017C;[St]
+017D;[G]
+017E;[De]
+017F;[H]
+0180;[Sl]
+0181;[Fl]
+0182;[Po]
+0183;Dreamweaver
+0184;[St]
+0185;[G]
+0186;[De]
+0187;[H]
+0188;[Sl]
+0189;[Fl]
+018A;[Po]
+018B;Genmaru
+018C;Mjollnir
+018D;Thor
+018E;Humthor's Harm
+018F;Bow
+0190;Flame Bow
+0191;[St]
+0192;[G]
+0193;[De]
+0194;[H]
+0195;[Sl]
+0196;[Fl]
+0197;[Po]
+0198;Sleepy Bow
+0199;[St]
+01B8;[G]
+019B;[De]
+01BA;[H]
+01B1;[Sl]
+01BC;[Fl]
+01BD;[Po]
+01BE;Bow of Apollopon
+01BF;Yamibashiri
+01C0;Raijinpon's Bow
+01C1;Yumipon's Bow
+01A4;Longbow
+01A5;Poison Longbow
+01A6;[St]
+01A7;[G]
+01A8;[De]
+01A9;[H]
+01AA;[Sl]
+01AB;[Fl]
+01AC;[Po]
+01AD;Stagger Longbow
+01B8;[St]
+01B9;[G]
+01BA;[De]
+01B1;[H]
+01BC;[Sl]
+01BD;[Fl]
+01BE;[Po]
+01BF;Crossbow of Faible
+01C0;Krakabom Crossbow
+01C1;Yoichiro
+01B8;Dekiramos's Crossbow
+01B9;Crossbow
+01BA;Ice Crossbow
+01BB;[St]
+01BC;[G]
+01BD;[De]
+01BE;[H]
+01BF;[Sl]
+01C0;[Fl]
+01C1;[Po]
+01C2;Repel Crossbow
+01C3;[St]
+01C4;[G]
+01C5;[De]
+01C6;[H]
+01C7;[Sl]
+01C8;[Fl]
+01C9;[Po]
+01CA;The Machinator
+01CB;Illiamtel's Overture
+01CC;Teskatori Shooter
+01CD;Goweecha Gun
+01CE;Tuba
+01CF;Flame Horn
+01D0;[St]
+01D1;[G]
+01D2;[De]
+01D3;[H]
+01D4;[Sl]
+01D5;[Fl]
+01D6;[Po]
+01D7;Ice Horn
+01D8;[St]
+01D9;[G]
+01DA;[De]
+01DB;[H]
+01DC;[Sl]
+01DD;[Fl]
+01DE;[Po]
+01DF;Healixir Tuba
+01E0;Dragonap Tuba
+01E1;Sonic Demonslayer
+01E2;Tuba of Panchunan
+01E3;Horn
+01E4;Sleepy Longhorn
+01E5;[St]
+01E6;[G]
+01E7;[De]
+01E8;[H]
+01E9;[Sl]
+01EA;[Fl]
+01EB;[Po]
+01EC;Stagger Longhorn
+01ED;[St]
+01EE;[G]
+01EF;[De]
+01F0;[H]
+01F1;[Sl]
+01F2;[Fl]
+01F3;[Po]
+01F4;Horn of Homugai
+01F5;Megaslayer
+01F6;Great Howl
+01F7;Bellophone
+01F8;Twinhorn
+01F9;Lightning Twinhorn
+01FA;[St]
+01FB;[G]
+01FC;[De]
+01FD;[H]
+01FE;[Sl]
+01FF;[Fl]
+0200;[Po]
+0201;Poison Twinhorn
+0202;[St]
+0203;[G]
+0204;[De]
+0205;`
+0206;[Sl]
+0207;[Fl]
+0208;[Po]
+0209;Horns of Hamlin
+020A;Siren's Song
+020B;Spriggan's Song
+020C;Gjallarborn
+020D;Staff
+020E;Fireball Staff
+020F;[St]
+0210;[G]
+0211;[De]
+0212;[H]
+0213;[Sl]
+0214;[Fl]
+0215;[Po]
+0216;Firewall Staff
+0217;[St]
+0218;[G]
+0219;[De]
+021A;[H]
+021B;[Sl]
+021C;[Fl]
+021D;[Po]
+021E;Lightning Staff
+021F;[St]
+0220;[G]
+0221;[De]
+0222;[H]
+0223;[Sl]
+0224;[Fl]
+0225;[Po]
+0226;Thunderstorm Staff
+0227;Flamesea Staff
+0228;Holymist Staff
+0229;Darkvenom Staff
+022A;Jewelsword Staff
+022B;Phoenix Ultimate Staff
+022C;Scepter
+022D;Defense Scepter
+022E;[St]
+022F;[G]
+0230;[De]
+0231;[H]
+0232;[Sl]
+0233;[Fl]
+0234;[Po]
+0235;Purity Scepter
+0236;[St]
+0237;[G]
+0238;[De]
+0239;[H]
+023A;[Sl]
+023B;[Fl]
+023C;[Po]
+023D;Healing Scepter
+023E;[St]
+023F;[G]
+0240;[De]
+0241;[H]
+0242;[Sl]
+0243;[Fl]
+0244;[Po]
+0245;Firefighter Scepter
+0246;Defrost Scepter
+0247;Antivenom Scepter
+0248;Sleepless Scepter
+0249;Maelstrom Scepter
+024A;Scepter of Rahmon
+024B;Cannon
+024C;Flame Cannon
+024D;[St]
+024E;[G]
+024F;[De]
+0250;[H]
+0251;[Sl]
+0252;[Fl]
+0253;[Po]
+0254;Bonkadonk Cannon
+0255;Lullablight
+0256;Universatile Cannon
+0257;Howitzer
+0258;Ice Howitzer
+0259;[St]
+025A;[G]
+025B;[De]
+025C;[H]
+025D;[Sl]
+025E;[Fl]
+025F;[Po]
+0260;Euryalus
+0261;Dreadmare
+0262;Eisaiho
+0263;Laser
+0264;Critical Laser
+0265;[St]
+0266;[G]
+0267;[De]
+0268;[H]
+0269;[Sl]
+026A;[Fl]
+026B;[Po]
+026C;Hoirenho
+026D;Ichigeki
+026E;Sunflare Laser
+026F;Helm
+0270;Lightning Helm
+0271;[St]
+0272;[G]
+0273;[De]
+0274;[H]
+0275;[Sl]
+0276;[Fl]
+0277;[Po]
+0278;Flame Helm
+0279;[St]
+027A;[G]
+027B;[De]
+027C;[H]
+027D;[Sl]
+027E;[Fl]
+027F;[Po]
+0280;Ice Helm
+0281;[St]
+0282;[G]
+0283;[De]
+0284;[H]
+0285;[Sl]
+0286;[Fl]
+0287;[Po]
+0288;Tahla Helm
+0289;Bunny Hood
+028A;Tebenos Helm
+028B;Samurai Helm
+028C;Marumenko Helm
+028D;Dolmorn Helm
+028E;Shield
+028F;Shield
+0290;0290
+0291;0291
+0292;0292
+0293;0293
+0294;0294
+0295;0295
+0296;0296
+0297;0297
+0298;0298
+0299;0299
+029A;029A
+029B;029B
+029C;029C
+029D;029D
+029E;029E
+029F;029F
+02A0;02A0
+02A1;02A1
+02A2;02A2
+02A3;02A3
+02A4;02A4
+02A5;02A5
+02A6;02A6
+02A7;02A7
+02A8;02A8
+02A9;02A9
+02AA;02AA
+02AB;02AB
+02AC;02AC
+02AD;02AD
+02AE;02AE
+02AF;02AF
+02B0;02B0
+02B1;02B1
+02B2;02B2
+02B3;02B3
+02B4;02B4
+02B5;02B5
+02B6;02B6
+02B7;02B7
+02B8;02B8
+02B9;02B9
+02BA;02BA
+02BB;02BB
+02BC;02BC
+02BD;02BD
+02BE;02BE
+02BF;02BF
+02C0;02C0
+02C1;02C1
+02C2;02C2
+02C3;02C3
+02C4;02C4
+02C5;02C5
+02C6;02C6
+02C7;02C7
+02C8;02C8
+02C9;02C9
+02CA;02CA
+02CB;02CB
+02CC;02CC
+02CD;02CD
+02CE;02CE
+02CF;02CF
+02D0;02D0
+02D1;02D1
+02D2;02D2
+02D3;02D3
+02D4;02D4
+02D5;02D5
+02D6;02D6
+02D7;02D7
+02D8;02D8
+02D9;02D9
+02DA;02DA
+02DB;02DB
+02DC;02DC
+02DD;02DD
+02DE;02DE
+02DF;02DF
+02E0;02E0
+02E1;02E1
+02E2;02E2
+02E3;02E3
+02E4;02E4
+02E5;02E5
+02E6;02E6
+02E7;02E7
+02E8;02E8
+02E9;02E9
+02EA;02EA
+02EB;02EB
+02EC;02EC
+02ED;02ED
+02EE;02EE
+02EF;02EF
+02F0;02F0
+02F1;02F1
+02F2;02F2
+02F3;02F3
+02F4;02F4
+02F5;02F5
+02F6;02F6
+02F7;02F7
+02F8;02F8
+02F9;02F9
+02FA;02FA
+02FB;02FB
+02FC;02FC
+02FD;02FD
+02FE;02FE
+02FF;02FF
+0300;0300
+0301;0301
+0302;0302
+0303;0303
+0304;0304
+0305;0305
+0306;0306
+0307;0307
+0308;0308
+0309;0309
+030A;030A
+030B;030B
+030C;030C
+030D;030D
+030E;030E
+030F;030F
+0310;0310
+0311;0311
+0312;0312
+0313;0313
+0314;0314
+0315;0315
+0316;0316
+0317;0317
+0318;0318
+0319;0319
+031A;031A
+031B;031B
+031C;031C
+031D;031D
+031E;031E
+031F;031F
+0320;0320
+0321;0321
+0322;0322
+0323;0323
+0324;0324
+0325;0325
+0326;0326
+0327;0327
+0328;0328
+0329;0329
+032A;032A
+032B;032B
+032C;032C
+032D;032D
+032E;032E
+032F;032F
+0330;0330
+0331;0331
+0332;0332
+0333;0333
+0334;0334
+0335;0335
+0336;0336
+0337;0337
+0338;0338
+0339;0339
+033A;033A
+033B;033B
+033C;033C
+033D;033D
+033E;033E
+033F;033F
+0340;0340
+0341;0341
+0342;0342
+0343;0343
+0344;0344
+0345;Ruemelter
+0346;0346
+0347;0347
+0348;0348
+0349;0349
+034A;034A
+034B;034B
+034C;034C
+034D;034D
+034E;034E
+034F;034F
+0350;0350
+0351;0351
+0352;0352
+0353;0353
+0354;0354
+0355;0355
+0356;0356
+0357;0357
+0358;0358
+0359;0359
+035A;035A
+035B;035B
+035C;035C
+035D;035D
+035E;035E
+035F;035F
+0360;0360
+0361;0361
+0362;0362
+0363;0363
+0364;0364
+0365;0365
+0366;0366
+0367;0367
+0368;0368
+0369;0369
+036A;036A
+036B;036B
+036C;036C
+036D;036D
+036E;036E
+036F;036F
+0370;0370
+0371;0371
+0372;0372
+0373;0373
+0374;0374
+0375;0375
+0376;0376
+0377;0377
+0378;0378
+0379;0379
+037A;037A
+037B;037B
+037C;037C
+037D;037D
+037E;037E
+037F;037F
+0380;0380
+0381;0381
+0382;0382
+0383;0383
+0384;0384
+0385;0385
+0386;0386
+0387;0387
+0388;0388
+0389;0389
+038A;038A
+038B;038B
+038C;038C
+038D;038D
+038E;038E
+038F;038F
+0390;0390
+0391;0391
+0392;0392
+0393;0393
+0394;0394
+0395;0395
+0396;0396
+0397;0397
+0398;0398
+0399;0399
+039A;039A
+039B;039B
+039C;039C
+039D;039D
+039E;039E
+039F;039F
+03A0;03A0
+03A1;03A1
+03A2;03A2
+03A3;03A3
+03A4;03A4
+03A5;03A5
+03A6;03A6
+03A7;03A7
+03A8;03A8
+03A9;03A9
+03AA;03AA
+03AB;03AB
+03AC;03AC
+03AD;03AD
+03AE;03AE
+03AF;03AF
+03B0;03B0
+03B1;03B1
+03B2;03B2
+03B3;03B3
+03B4;03B4
+03B5;03B5
+03B6;03B6
+03B7;03B7
+03B8;03B8
+03B9;03B9
+03BA;03BA
+03BB;03BB
+03BC;03BC
+03BD;03BD
+03BE;03BE
+03BF;03BF
+03C0;03C0
+03C1;03C1
+03C2;03C2
+03C3;03C3
+03C4;03C4
+03C5;03C5
+03C6;03C6
+03C7;03C7
+03C8;03C8
+03C9;03C9
+03CA;03CA
+03CB;03CB
+03CC;03CC
+03CD;03CD
+03CE;03CE
+03CF;03CF
+03D0;03D0
+03D1;03D1
+03D2;03D2
+03D3;03D3
+03D4;03D4
+03D5;03D5
+03D6;03D6
+03D7;03D7
+03D8;03D8
+03D9;03D9
+03DA;03DA
+03DB;03DB
+03DC;03DC
+03DD;03DD
+03DE;03DE
+03DF;03DF
+03E0;03E0
+03E1;03E1
+03E2;03E2
+03E3;DLC Helm
+03E4;DLC Helm
+03E5;DLC Helm
+03E6;DLC Helm
+03E7;DLC Helm
+03E8;DLC Helm
+03E9;DLC Helm
+03EA;Shubaba Gale Kabuto

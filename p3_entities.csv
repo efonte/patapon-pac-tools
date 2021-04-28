@@ -1,0 +1,372 @@
+0000;Yumiton
+0001;Tateton
+0002;Yariton
+0003;Kibaton
+0004;Dekaton
+0005;Megaton
+0006;Gong (Patapon 2)
+0007;Yumimen
+0008;Tatemen
+0009;Yarimen
+000A;Kibamen
+000B;Dekamen
+000C;Megamen
+000D;Mahomen
+000E;Robomen
+000F;Akumapon Yumi
+0010;Akumapon Tate
+0011;Akumapon Yari
+0012;Akumapon Kiba
+0013;Kuwagattan
+0014;Akumapon Mega
+0015;Yumideth
+0016;Tatedeth
+0017;Yarideth
+0018;Kibadeth
+0019;Dekadeth
+001A;Megadeth
+001B;Mahodeth
+001C;Robodeth
+001D;Ravenous
+001E;Sonarchy
+001F;Ragewolf
+0020;Naughtyfins
+0021;Slogturtle
+0022;Covet Hiss
+0023;Buzzcrave
+0024;Mochichi
+0025;Momochi
+0026;Motsitsi
+0027;Kacheek
+0028;Kacheek (Sand)
+0029;Kacheek (Swamp)
+002A;Kacheek (Stone)
+002B;Kacheek (Snow)
+002C;Gancheek
+002D;Poocheek
+002E;Parcheek
+002F;Picheek
+0030;Babatto
+0031;Zubatto
+0032;Dobatto
+0033;Rappata
+0034;Pekkora
+0035;Pekkorako
+0036;Uji
+0037;Dodonga
+0038;Majidonga
+0039;Kacchindonga
+003A;Accursed Dodonga
+003B;Zaknel
+003C;Dokaknel
+003D;Gaeen
+003E;Dogaeen
+003F;Ciokina
+0040;Cioking
+0041;Shookle
+0042;Shooshookle
+0043;Goruru
+0044;Garuru
+0045;Mochichichi
+0046;Fenicchi
+0047;Manboth
+0048;Manboroth
+0049;Centura
+004A;Darantula
+004B;Kanodias
+004C;Ganodias
+004D;Dettankarmen
+004E;Zuttankarmen
+004F;Cyclops (Red)
+0050;Cyclops (Blue)
+0051;Dragon (Fire)
+0052;Dragon (Ice)
+0053;Dragon (Poison)
+0054;Fenrir
+0055;Thunder Lion
+0056;Treant
+0057;Deth Treant
+0058;Gargoyle
+0059;Enchanted Gargoyle
+005A;Death
+005B;Enchanted Death
+005C;Dragon Puppy
+005D;Hyumitto
+005E;Salamander (Fire)
+005F;Salamander (Ice)
+0060;Balrog
+0061;Balrag
+0062;Golem
+0063;Golem (Ice)
+0064;Gigantus
+0065;Terantus
+0066;Gigante King
+0067;Arch Pandara (Box)
+0068;UNIT261_02 (Arch Pandara)
+0069;UNIT261_03 (Arch Pandara)
+006A;The Other Vessel
+006B;UNIT262_02 (The Other Vessel)
+006C;UNIT262_03 (The Other Vessel)
+006D;Gheek Dongara (Box)
+006E;UNIT262_02 (Gheek Dongara)
+006F;UNIT262_03 (Gheek Dongara)
+0070;Baros
+0071;2nd Head (Baros)
+0072;3rd Head (Baros)
+0073;Garos
+0074;2nd Head (Garos)
+0075;3rd Head (Garos)
+0076;Waros
+0077;2nd Head (Waros)
+0078;3rd Head (Waros)
+0079;ROCKFACE_000 (Patapon 1/2)
+007A;ROCKFACE_001 (Patapon 1/2)
+007B;STONE_000 (Patapon 2?)
+007C;STONE_001 (Patapon 2?)
+007D;SANDBAG (Patapon 2)
+007E;Goal Flag/Finish Line
+007F;Injured Patapon
+0080;Sunflower
+0081;Sparkling Sunflower
+0082;Beehive
+0083;Sparkling Beehive
+0084;Song Holder
+0085;Swamp/Rain Flower
+0086;Sparking Swamp/Rain Flower
+0087;Spider
+0088;Sparkling Spider
+0089;Catapult
+008A;Broken Catapult
+008B;Desert Flower
+008C;Hoshipon
+008D;Talking Sign
+008E;Patapon Struggling (Shookle)
+008F;WEP Totem
+0090;OEP_1_PON
+0091;OEP_1_PATA
+0092;OEP_1_CHAKA
+0093;OEP_1_DON
+0094;OEP_2_PON
+0095;OEP_2_PATA
+0096;OEP_2_CHAKA
+0097;OEP_2_DON
+0098;OEP_3_PON
+0099;OEP_3_PATA
+009A;OEP_3_CHAKA
+009B;OEP_3_DON
+009C;OEP_4_PON
+009D;OEP_4_PATA
+009E;OEP_4_CHAKA
+009F;OEP_4_DON
+00A0;ROCKFACE_LOW_000
+00A1;ROCKFACE_HI_000
+00A2;GRASS_003 (Fields)
+00A3;GRASS_004 (Fields)
+00A4;GRASS_005 (Volcanoes)
+00A5;GRASS_006 (Volcanoes)
+00A6;GRASS_007 (Hot Zones)
+00A7;GRASS_008 (Hot Zones)
+00A8;Cannon
+00A9;Chainsaw
+00AA;Snoworb Cannon
+00AB;ROOTS_CHR55
+00AC;BOSSCASTLEPARTS_000
+00AD;BOSSCASTLEPARTS_001
+00AE;BOSSCASTLEPARTS_002
+00AF;BOSSCASTLEPARTS_003
+00B0;BOSSCASTLEPARTS2_000
+00B1;BOSSCASTLEPARTS2_001
+00B2;BOSSCASTLEPARTS2_002
+00B3;BOSSCASTLEPARTS2_003
+00B4;Chest (Patapon 2/Training Grounds)
+00B5;Wooden Barricade (Patapon 2)
+00B6;Door (Dungeon)
+00B7;Key Door (Dungeon)
+00B8;Results Screen Hero Stand
+00B9;BONE_WALL_S
+00BA;BONE_GRASS_001 (Field of Giants)
+00BB;BONE_GRASS_002 (Field of Giants)
+00BC;BONE_GRASS_003 (Volcanoes)
+00BD;BONE_GRASS_004 (Volcanoes)
+00BE;SILVER_HOSIPON (Cutscene/Unused)
+00BF;EVIL_BOX (Cutscene/Unused)
+00C0;Archfiend
+00C1;Archfiend Glow
+00C2;Archfiend (Glitched?)
+00C3;Archfiend Glow (Glitched?)
+00C4;Archfiend
+00C5;Archfiend Glow
+00C6;Archfiend (Glitched?)
+00C7;Archfiend Glow (Glitched?)
+00C8;Archfiend
+00C9;Archfiend Glow
+00CA;Archfiend (Glitched?)
+00CB;Archfiend Glow (Glitched?)
+00CC;Archfiend
+00CD;Archfiend Glow
+00CE;Archfiend (Glitched?)
+00CF;Archfiend Glow (Glitched?)
+00D0;Archfiend
+00D1;Archfiend Glow
+00D2;Archfiend (Glitched?)
+00D3;Archfiend Glow (Glitched?)
+00D4;Archfiend
+00D5;Archfiend Glow
+00D6;Archfiend (Glitched?)
+00D7;Archfiend Glow (Glitched?)
+00D8;Archfiend
+00D9;Archfiend Glow
+00DA;Archfiend (Glitched?)
+00DB;Archfiend Glow (Glitched?)
+00DC;Archfiend
+00DD;Archfiend Glow
+00DE;Stone Patapon
+00DF;Stone Meden
+00E0;STONE_TONTINKAN
+00E1;BONE_FORT_L
+00E2;BONE_WALL_L
+00E3;HATAPON_FLAG
+00E4;BONE_FORT_M
+00E5;Opened Box
+00E6;DAMNATORY_GROUND
+00E7;GROUND_RAIN (Opening Mission)
+00E8;Pon Drum (Cutscene)
+00E9;Pata Drum (Cutscene)
+00EA;Chaka Drum (Cutscene)
+00EB;Don Drum (Cutscene)
+00EC;Bada Bon Drum (Can be cutscene)
+00ED;SI_PATA
+00EE;SI_PON
+00EF;SI_CHAKA
+00F0;SI_DON
+00F1;HATAPON (Cutscene)
+00F2;DRUM
+00F3;FLAG
+00F4;MAGIC_CIRCLE
+00F5;MAGIC_CIRCLE_LIGHT
+00F6;MAGIC_CIRCLE_BACK
+00F7;FADE
+00F8;MAGIC_CIRCLE_EFFECT
+00F9;PIKEMAN (Cutscene)
+00FA;GHOST_INFANTRY (Ban Tatepon)
+00FB;GHOST_ARCHER (Don Yumipon)
+00FC;SPIRITS
+00FD;Rubble (Vanity)
+00FE;AUREOLA (Flash?) (Cutscene)
+00FF;STONE_HERO (Reviving) (Cutscene)
+0100;SILVER_HOSIPON_ASH (Cutscene)
+0101;CLEARSWITCH_TOUCH
+0102;CLEARSWITCH_HIT
+0103;WILDLAND_ROCK_L (Patapon 2/3)
+0104;WILDLAND_ROCK_M (Patapon 2/3)
+0105;GARGOYLE_TREASUREBOX_0
+0106;GARGOYLE_TREASUREBOX_1
+0107;GARGOYLE_TREASUREBOX_2
+0108;GARGOYLE_TREASUREBOX_3
+0109;Lever (Activates when touched)
+010A;Pressure Pad (Activates when touched)
+010B;Breakable Block (Breaks when touched)
+010C;AZITO_HATAPON (Cutscene)
+010D;AZITO_HATAPON_FLAG
+010E;Archfiend Shrine (Estate or Earnestness)
+010F;Archfiend Shrine (Castle of Justice)
+0110;Archfiend Shrine (Cave of Valor)
+0111;Archfiend Shrine (Tower of Purity)
+0112;Archfiend Shrine (Evilmass of Adamance)
+0113;Archfiend Shrine (Tomb of Tolerance)
+0114;Archfiend Shrine (Labyrinth of Restraint)
+0115;SHERO_DOTEPPEKI (Guardira Shield)
+0116;ILLUMINANT (Cutscene)
+0117;WAREHOUSE_002
+0118;WAREHOUSE_003
+0119;VOITURE_000 GIMC080.BND (Removed)
+011A;Bonedeth Stagecoach
+011B;Guillotines (Needs a timer)
+011C;Superweapon Org
+011D;Superweapon Dahl
+011E;Ziggerzank (Patapon 3)
+011F;Karmen Hut
+0120;Karmen Fortress
+0121;Karmen Tower (Stone)
+0122;Karmen Tower (Iron)
+0123;Karmen Bunker (Pillbox)
+0124;Karmen Iron Wall
+0125;Blizzard Tower/Ice Castle (P2/P3)
+0126;Patapon Caravan (Patapon 1)
+0127;Zugagang (Patapon 2)
+0128;Mantango (Giant Mushroom...)
+0129;Catapult (Facing towards you)
+012A;Zigoton Caravan (Patapon 1)
+012B;Zigoton Windmill (Patapon 1)
+012C;Zigoton Tower (Patapon 1)
+012D;Ziggertank (Patapon 1/2)
+012E;Ice Cave
+012F;Karmen Caravan
+0130;Karmen Windmill
+0131;Masked Gong (Cutscene)
+0132;Allied Gong
+0133;Underworld Entrance (Cutscene)
+0134;Mecha Hoshipon
+0135;Shakapon
+014A;Swinging Axe
+0137;DREAM_OLD_HERO (Cutscene)
+014C;DREAM_SCREEN (Cutscene)
+014D;Moon
+014E;Glowing Floor
+014F;Dark Hideout BG
+0150;Dark Hideout BG Pt. 2
+0151;Dark Hideout BG Pt. 3
+0152;Dark Hideout Team Totem
+0153;DarkSeat
+0140;Dark Hideout Herogate
+0141;DarkMasterOberiku
+0142;Dark Hideout Battlegate
+0143;Dark Hideout Flagpole
+0144;Dark Hideout Blacksmith (Stage 1)
+0145;Dark Hideout Blacksmith (Stage 2)
+0146;Dark Hideout Blacksmith (Stage 3)
+0147;Dark Hideout Blacksmith (Stage 4)
+0148;Dark Hero Armory
+0149;Dark Hero Barracks
+014A;Dark Hoshipon
+014B;Dark Hoshipon (Again)
+014C;DarkMachanUnit
+014D;DarkUnitSelectCursor (Dark Hideout)
+014E;Mecha Hoshipon (Dark Hideout)
+014F;DarkMachanFlag (Dark Hideout)
+0150;Cage
+0151;Living Cage
+0152;P_ROCKFACE_LOW_000
+0153;P_ROCKFACE_HI_000
+0154;ED3_TON (Cutscene)
+0155;ED3_CHIN (Cutscene)
+0156;ED3_KAN (Cutscene)
+0157;ED3_HATA (Cutscene)
+0158;ED3_FLAG (Cutscene)
+0159;ED3_SILVER (Cutscene)
+015A;EVENT_CREVICE/Portal (Cutscene)
+015B;Gong turns into Ravenous (Cutscene)
+015C;Naughtyfins reverts to Princess (Cutscene)
+015D;EVENT_OTHERWORLD (Cutscene?)
+015E;EVENT_CLEARWALL/Earthend.
+015F;EVENT_ZMASK (???)
+0160;Dark Hideout Operating Table
+0161;Evilmass of Adamance Entrance
+0162;Evilmass of Adamance Entrance
+0163;Evilmass of Adamance Entrance
+0164;Evilmass of Adamance Entrance
+0165;Light (Final Cutscene)
+0166;Your Light (Final Cutscene)
+0167;Flash (Cutscene)
+0168;Dark Hero Glow (Ending Choice)
+0169;Death (Ending Choice)
+016A;Sacrifice (Ending Choice)
+016B;Shooting Star (Ending Choice)
+016C;Giant Fire (Labyrinth of Restraint)
+016D;Shooshookle Spike (Attack)
+016E;Ormen Karmen
+016F;Kharma
+0170;Sokshi Gate
+0171;Cannon (Race)
+0172;Snoworb Cannon (Race)
+0173;Iron Wall (Race)
