@@ -3,7 +3,7 @@ import csv
 import io
 import struct
 from dataclasses import dataclass
-from enum import Flag, auto
+from enum import Enum, Flag, auto
 from io import BytesIO
 from pathlib import Path
 from struct import unpack
@@ -12,6 +12,12 @@ from typing import Any, Dict, List, Tuple, Union
 # from numba import jit
 import typer
 from rich import print
+
+
+class Game(str, Enum):
+    P1 = "P1"
+    P2 = "P2"
+    P3 = "P3"
 
 
 class InstType(Flag):
@@ -271,13 +277,6 @@ def print_new_types(instructions: List[Union[Instruction, Tuple[int, bytearray]]
         print(string)
 
 
-# instructions_set = get_instruction_set("p1_instruction_set.csv")
-instructions_set = get_instruction_set("p2_instruction_set.csv")
-# instructions_set = get_instruction_set("p3_instruction_set.csv")
-
-keybinds = get_ids(Path("./keybinds.csv"))
-loot = get_ids(Path("./p2_loot.csv"))
-
 app = typer.Typer()
 
 
@@ -285,6 +284,7 @@ app = typer.Typer()
 @app.command()
 def pac(
     input: Path = typer.Argument(..., help="PAC file path"),
+    game: Game = typer.Option(Game.P3, case_sensitive=False, help="Patapon game"),
     # output: Path = typer.Option(None, "--output", "-o", help="TXT file path"),
 ):
     # if not input.is_file():
@@ -299,6 +299,11 @@ def pac(
         # pac_list.extend(list(input.glob("**/stagescript.pac")))
         # pac_list.extend(list(input.glob("**/missionscript.pac")))
         pac_list.extend(list(input.glob("**/*.pac")))
+
+    instructions_set = get_instruction_set(f"{game.value.lower()}_instruction_set.csv")
+    keybinds = get_ids(Path("./keybinds.csv"))
+    loot = get_ids(Path(f"./{game.value.lower()}_loot.csv"))
+
     for input in pac_list:
         output = input.parent.joinpath(f"{input.stem}.txt")
         # print(f'Reading "{input}"')
