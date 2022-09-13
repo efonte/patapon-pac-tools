@@ -1,18 +1,16 @@
 import copy
 import csv
 import io
-import re
+import struct
 from dataclasses import dataclass
-from enum import Enum, Flag, auto
+from enum import Flag, auto
 from io import BytesIO
 from pathlib import Path
-from re import T
 from struct import unpack
 from typing import Any, Dict, List, Tuple, Union
 
-import typer
-
 # from numba import jit
+import typer
 from rich import print
 
 
@@ -182,7 +180,7 @@ def get_inst_raw_bytes(infile, last_offset: int) -> bytearray:
 
 
 def get_str_params(params: List[InstParam]) -> str:
-    #  return ",".join(str(p) for p in params)
+    # return ",".join(str(p) for p in params)
     str_params = ""
     for p in params:
         if p.type_str.startswith("T_"):
@@ -229,7 +227,7 @@ def get_str_params(params: List[InstParam]) -> str:
             str_params += " ".join([f"{b:02X}" for b in p.value])
         else:
             # str_params += f"{p.value}"
-            print(p.type)
+            print(f"{params} {p.type}")
             exit()
 
     return str_params
@@ -349,198 +347,222 @@ def pac(
                 # inst.params[0].value = params_bytes
                 # print (f"{offset:08X}")
 
-                for i in range(len(inst.params)):
-                    param: InstParam = inst.params[i]
-                    if param.type == InstType.BYTES:
-                        param.value = params_bytes
-                    elif param.type == InstType.STR:
-                        # # text = params_io.read(4)
-                        # text = unpack("4s", params_io.read(4))[0].decode("shift_jis")
-                        # while text[-1] != "\x00":
-                        #     text += unpack("4s", params_io.read(4))[0].decode("shift_jis")
-                        params_last_offset = get_last_offset(params_io)
-                        text_bytes = params_io.read(1)
-                        while (
-                            text_bytes[-1] != 0x00
-                            and params_io.tell() < params_last_offset
-                        ):
-                            text_bytes += params_io.read(1)
-                            # print(f"{infile.tell():08X}")
-                            # print(text_bytes[-1])
-                        # text = unpack(f"{len(text_bytes)}s", bytearray(text_bytes))[0].decode("cp932").rstrip("\x00")
-                        text = (
-                            unpack(f"{len(text_bytes)}s", bytearray(text_bytes))[0]
-                            .decode("shift_jis")
-                            .rstrip("\x00")
-                        )
-                        if (
-                            i == len(inst.params) - 1
-                        ):  # read variables if str is the last parameter
-                            text_variables = params_io.read()
-                            # if len(text_variables) > 0:
-                            #     if len(text_variables) >= 4:
-                            #         text += "{"
-                            #         chunks = [
-                            #             text_variables[i : i + 4]
-                            #             for i in range(0, len(text_variables), 4)
-                            #         ]
-                            #         chunk_count = 0
-                            #         for chunk in chunks:
-                            #             if len(chunk) == 4:
-                            #                 # if chunk != b"\x00" * 4:
-                            #                 # text += " ".join([f"{b:02X}" for b in chunk])
-                            #                 text += " " if chunk_count > 0 else ""
-                            #                 text += f"{unpack(f'I', chunk)[0]:08X}"
-                            #                 chunk_count += 1
-                            #             elif chunk != b"\x00" * len(chunk):
-                            #                 print("Error 1. Expecting padding")
-                            #                 exit()
-                            #         text += "}"
-                            #         # text += (
-                            #         #     "{" + " ".join([f"{b:02X}" for b in text_variables]) + "}"
-                            #         # )
-                            #     elif text_variables != b"\x00" * len(text_variables):
-                            #         print("Error 2. Expecting padding")
-                            #         exit()
-                            chunks = [
-                                text_variables[i : i + 4]
-                                for i in range(0, len(text_variables), 4)
-                            ]
-                            if (
-                                len(chunks) > 0
-                                and len(chunks[-1]) < 4
-                                and chunks[-1] == b"\x00" * len(chunks[-1])
+                try:
+
+                    for i in range(len(inst.params)):
+                        param: InstParam = inst.params[i]
+                        if param.type == InstType.BYTES:
+                            param.value = params_bytes
+                        elif param.type == InstType.STR:
+                            # # text = params_io.read(4)
+                            # text = unpack("4s", params_io.read(4))[0].decode("shift_jis")
+                            # while text[-1] != "\x00":
+                            #     text += unpack("4s", params_io.read(4))[0].decode("shift_jis")
+                            params_last_offset = get_last_offset(params_io)
+                            text_bytes = params_io.read(1)
+                            while (
+                                text_bytes[-1] != 0x00
+                                and params_io.tell() < params_last_offset
                             ):
-                                chunks = chunks[0:-1]
-                            if len(chunks) > 0:
-                                text += (
-                                    "{"
-                                    + " ".join([f"{b:02X}" for b in b"".join(chunks)])
-                                    + "}"
-                                )
-                        else:
-                            # Read padding
-                            if params_io.tell() % 4 != 0:
-                                padding_size = (
-                                    (params_io.tell() // 4) + 1
-                                ) * 4 - params_io.tell()
-                                padding = params_io.read(padding_size)
-                                if padding != b"\x00" * len(padding):
-                                    print("Error. Expecting padding")
-                                    exit()
-
-                        param.value = text
-                        # break
-                    elif param.type == InstType.T:
-                        param.value = unpack(f"I", params_io.read(4))[0]
-                        value_type_str = "V_" + param.type_str.split("T_")[1]
-
-                        for j in range(len(inst.params)):
-                            if inst.params[j].type_str == value_type_str:
-                                if param.value == 0x10:  # float
-                                    inst.params[j].type |= InstType.FLOAT
-                                elif param.value == 0x2:  # int, short, uint, ushort?
-                                    inst.params[j].type |= InstType.INT
-                                elif param.value == 0x20:  # int, short, uint, ushort?
-                                    inst.params[j].type |= InstType.UINT
-                                else:  # 0x4, 0x8, 0x40
-                                    inst.params[j].type |= InstType.INT
-                                    # TODO
-                                    # print(
-                                    #     f"{offset:08X} {inst.type_name} Unknown Type 0x{param.value:X}"
-                                    # )
-                                    # exit(1)
-                                break
-                    elif InstType.CONTINOUS in param.type:
-                        sub_param_type = InstType.UINT
-                        sub_param_type_str = "UINT"
-                        if InstType.UINT in param.type:
-                            sub_param_type = InstType.UINT
-                            sub_param_type_str = "UINT"
-                        elif InstType.INT in param.type:
-                            sub_param_type = InstType.INT
-                            sub_param_type_str = "INT"
-                        elif InstType.FLOAT in param.type:
-                            sub_param_type = InstType.FLOAT
-                            sub_param_type_str = "FLOAT"
-                        inst.params.remove(param)
-                        params_last_offset = get_last_offset(params_io)
-                        num_params = (params_last_offset - params_io.tell()) // 4
-                        for c in range(num_params):
-                            sub_param = InstParam()
-                            sub_param.type = sub_param_type
-                            sub_param.type_str = sub_param_type_str
-                            sub_param.name = f"Continous {c+1}"
-                            if sub_param_type == InstType.UINT:
-                                sub_param.value = unpack(f"I", params_io.read(4))[0]
-                            elif sub_param_type == InstType.INT:
-                                sub_param.value = unpack(f"i", params_io.read(4))[0]
-                            elif sub_param_type == InstType.FLOAT:
-                                sub_param.value = float(
-                                    "{:.4f}".format(unpack(f"f", params_io.read(4))[0])
-                                )
+                                text_bytes += params_io.read(1)
+                                # print(f"{infile.tell():08X}")
+                                # print(text_bytes[-1])
+                            # text = unpack(f"{len(text_bytes)}s", bytearray(text_bytes))[0].decode("cp932").rstrip("\x00")
+                            text = (
+                                unpack(f"{len(text_bytes)}s", bytearray(text_bytes))[0]
+                                .decode("shift_jis")
+                                .rstrip("\x00")
+                            )
+                            if (
+                                i == len(inst.params) - 1
+                            ):  # read variables if str is the last parameter
+                                text_variables = params_io.read()
+                                # if len(text_variables) > 0:
+                                #     if len(text_variables) >= 4:
+                                #         text += "{"
+                                #         chunks = [
+                                #             text_variables[i : i + 4]
+                                #             for i in range(0, len(text_variables), 4)
+                                #         ]
+                                #         chunk_count = 0
+                                #         for chunk in chunks:
+                                #             if len(chunk) == 4:
+                                #                 # if chunk != b"\x00" * 4:
+                                #                 # text += " ".join([f"{b:02X}" for b in chunk])
+                                #                 text += " " if chunk_count > 0 else ""
+                                #                 text += f"{unpack(f'I', chunk)[0]:08X}"
+                                #                 chunk_count += 1
+                                #             elif chunk != b"\x00" * len(chunk):
+                                #                 print("Error 1. Expecting padding")
+                                #                 exit()
+                                #         text += "}"
+                                #         # text += (
+                                #         #     "{" + " ".join([f"{b:02X}" for b in text_variables]) + "}"
+                                #         # )
+                                #     elif text_variables != b"\x00" * len(text_variables):
+                                #         print("Error 2. Expecting padding")
+                                #         exit()
+                                chunks = [
+                                    text_variables[i : i + 4]
+                                    for i in range(0, len(text_variables), 4)
+                                ]
+                                if (
+                                    len(chunks) > 0
+                                    and len(chunks[-1]) < 4
+                                    and chunks[-1] == b"\x00" * len(chunks[-1])
+                                ):
+                                    chunks = chunks[0:-1]
+                                if len(chunks) > 0:
+                                    text += (
+                                        "{"
+                                        + " ".join(
+                                            [f"{b:02X}" for b in b"".join(chunks)]
+                                        )
+                                        + "}"
+                                    )
                             else:
-                                print(f"Error Continous unk {sub_param_type=}")
-                                exit()
-                            inst.params.append(sub_param)
-                        break
-                    elif InstType.COUNT in param.type:
-                        count = unpack(f"I", params_io.read(4))[0]
-                        param.value = count
-                        sub_param_type = InstType.UINT
-                        sub_param_type_str = "UINT"
-                        if InstType.UINT in param.type:
-                            sub_param_type = InstType.UINT
-                            sub_param_type_str = "UINT"
-                        elif InstType.INT in param.type:
-                            sub_param_type = InstType.INT
-                            sub_param_type_str = "INT"
-                        elif InstType.FLOAT in param.type:
-                            sub_param_type = InstType.FLOAT
-                            sub_param_type_str = "FLOAT"
-                        # inst.params.remove(param)
-                        for c in range(count):
-                            sub_param = InstParam()
-                            sub_param.type = sub_param_type
-                            sub_param.type_str = sub_param_type_str
-                            sub_param.name = f"Count {c+1}"
-                            if sub_param_type == InstType.UINT:
-                                sub_param.value = unpack(f"I", params_io.read(4))[0]
-                            elif sub_param_type == InstType.INT:
-                                sub_param.value = unpack(f"i", params_io.read(4))[0]
-                            elif sub_param_type == InstType.FLOAT:
-                                sub_param.value = float(
-                                    "{:.4f}".format(unpack(f"f", params_io.read(4))[0])
-                                )
-                            else:
-                                print(f"Error Count {sub_param_type=}")
-                                exit()
-                            inst.params.append(sub_param)
-                        # TODO Check if there are more parameters after the COUNT
-                        break
-                    elif InstType.UINT in param.type:
-                        try:
+                                # Read padding
+                                if params_io.tell() % 4 != 0:
+                                    padding_size = (
+                                        (params_io.tell() // 4) + 1
+                                    ) * 4 - params_io.tell()
+                                    padding = params_io.read(padding_size)
+                                    if padding != b"\x00" * len(padding):
+                                        print("Error. Expecting padding")
+                                        exit()
+
+                            param.value = text
+                            # break
+                        elif param.type == InstType.T:
                             param.value = unpack(f"I", params_io.read(4))[0]
-                        except Exception as e:
-                            print(e)
-                            print(output)
-                            print(inst)
-                            exit()
-                    elif InstType.INT in param.type:
-                        param.value = unpack(f"i", params_io.read(4))[0]
-                    elif InstType.FLOAT in param.type:
-                        param.value = float(
-                            "{:.4f}".format(unpack(f"f", params_io.read(4))[0])
-                        )
-                    elif param.type == InstType.ENTITY_ID:
-                        param.value = unpack(f"I", params_io.read(4))[0]
-                    elif param.type == InstType.EQUIP_ID:
-                        param.value = unpack(f"I", params_io.read(4))[0]
-                    elif param.type == InstType.KEYBIND_ID:
-                        param.value = unpack(f"I", params_io.read(4))[0]
-                    elif param.type == InstType.LOOT_ID:
-                        param.value = unpack(f"I", params_io.read(4))[0]
+                            value_type_str = "V_" + param.type_str.split("T_")[1]
 
+                            for j in range(len(inst.params)):
+                                # typedef enum pac_pointer_types {
+                                #     FLOAT=16,
+                                #     INTEGER=2,
+                                #     ADDRESS=1,
+                                #     POINTER_0x20=32,
+                                #     POINTER_0x4=4,
+                                #     POINTER_0x40=64,
+                                #     POINTER_0x8=8,
+                                #     UNKNOWN=0
+                                # }
+                                if inst.params[j].type_str == value_type_str:
+                                    if param.value == 0x10:  # float
+                                        inst.params[j].type |= InstType.FLOAT
+                                    elif (
+                                        param.value == 0x2
+                                    ):  # int, short, uint, ushort?
+                                        inst.params[j].type |= InstType.INT
+                                    elif (
+                                        param.value == 0x20
+                                    ):  # int, short, uint, ushort?
+                                        inst.params[j].type |= InstType.UINT
+                                    else:  # 0x4, 0x8, 0x40
+                                        inst.params[j].type |= InstType.INT
+                                        # TODO
+                                        # print(
+                                        #     f"{offset:08X} {inst.type_name} Unknown Type 0x{param.value:X}"
+                                        # )
+                                        # exit(1)
+                                    break
+                        elif InstType.CONTINOUS in param.type:
+                            sub_param_type = InstType.UINT
+                            sub_param_type_str = "UINT"
+                            if InstType.UINT in param.type:
+                                sub_param_type = InstType.UINT
+                                sub_param_type_str = "UINT"
+                            elif InstType.INT in param.type:
+                                sub_param_type = InstType.INT
+                                sub_param_type_str = "INT"
+                            elif InstType.FLOAT in param.type:
+                                sub_param_type = InstType.FLOAT
+                                sub_param_type_str = "FLOAT"
+                            inst.params.remove(param)
+                            params_last_offset = get_last_offset(params_io)
+                            num_params = (params_last_offset - params_io.tell()) // 4
+                            for c in range(num_params):
+                                sub_param = InstParam()
+                                sub_param.type = sub_param_type
+                                sub_param.type_str = sub_param_type_str
+                                sub_param.name = f"Continous {c+1}"
+                                if sub_param_type == InstType.UINT:
+                                    sub_param.value = unpack(f"I", params_io.read(4))[0]
+                                elif sub_param_type == InstType.INT:
+                                    sub_param.value = unpack(f"i", params_io.read(4))[0]
+                                elif sub_param_type == InstType.FLOAT:
+                                    sub_param.value = float(
+                                        "{:.4f}".format(
+                                            unpack(f"f", params_io.read(4))[0]
+                                        )
+                                    )
+                                else:
+                                    print(f"Error Continous unk {sub_param_type=}")
+                                    exit()
+                                inst.params.append(sub_param)
+                            break
+                        elif InstType.COUNT in param.type:
+                            count = unpack(f"I", params_io.read(4))[0]
+                            param.value = count
+                            sub_param_type = InstType.UINT
+                            sub_param_type_str = "UINT"
+                            if InstType.UINT in param.type:
+                                sub_param_type = InstType.UINT
+                                sub_param_type_str = "UINT"
+                            elif InstType.INT in param.type:
+                                sub_param_type = InstType.INT
+                                sub_param_type_str = "INT"
+                            elif InstType.FLOAT in param.type:
+                                sub_param_type = InstType.FLOAT
+                                sub_param_type_str = "FLOAT"
+                            # inst.params.remove(param)
+                            for c in range(count):
+                                sub_param = InstParam()
+                                sub_param.type = sub_param_type
+                                sub_param.type_str = sub_param_type_str
+                                sub_param.name = f"Count {c+1}"
+                                if sub_param_type == InstType.UINT:
+                                    sub_param.value = unpack(f"I", params_io.read(4))[0]
+                                elif sub_param_type == InstType.INT:
+                                    sub_param.value = unpack(f"i", params_io.read(4))[0]
+                                elif sub_param_type == InstType.FLOAT:
+                                    sub_param.value = float(
+                                        "{:.4f}".format(
+                                            unpack(f"f", params_io.read(4))[0]
+                                        )
+                                    )
+                                else:
+                                    print(f"Error Count {sub_param_type=}")
+                                    exit()
+                                inst.params.append(sub_param)
+                            # TODO Check if there are more parameters after the COUNT
+                            break
+                        elif InstType.UINT in param.type:
+                            try:
+                                param.value = unpack(f"I", params_io.read(4))[0]
+                            except Exception as e:
+                                print(e)
+                                print(output)
+                                print(inst)
+                                exit()
+                        elif InstType.INT in param.type:
+                            param.value = unpack(f"i", params_io.read(4))[0]
+                        elif InstType.FLOAT in param.type:
+                            param.value = float(
+                                "{:.4f}".format(unpack(f"f", params_io.read(4))[0])
+                            )
+                        elif param.type == InstType.ENTITY_ID:
+                            param.value = unpack(f"I", params_io.read(4))[0]
+                        elif param.type == InstType.EQUIP_ID:
+                            param.value = unpack(f"I", params_io.read(4))[0]
+                        elif param.type == InstType.KEYBIND_ID:
+                            param.value = unpack(f"I", params_io.read(4))[0]
+                        elif param.type == InstType.LOOT_ID:
+                            param.value = unpack(f"I", params_io.read(4))[0]
+                except struct.error as e:
+                    print(f'Error "{inst.type_name}": {e}')
+                    exit()
                 # outfile.write(f"{inst.offset:08X}  {inst.type_name}  {inst.params}\n")
                 instructions.append(inst)
 
