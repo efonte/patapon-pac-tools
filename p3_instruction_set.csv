@@ -34,7 +34,7 @@
 00;0023;cmd_ifCallLS;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;0024;cmd_ifCallLB;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;0025;cmd_ifCallAND;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-00;0027;cmd_flgSet;Unk;Unk1: uint, Unk2: uint
+00;0027;cmd_flgSet;Unk;Unk1: COUNT_uint
 00;0028;cmd_flgClr;Unk;Unk1: COUNT_uint
 00;0029;cmd_flgSetId;Unk;Unk1: uint, Unk2: uint
 00;002A;cmd_flgClrId;Unk;Unk1: uint, Unk2: uint
@@ -45,10 +45,12 @@
 00;002F;cmd_inxJmp;Unk;Unk1: uint, Unk2: uint, Unk3: CONTINOUS_uint
 00;0030;cmd_stkDec;Unk;
 00;0031;cmd_stkClr;Unk;
+00;0036;cmd_setSleep;Unk;Unk1: uint, Unk2: uint
 00;0037;cmd_sinf;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0038;cmd_cosf;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0039;cmd_atan2f;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 00;003A;cmd_abs;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+00;003B;cmd_sqrt;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;003F;cmd_callLabel;Unk;Unk1: uint, Unk2: uint
 00;0041;cmd_mod;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0042;cmd_memset;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
@@ -66,7 +68,7 @@
 03;0006;messageClose;Unk;
 03;0007;setMessageColor;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 03;0008;doSelectCursor;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-03;0009;setRenderPriority;Unk;Unk1: uint, Unk2: uint
+03;0009;setRenderPriority03;Unk;Unk1: uint, Unk2: uint
 03;000D;showDialogEx;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: COUNT_uint
 03;000E;closeDialog;Unk;
 03;0010;setPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -92,20 +94,25 @@
 0A;0006;setLaboInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0A;0007;getGfpData;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 0A;0008;serchGfpId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
-0A;0009;addItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0A;0009;addItem0A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0A;000A;addCharin;Unk;Unk1: uint, Unk2: uint
-0A;000B;getItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0A;000B;getItem0A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0A;000C;clearItem;Unk;Unk1: uint, Unk2: uint
 0A;000D;clearIsFirst;Unk;Unk1: uint, Unk2: uint
 0A;000E;getMaterialItemId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0A;0010;setClassData;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+0A;0012;getPlayerData;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
 0A;0013;setPlayerData;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+0A;0014;setAccessoryIdFileIndex;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0A;0015;checkEqualHeroName;Unk;Unk1: uint, Unk2: uint, Unk3: str
 0A;0017;requestActor;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 0A;0018;requestExpandParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0A;0019;addQuestCompensationData;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0A;001A;setTimmingScript0A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0A;001B;setMssionBgmId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0A;001C;getGameMode;Unk;Unk1: uint, Unk2: uint
 0A;001E;gotoMission;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+0A;001F;resetTips;Unk;Unk1: uint, Unk2: uint
 0A;0020;getMissionInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 0A;0022;callSysMsgLabel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 0A;0023;clearSysMsg;Unk;
@@ -113,6 +120,11 @@
 0A;0025;setSoundFixBeat;Unk;Unk1: uint, Unk2: uint
 0A;0026;isSoundDisableRhtymHit;Unk;Unk1: uint, Unk2: uint
 0A;0027;isSoundFixBeat;Unk;Unk1: uint, Unk2: uint
+0A;0028;setTipsImageId;Unk;Unk1: uint, Unk2: uint
+0A;0029;checkTipsUnlock;Unk;Unk1: uint, Unk2: uint
+0A;002B;unlockTipsImageNoSave;Unk;
+0A;002C;clearTipsSelectMask;Unk;
+0A;002E;setTipsSelectMask;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0A;0030;saveFlag;Unk;
 0A;0031;loadFlag;Unk;
 0A;0033;multi_setTweet;Unk;Unk1: uint, Unk2: uint
@@ -130,15 +142,18 @@
 0A;0043;unlockMedenShopItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0A;0044;clearMedenShopItem;Unk;
 0A;0046;setKnownItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0A;0047;getUnitParam0A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0A;0048;enumEquipItem;Unk;Unk1: uint, Unk2: uint
 0A;0049;getEquipItemParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-0B;0001;playSe;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+0B;0001;playSe0B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
 0B;0002;playAtrac;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
-0B;0003;stop;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0B;0003;stop0B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0B;0004;cancel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0B;0005;volume;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+0B;0006;pan;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0B;0007;allReset;Unk;
 0B;0008;playSeFromPos;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
+0B;0009;calcVolumeRate;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0C;0001;getCommandId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0C;0002;getHitRate;Unk;Unk1: uint, Unk2: uint
 0C;0003;getCommandRate;Unk;Unk1: uint, Unk2: uint
@@ -167,7 +182,7 @@
 0C;001B;setDisablePercussionView;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0C;001C;clearDisablePercussionView;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0C;001E;start;Unk;Unk1: uint, Unk2: uint
-0C;001F;stop;Unk;Unk1: uint, Unk2: uint
+0C;001F;stop0C;Unk;Unk1: uint, Unk2: uint
 0C;0020;setDisableCommandGuide;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0C;0022;setImitationSoundPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0C;0023;setDisableHeroVoice;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -179,21 +194,28 @@
 0C;002A;setFeverGaugePriority;Unk;Unk1: uint, Unk2: uint
 0C;002B;getFeverGaugePriority;Unk;Unk1: uint, Unk2: uint
 0C;002C;getEquipSummonType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-10;0006;gimmickGetUserIdF;Unk;Unk1: uint, Unk2: uint
-10;0007;gimmickSetUserIdF;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-10;0008;gimmickGetUserIdI;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
-10;000A;effectsetCommonStatusParam;Unk;Unk1: uint, Unk2: uint
-10;000C;effectHitEffectCallback;Unk;
-10;000D;setWorkValue;Unk;Unk1: uint, Unk2: uint
-10;000E;getWorkValue;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+10;0002;setScriptLabelTable;Unk;Unk1: uint
+10;0006;getPack10;Unk;Unk1: uint, Unk2: uint
+10;0007;labelToInt;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+10;0008;createScript10;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+10;000A;getGroupId;Unk;Unk1: uint, Unk2: uint
+10;000C;killChildren;Unk;
+10;000D;killScript;Unk;Unk1: uint, Unk2: uint
+10;000E;setAddress;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 12;0002;setMissionTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 12;0003;setMaxMissionAreaId;Unk;Unk1: uint, Unk2: uint
 12;0004;getMaxMissionAreaId;Unk;Unk1: uint, Unk2: uint
 12;0005;restartMission;Unk;Unk1: uint, Unk2: uint
 12;0006;getMissionAreaId;Unk;Unk1: uint, Unk2: uint
 12;0007;setMissionAreaId;Unk;Unk1: uint, Unk2: uint
+13;0002;13_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;0002;getPack16;Unk;Unk1: uint, Unk2: uint, Unk3: str
 16;0006;addGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;0008;addEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+16;0009;setEffectTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;000A;setGimmickTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;000B;setMotionEventTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;000C;setHitEffectScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 16;000D;multiSetMultiParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;000E;multiAddMapIcon;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;000F;multiAddMapUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -205,8 +227,8 @@
 16;0015;multiGetTime;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0016;multiPauseTime;Unk;Unk1: uint, Unk2: uint
 16;0017;resultGetState;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-16;0019;resultSetState;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint
-16;001B;getUnitParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;0019;resultSetState;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: str
+16;001B;getUnitParam16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;001C;setVersusRule;Unk;Unk1: uint, Unk2: uint
 16;001D;getStageRuleParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;001E;getStageGimmickParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -248,9 +270,11 @@
 16;0042;getSquadBasePosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0043;setFlagUnitBasePosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0044;setPlayerSquadType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0045;calcCommonParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0046;eraseSquad;Unk;Unk1: uint, Unk2: uint
 16;0047;setAdvanceEnable;Unk;Unk1: uint, Unk2: uint
 16;0048;setAdvanceSpeedRatio;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-16;0049;setMoveSpeedRatio;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0049;setMoveSpeedRatio16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;004C;recoveryPlayerTroopHP;Unk;
 16;004D;recoveryPlayerTroopHPRatio;Unk;Unk1: uint, Unk2: uint
 16;004E;recoveryHP;Unk;Unk1: uint, Unk2: uint
@@ -265,13 +289,13 @@
 16;005A;addCharinEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
 16;005B;startSetupStage;Unk;Unk1: uint, Unk2: uint
 16;005C;endSetupStage;Unk;
-16;005D;addStage;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: str
+16;005D;addStage16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: str
 16;005E;setStageParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 16;005F;applyStage;Unk;Unk1: uint, Unk2: uint
 16;0060;disableRetireBox;Unk;Unk1: uint, Unk2: uint
-16;0061;addItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+16;0061;addItem16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 16;0062;decItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-16;0063;getItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0063;getItem16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0065;setupStartDungeonWall;Unk;
 16;0066;setupAddDungeonWall;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0067;setupEndDungeonWall;Unk;
@@ -361,14 +385,17 @@
 16;00C9;sendVersus02MissileInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 16;00CA;receiveVersus02MissileInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 16;00CB;sendVersus02EnemyCtrl;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;00CD;getPlayerId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;00CE;getTroopTopPosX_Enemy;Unk;Unk1: uint, Unk2: uint
 16;00D0;getTroopType_GimmickUID;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;00D1;setEffectTargetMask;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
 16;00D4;resetQuestPay;Unk;
 16;00D5;setQuestPayItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;00D6;setQuestPayExp;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-16;00D8;setUnitCtrlCurrentActType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;00D8;setUnitCtrlCurrentActType16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;00D9;setMultimapViewState;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;00DA;setUnitDeadMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;00DB;getGeneratorInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 16;00DE;setFrontLineDetectForce;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;00DF;getSymbolMarkId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;00E0;readSymbolMarkFile;Unk;Unk1: uint, Unk2: uint
@@ -379,16 +406,18 @@
 16;00E5;multi_startGoAhead;Unk;
 16;00E6;multi_stopGoAhead;Unk;
 16;00E7;multi_isFinishGoAhead;Unk;Unk1: uint, Unk2: uint
-16;00E8;networkErrorInvoke;Unk;
+16;00E8;networkErrorInvoke16;Unk;
 16;00EB;resultGetPhase;Unk;Unk1: uint, Unk2: uint
 16;00EC;setupDungeonComment;Unk;Unk1: uint
 16;00F0;getUnitHandle_TroopTopPos;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;00F1;isFrontLineEnterAttack;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 16;00F2;isFrontLineEnterView;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 16;00F3;isPossibleExecHeroMode;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;00F4;getFrontLinePosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;00F5;setUnitCtrlMoveEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-16;00F6;setVersusString;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint   
+16;00F6;setVersusString;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint
 16;00F8;isVisibleVersusString;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;0100;getQuestType;Unk;Unk1: uint, Unk2: uint
 16;0101;setUpdateDefaultCamera;Unk;Unk1: uint, Unk2: uint
 16;0102;resultReadyGo;Unk;
 16;0103;getDeadCount;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -408,6 +437,8 @@
 16;0112;playHitEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;0113;getSummonPlayerId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0114;getVersusPKInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;0115;getUnitWeight;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0116;addLockdGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;0117;getForwardMissile;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 16;0118;startScreenFog;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 16;0119;getMsgWndUseNum;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -441,9 +472,10 @@
 16;013E;setDisableVersusStringRender;Unk;Unk1: uint, Unk2: uint
 16;013F;startIntroEvent;Unk;
 16;0140;getTroopHeroType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-16;0141;getTroopSign;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0141;getTroopSign16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0142;disableEquipBigShield;Unk;Unk1: uint, Unk2: uint
 17;0002;isEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;0003;getActorBaseInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 17;0006;setActive;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0007;getActive;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0008;setBrakeScore;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
@@ -451,23 +483,28 @@
 17;000A;getModelInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 17;000B;setModelInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
 17;000C;getMotionInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+17;000D;setGroupId17;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;000E;flipEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;000F;getFlipEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0010;setFixMoveEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-17;0011;setMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+17;0011;setMotion17;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+17;0012;setMoveSpeedRatio17;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0013;setVector;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0014;addVector;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 17;0015;setVectorFluctuationAngle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-17;0018;setRenderPriority;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;0017;setDecay;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+17;0018;setRenderPriority17;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0019;resetAttackUniqueId;Unk;Unk1: uint, Unk2: uint
-17;001A;setLink;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
+17;001A;setLink;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: str
 17;001B;setLinkParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
-17;001C;addLinkObject;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint
+17;001C;addLinkObject;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: str
 17;001D;releaseLink;Unk;Unk1: uint, Unk2: uint
+17;001F;getMotionFrameRate;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0020;getNodeIndex;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: str
 17;0021;getNodePos;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 17;0023;setNodeDisp;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0024;getStatusInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+17;0025;disableKillTimer;Unk;Unk1: uint, Unk2: uint
 17;0026;kill;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0028;del;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0029;setMaxHitPoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -489,14 +526,17 @@
 17;003C;movePosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
 17;003D;stopMove;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;003E;enableCollision;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+17;003F;addHit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
 17;0040;isDamaged;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0041;enableCollisionFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+17;0042;setCollisionSize;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 17;0043;getCollisionSize;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0044;setDamageParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0045;setPushParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+17;0046;appearItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0047;setActorLevel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0048;getActorLevel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-17;0049;setItemTable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;0049;setItemTable17;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;004A;setLinkInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;004B;setScale;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;004C;getScale;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -504,49 +544,73 @@
 17;004E;getAbnormalStatus;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;004F;addAbnormalStatus;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 17;0050;addAbnormalStatusSlip;Unk;Unk1: uint, Unk2: uint
+17;0051;addAbnormalStatusBlowOff;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0052;getChildGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+17;0053;getClassType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0054;getParent;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0055;getCollisionType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;0056;isHero;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;0057;isFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;005A;getMotionEndFrame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;005C;getDamageDeadFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;005D;getDirection;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;005E;setDirection;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;005F;getTroopSign17;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+17;0060;catLink;Unk;Unk1: uint, Unk2: uint
 17;0061;allClearActorWindow;Unk;
 17;0062;callLocalizeMessageWindow;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
 17;0063;setUserFogAlpha;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0064;enableForeverRun;Unk;Unk1: uint, Unk2: uint
+17;0065;setLinkById;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
 17;0066;setModelLowerHeight;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 17;0067;setBreakScoreTroop;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 17;0068;isMyHero;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0069;setCanCaptureItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+17;006A;extinctionFire;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;006B;getSubjectHandle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;006C;getSubjectPlayerId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;006D;enableDamageFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;006E;setParent;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-17;006F;playSe;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
+17;006F;playSe17;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
 17;0070;getRenderPriority;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 17;0071;enableRenderAttach;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0001;19_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0002;19_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
-19;0004;19_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-19;0005;19_0005;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0006;19_0006;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-19;0007;19_0007;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-19;0008;19_0008;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-19;0009;19_0009;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-19;000A;19_000A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;000F;19_000F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-19;0010;19_0010;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0011;19_0011;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0012;19_0012;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0013;19_0013;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0015;19_0015;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-19;0016;19_0016;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0017;19_0017;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-19;0019;19_0019;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;001A;19_001A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-19;001B;19_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;001D;19_001D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0020;19_0020;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-19;0021;19_0021;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-1C;0004;setTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;0001;gimmick_getHandle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0002;setActionController;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
+19;0003;effectGetUserId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;0004;effectSetUserId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;0005;effectSetWaitTime;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0006;gimmickGetUserIdF;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;0007;gimmickSetUserIdF;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;0008;gimmickGetUserIdI;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;0009;gimmickSetUserIdI;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;000A;effectsetCommonStatusParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;000B;effectSetTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+19;000C;effectHitEffectCallback;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;000D;setWorkValue;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;000F;setUserScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
+19;0010;setDrawMode;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0011;effectsetDeleteId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0012;effectkill;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0013;effectgetEffectId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0014;getActorPhase;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0015;setModelRotate;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;0016;getGimmickId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0017;killGeneratorGroup;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+19;0018;setChangeAUIDTimming;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0019;setEnableNetwork;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;001A;getSwitchWaitTime;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+19;001B;setDisableThroughAttack;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;001C;setIsNotHitDungeon;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;001D;setPhaseWait;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;001F;gimmickgetFreeUnique;Unk;Unk1: uint, Unk2: uint
+19;0020;effectSetDisableGimmickThrough;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+19;0021;setRenderNoFlip;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+1A;0002;1A_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
+1A;0003;1A_0003;Unk;Unk1: uint, Unk2: uint
+1A;0004;1A_0004;Unk;Unk1: uint, Unk2: uint
+1B;0002;1B_0002;Unk;
+1B;0003;1B_0003;Unk;
+1C;0004;setTimmingScript1C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0005;setEnablePad;Unk;Unk1: uint, Unk2: uint
 1C;0006;getAzitoInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 1C;0007;setAzitoInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -556,7 +620,7 @@
 1C;000F;getMultiEventUnitHandle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0010;getMultiHeroHandle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0012;addArea;Unk;Unk1: uint, Unk2: uint
-1C;0013;addStage;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint, Unk26: uint, Unk27: str
+1C;0013;addStage1C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint, Unk26: uint
 1C;0014;addQuest;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint
 1C;0015;resetStageParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0017;reflectQCompDataToCompData;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -572,7 +636,7 @@
 1C;0027;getSyncGameFlagResult;Unk;Unk1: uint, Unk2: uint
 1C;0028;toTilte;Unk;
 1C;002B;openAllTips;Unk;
-1C;002C;networkErrorInvoke;Unk;
+1C;002C;networkErrorInvoke1C;Unk;
 1C;002D;clearVersusInfo;Unk;
 1C;002E;setChatBalloonOffset;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;002F;setConnectionIconDraw;Unk;Unk1: uint, Unk2: uint
@@ -606,7 +670,7 @@
 1F;0019;setTroopType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 1F;001A;setReqActorFixPosFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;001B;setModeEx;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-1F;001C;setUnitCtrlActivity;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+1F;001C;setUnitCtrlActivity1F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 1F;001D;setReqActorRenderPrio;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 1F;001E;setUnitCtrlWatchArea;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;001F;setReqActorItemTable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
@@ -617,27 +681,51 @@
 1F;0024;setUnitCtrlGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;0025;setGimmickFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 1F;0026;setUnitCtrlTimingScript_Int;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-1F;0027;setUnitCtrlCurrentActType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+1F;0027;setUnitCtrlCurrentActType1F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;0028;setReqActorHp;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;0029;setBossCtrlStaggerItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;002A;setUnitCtrlAdventPosX;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;002B;getUnitCtrlActivity;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 1F;002C;getUnitCtrlCurrentActType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-1F;002E;setBossMoveRange;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-1F;002F;setBossMoveRangeLimit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+1F;002E;setBossMoveRange1F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+1F;002F;setBossMoveRangeLimit1F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;0031;setUnitCtrlSkill;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;0032;isActiveGen;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-20;0002;20_0002;Unk;
-20;0003;20_0003;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-20;0004;20_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-20;0005;20_0005;Unk;Unk1: uint, Unk2: uint
-20;4228;20_4228;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-20;5728;20_5728;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+20;0002;reset;Unk;
+20;0003;setPoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+20;0004;addPoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+20;0005;getId;Unk;Unk1: uint, Unk2: uint
 21;0003;enableBossManualCtrl;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 21;0004;setBossActionId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 21;0005;getBossActionId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 21;0008;setBossTargetPos;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 21;0009;setBossDisableAtkMove;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;000B;getBossMoveRange;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+21;000C;setBossMoveRangeLimit21;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;000D;getBossMoveRangeLimit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 21;000F;setBossNoDamage;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0013;getBossIsCreate;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0014;callBossRetreatEndInit;Unk;Unk1: uint, Unk2: uint
+21;0015;getBossAttackMoveRange;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+21;0016;getBossDisableAtkMove;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0018;setCapture;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+21;0019;addVecTroopP;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+21;001A;addAbnormalTroopP;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+21;001B;setMotion21;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+21;0021;resetObject;Unk;Unk1: uint, Unk2: uint
+21;0024;setEnableAbnormalWhole;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0026;resetCollisionShapeBox;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+21;0027;getSoundCommandID;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;002B;sendMonsterInfoAction;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;002C;recvMonsterInfoAction;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+21;002D;sendMonsterInfoState;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;002E;recvMonsterInfoState;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0033;setActivityParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0034;obstacleClear;Unk;Unk1: uint, Unk2: uint
+21;0035;obstacleCreateEffect;Unk;Unk1: uint, Unk2: uint
+21;0036;obstacleCheckEndMove;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0037;obstacleGetMoveRatio;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 21;0039;wakeUpForce;Unk;Unk1: uint, Unk2: uint
 21;003A;setDisableSelectAction;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+21;0010;getBossInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint, Unk26: uint, Unk27: uint, Unk28: uint, Unk29: uint, Unk30: uint, Unk31: uint, Unk32: uint, Unk33: uint, Unk34: uint, Unk35: uint, Unk36: uint, Unk37: uint, Unk38: uint, Unk39: uint, Unk40: uint, Unk41: uint, Unk42: uint, Unk43: uint, Unk44: uint, Unk45: uint, Unk46: uint, Unk47: uint, Unk48: uint, Unk49: uint, Unk50: uint, Unk51: uint, Unk52: uint, Unk53: uint, Unk54: uint, Unk55: uint, Unk56: uint, Unk57: uint, Unk58: uint, Unk59: uint, Unk60: uint, Unk61: uint, Unk62: uint, Unk63: uint, Unk64: uint, Unk65: uint, Unk66: uint
+21;0012;setBossInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint, Unk26: uint, Unk27: uint, Unk28: uint, Unk29: uint, Unk30: uint, Unk31: uint, Unk32: uint, Unk33: uint, Unk34: uint, Unk35: uint, Unk36: uint, Unk37: uint, Unk38: uint, Unk39: uint, Unk40: uint, Unk41: uint, Unk42: uint, Unk43: uint, Unk44: uint, Unk45: uint, Unk46: uint, Unk47: uint, Unk48: uint, Unk49: uint, Unk50: uint, Unk51: uint, Unk52: uint, Unk53: uint, Unk54: uint, Unk55: uint, Unk56: uint, Unk57: uint, Unk58: uint, Unk59: uint, Unk60: uint, Unk61: uint, Unk62: uint, Unk63: uint, Unk64: uint, Unk65: uint, Unk66: uint, Unk67: uint, Unk68: uint
