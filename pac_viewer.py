@@ -15,6 +15,8 @@ from art import text2art
 from rich import print
 from rich.console import Console
 
+# Based on https://github.com/owodzeg/PacViewer
+
 
 class Game(str, Enum):
     P1 = "P1"

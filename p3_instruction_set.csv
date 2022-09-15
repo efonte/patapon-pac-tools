@@ -208,7 +208,7 @@
 12;0005;restartMission;Unk;Unk1: uint, Unk2: uint
 12;0006;getMissionAreaId;Unk;Unk1: uint, Unk2: uint
 12;0007;setMissionAreaId;Unk;Unk1: uint, Unk2: uint
-13;0002;13_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+13;0002;setTitleTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 16;0002;getPack16;Unk;Unk1: uint, Unk2: uint, Unk3: str
 16;0006;addGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;0008;addEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
@@ -645,7 +645,7 @@
 1C;0033;getEventUnitCharaBaseParamIndexId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0034;setEnableReload;Unk;Unk1: uint, Unk2: uint
 1C;0036;setIamCheater;Unk;
-1D;0002;1D_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+1D;0002;setBasesTimmingScript;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1F;0002;create;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 1F;0004;setLevel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 1F;0005;setPosX;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
