@@ -3,6 +3,7 @@
 00;0003;00_0003;Unk;Unk1: uint
 00;0004;00_0004;Unk;Unk1: uint, Unk2: uint
 00;0005;00_0005;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+00;0006;00_0006;Unk;Unk1: uint, Unk2: uint, Unk3: uint
 00;0007;00_0007;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0008;00_0008;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0009;00_0009;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -24,6 +25,7 @@
 00;001A;00_001A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;001B;00_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;001D;00_001D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
+00;001E;00_001E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;001F;00_001F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;0020;00_0020;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;0021;00_0021;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
@@ -31,23 +33,29 @@
 00;0023;00_0023;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
 00;0025;00_0025;Unk;Unk1: uint, Unk2: uint
 00;0026;00_0026;Unk;Unk1: uint, Unk2: uint
+00;0027;00_0027;Unk;Unk1: uint, Unk2: uint
+00;0028;00_0028;Unk;Unk1: uint, Unk2: uint
 00;0029;00_0029;Unk;Unk1: uint, Unk2: uint
-00;002A;00_002A;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+00;002A;00_002A;Unk;Unk1: uint, Unk2: COUNT_uint
 00;002C;00_002C;Unk;Unk1: uint, Unk2: COUNT_uint
-00;002D;00_002D;Unk;Unk1: uint, Unk2: uint, Unk3: CONTINOUS_uint
+00;002D;00_002D;Unk;Unk1: uint, Unk2: uint, Unk3: CONTINUOUS_uint
 00;002E;00_002E;Unk;
 00;002F;00_002F;Unk;
-00;0031;00_0031;Unk1;Unk1: str
-00;0032;00_0032;Unk1;Unk1: str
+00;0030;00_0030;Unk;Unk1: uint, Unk2: uint, Unk4: str
+00;0031;00_0031;Unk;Unk1: str
+00;0032;00_0032;Unk;Unk1: str
+00;0035;00_0035;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0036;00_0036;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0037;00_0037;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;0038;00_0038;Unk;Unk1: uint, Unk2: uint, Unk3: uint
 00;0039;00_0039;Unk;Unk1: uint, Unk2: uint
+00;003B;00_003B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;003C;00_003C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 00;003D;00_003D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 00;003E;00_003E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 00;003F;00_003F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 00;0040;00_0040;Unk;Unk1: uint, Unk2: uint
+00;0041;00_0041;Unk;
 01;0001;01_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 01;0002;01_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 01;0004;01_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
@@ -67,7 +75,7 @@
 01;0015;01_0015;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 01;0016;01_0016;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 01;0017;01_0017;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0018;01_0018;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: str
+01;0018;01_0018;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: str
 01;001A;01_001A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 01;001B;01_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint
 01;001D;01_001D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
@@ -88,40 +96,154 @@
 01;0032;01_0032;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 01;0033;01_0033;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 01;0034;01_0034;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-03;0001;03_0001;Unk;Unk1: str, Unk2: uint
+01;0035;01_0035;Unk;Unk1: uint, Unk2: uint
+02;0001;02_0001;Unk;Unk1: uint, Unk2: uint
+02;0002;02_0002;Unk;
+02;0003;02_0003;Unk;Unk1: uint, Unk2: uint
+02;0008;02_0008;Unk;Unk1: uint, Unk2: uint
+02;0009;02_0009;Unk;Unk1: uint, Unk2: uint
+02;000A;02_000A;Unk;Unk1: uint, Unk2: uint
+02;000B;02_000B;Unk;Unk1: uint, Unk2: uint
+02;000D;02_000D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;0012;02_0012;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;0013;02_0013;Unk;Unk1: uint, Unk2: uint
+02;0014;02_0014;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0015;02_0015;Unk;Unk1: uint, Unk2: uint
+02;0017;02_0017;Unk;Unk1: uint, Unk2: uint
+02;0019;02_0019;Unk;Unk1: uint, Unk2: uint
+02;001A;02_001A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;001B;02_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;001E;02_001E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;001F;02_001F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+02;0022;02_0022;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+02;0024;02_0024;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;0027;02_0027;Unk;Unk1: uint, Unk2: uint
+02;0028;02_0028;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;002B;02_002B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;0032;02_0032;Unk;Unk1: uint
+02;0034;02_0034;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+02;0037;02_0037;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;0038;02_0038;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0039;02_0039;Unk;
+02;003F;02_003F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;0040;02_0040;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;0041;02_0041;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;0045;02_0045;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0046;02_0046;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+02;0047;02_0047;Unk;Unk1: uint, Unk2: uint
+02;004B;02_004B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;004D;02_004D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;004E;02_004E;Unk;Unk1: uint, Unk2: uint
+02;0051;02_0051;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+02;0052;02_0052;Unk;Unk1: uint, Unk2: uint
+02;0053;02_0053;Unk;Unk1: uint, Unk2: uint
+02;0054;02_0054;Unk;Unk1: uint, Unk2: uint
+02;0055;02_0055;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;0057;02_0057;Unk;Unk1: uint, Unk2: uint
+02;0059;02_0059;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+02;005A;02_005A;Unk;Unk1: uint, Unk2: uint
+02;005B;02_005B;Unk;Unk1: uint, Unk2: uint
+02;005C;02_005C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+02;005D;02_005D;Unk;Unk1: uint, Unk2: uint
+02;005E;02_005E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;005F;02_005F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0060;02_0060;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
+02;0061;02_0061;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0062;02_0062;Unk;Unk1: uint, Unk2: uint
+02;0063;02_0063;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;0064;02_0064;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0065;02_0065;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0066;02_0066;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0067;02_0067;Unk;Unk1: uint, Unk2: uint
+02;0068;02_0068;Unk;
+02;0069;02_0069;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;03E8;02_03E8;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0456;02_0456;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;0457;02_0457;Unk;Unk1: uint, Unk2: uint
+02;0458;02_0458;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;07D0;02_07D0;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;09C5;02_09C5;Unk;Unk1: uint, Unk2: uint
+02;0BB8;02_0BB8;Unk;
+02;0BB9;02_0BB9;Unk;
+02;0FA0;02_0FA0;Unk;Unk1: uint, Unk2: uint
+02;1004;02_1004;Unk;Unk1: uint, Unk2: uint
+02;1005;02_1005;Unk;Unk1: uint
+02;1006;02_1006;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+02;1007;02_1007;Unk;
+02;1008;02_1008;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;100D;02_100D;Unk;Unk1: uint, Unk2: uint
+02;100E;02_100E;Unk;Unk1: uint, Unk2: uint
+02;1388;02_1388;Unk;Unk1: uint, Unk2: uint
+02;13EC;02_13EC;Unk;Unk1: uint, Unk2: uint
+02;13EE;02_13EE;Unk;Unk1: uint, Unk2: uint
+02;13EF;02_13EF;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
+02;13F0;02_13F0;Unk;Unk1: uint, Unk2: uint
+02;1770;02_1770;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint
+02;1771;02_1771;Unk;Unk1: uint, Unk2: uint
+02;1772;02_1772;Unk;Unk1: uint, Unk2: uint
+02;1773;02_1773;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
+02;1774;02_1774;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
+02;1775;02_1775;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
+02;1776;02_1776;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint
+02;1777;02_1777;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint
+02;177A;02_177A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint
+02;17A2;02_17A2;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
+02;1B58;02_1B58;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+02;1F40;02_1F40;Unk;Unk1: uint
+02;1F41;02_1F41;Unk;
+02;1F42;02_1F42;Unk;
+03;0001;03_0001;Unk;Unk1: str
 03;0002;03_0002;Unk;Unk1: uint, Unk2: uint
 03;0003;03_0003;Unk;Unk1: uint, Unk2: uint
 03;0004;03_0004;Unk;Unk1: uint, Unk2: uint
+03;0006;03_0006;Unk;
+03;0007;03_0007;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 03;0009;03_0009;Unk;Unk1: uint, Unk2: uint
-03;000C;03_000C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint   
+03;000A;03_000A;Unk;Unk1: uint, Unk2: uint
+03;000B;03_000B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+03;000C;03_000C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint
+03;000D;03_000D;Unk;Unk1: uint, Unk2: uint
+03;000E;03_000E;Unk;Unk1: uint, Unk2: uint
 03;0010;03_0010;Unk;
-03;0011;03_0011;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint   
+03;0011;03_0011;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint
+03;0013;03_0013;Unk;Unk1: uint
+03;0015;03_0015;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
 03;0016;03_0016;Unk;
+03;0019;03_0019;Unk;Unk1: uint, Unk2: uint
+03;001A;03_001A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;0001;04_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint
 04;0002;04_0002;Unk;Unk1: uint, Unk2: uint
 04;0003;04_0003;Unk;Unk1: uint, Unk2: uint
 04;0004;04_0004;Unk;Unk1: uint, Unk2: uint
 04;0005;04_0005;Unk;Unk1: uint, Unk2: uint
 04;0006;04_0006;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;0007;04_0007;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
+04;0008;04_0008;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 04;0009;04_0009;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+04;000A;04_000A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 04;000B;04_000B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
 04;000C;04_000C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
 04;000D;04_000D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 04;000E;04_000E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+04;000F;04_000F;Unk;Unk1: uint, Unk2: uint
 04;0011;04_0011;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 04;0013;04_0013;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;0014;04_0014;Unk;Unk1: uint, Unk2: uint
 04;0015;04_0015;Unk;Unk1: uint, Unk2: uint
 04;0016;04_0016;Unk;Unk1: uint, Unk2: uint
+04;0017;04_0017;Unk;Unk1: uint, Unk2: uint
 04;001A;04_001A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;001B;04_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;001E;04_001E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;001F;04_001F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+04;0020;04_0020;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+04;0023;04_0023;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;0024;04_0024;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;0025;04_0025;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;0026;04_0026;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 04;0027;04_0027;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 04;0029;04_0029;Unk;Unk1: uint, Unk2: uint
+04;002A;04_002A;Unk;Unk1: uint, Unk2: uint
 04;002B;04_002B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 04;002D;04_002D;Unk;Unk1: uint, Unk2: uint
 04;002E;04_002E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
@@ -134,7 +256,9 @@
 04;0035;04_0035;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
 04;0036;04_0036;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint
 04;0037;04_0037;Unk;Unk1: uint
+04;0038;04_0038;Unk;Unk1: uint, Unk2: uint
 04;0039;04_0039;Unk;Unk1: uint, Unk2: uint
+04;003A;04_003A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;003B;04_003B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;003C;04_003C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;003D;04_003D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
@@ -142,7 +266,7 @@
 04;003F;04_003F;Unk;Unk1: uint, Unk2: uint
 04;0040;04_0040;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 04;0041;04_0041;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;0042;04_0042;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint
+04;0042;04_0042;Unk;Unk1: uint, Unk2: CONTINUOUS_uint
 04;0043;04_0043;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;004B;04_004B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;004D;04_004D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
@@ -150,6 +274,7 @@
 04;0050;04_0050;Unk;
 04;0051;04_0051;Unk;
 04;0052;04_0052;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+04;0054;04_0054;Unk;Unk1: uint, Unk2: uint
 04;0055;04_0055;Unk;Unk1: uint, Unk2: uint
 04;0056;04_0056;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;0057;04_0057;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
@@ -158,6 +283,7 @@
 04;005B;04_005B;Unk;Unk1: uint, Unk2: uint
 04;005C;04_005C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;005D;04_005D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;005E;04_005E;Unk;Unk1: uint, Unk2: uint
 04;005F;04_005F;Unk;Unk1: uint, Unk2: uint
 04;0062;04_0062;Unk;
 04;0063;04_0063;Unk;
@@ -166,15 +292,19 @@
 04;0066;04_0066;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
 04;0067;04_0067;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint
 04;0068;04_0068;Unk;Unk1: uint, Unk2: uint
+04;0069;04_0069;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 04;006A;04_006A;Unk;Unk1: uint, Unk2: uint
 04;006B;04_006B;Unk;Unk1: uint, Unk2: uint
 04;006E;04_006E;Unk;Unk1: uint
 04;006F;04_006F;Unk;Unk1: uint, Unk2: uint
 04;0070;04_0070;Unk;Unk1: uint, Unk2: uint
 04;0071;04_0071;Unk;Unk1: uint, Unk2: uint
+04;0072;04_0072;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 04;0073;04_0073;Unk;Unk1: uint, Unk2: uint
 04;0074;04_0074;Unk;Unk1: uint, Unk2: uint
 04;0076;04_0076;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;0077;04_0077;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+04;0078;04_0078;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 04;0079;04_0079;Unk;
 04;007C;04_007C;Unk;Unk1: uint, Unk2: uint
 04;007E;04_007E;Unk;Unk1: uint, Unk2: uint
@@ -182,10 +312,36 @@
 04;0080;04_0080;Unk;Unk1: uint, Unk2: uint
 04;0081;04_0081;Unk;
 04;0082;04_0082;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+05;0002;05_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+05;0003;05_0003;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+05;0004;05_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+05;0005;05_0005;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+05;0007;05_0007;Unk;Unk1: uint
+05;0008;05_0008;Unk;Unk1: uint, Unk2: uint
+07;0001;07_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+07;0003;07_0003;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+07;0004;07_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
+07;0005;07_0005;Unk;
+07;0006;07_0006;Unk;
+07;0007;07_0007;Unk;
+07;0008;07_0008;Unk;Unk1: uint, Unk2: uint
+07;0009;07_0009;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+07;000A;07_000A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+07;000B;07_000B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 08;0001;08_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 08;0002;08_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 08;0003;08_0003;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+08;0004;08_0004;Unk;
+08;0005;08_0005;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+08;0006;08_0006;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+08;0007;08_0007;Unk;Unk1: uint, Unk2: uint
+08;0008;08_0008;Unk;
+08;0009;08_0009;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+08;000A;08_000A;Unk;Unk1: uint, Unk2: uint
+09;0002;09_0002;Unk;Unk1: uint, Unk2: uint
 09;0003;09_0003;Unk;Unk1: uint, Unk2: uint
+09;0005;09_0005;Unk;Unk1: uint, Unk2: uint, Unk3: str
+09;0006;09_0006;Unk;Unk1: uint, Unk2: uint, Unk3: str
 09;0007;09_0007;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
 09;0008;09_0008;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: str
 0C;0001;0C_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
@@ -205,6 +361,7 @@
 0C;0014;0C_0014;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 0C;0015;0C_0015;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
 0C;0016;0C_0016;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0C;0018;0C_0018;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 0C;001B;0C_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0C;001C;0C_001C;Unk;Unk1: uint, Unk2: uint
 0C;001D;0C_001D;Unk;Unk1: uint, Unk2: uint
@@ -216,6 +373,60 @@
 0D;0001;0D_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0D;0002;0D_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 0D;0004;0D_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0E;0001;0E_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 0F;0001;0F_0001;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint
+0F;0002;0F_0002;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint
+0F;0003;0F_0003;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0F;0004;0F_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0F;0005;0F_0005;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0F;0006;0F_0006;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0F;0007;0F_0007;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0F;0008;0F_0008;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0F;000A;0F_000A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
+0F;000B;0F_000B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0F;000C;0F_000C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+0F;000D;0F_000D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0F;000E;0F_000E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
 0F;000F;0F_000F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint
+0F;0010;0F_0010;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
 0F;0011;0F_0011;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+0F;0012;0F_0012;Unk;Unk1: uint, Unk2: uint
+0F;0013;0F_0013;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+10;0003;10_0003;Unk;
+10;0004;10_0004;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+10;0009;10_0009;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+10;0015;10_0015;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+10;0018;10_0018;Unk;
+10;001A;10_001A;Unk;Unk1: uint, Unk2: uint
+10;001B;10_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
+10;001C;10_001C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+10;001E;10_001E;Unk;Unk1: uint, Unk2: uint
+10;001F;10_001F;Unk;Unk1: uint, Unk2: uint
+10;0020;10_0020;Unk;Unk1: uint, Unk2: uint
+12;0002;12_0002;Unk;Unk1: uint
+13;0003;13_0003;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+15;0001;15_0001;Unk;Unk1: uint, Unk2: uint
+16;0003;16_0003;Unk;Unk1: uint, Unk2: uint
+16;0005;16_0005;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;0006;16_0006;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;0007;16_0007;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;0008;16_0008;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0009;16_0009;Unk;Unk1: uint, Unk2: uint, Unk3: str
+16;000A;16_000A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;000B;16_000B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;000C;16_000C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
+16;000D;16_000D;Unk;
+16;000E;16_000E;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;000F;16_000F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;0010;16_0010;Unk;Unk1: uint, Unk2: uint
+16;0011;16_0011;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0013;16_0013;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0014;16_0014;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+16;0016;16_0016;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0017;16_0017;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint
+16;0018;16_0018;Unk;
+16;0019;16_0019;Unk;Unk1: uint, Unk2: uint
+16;001A;16_001A;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;001B;16_001B;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;001C;16_001C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;001D;16_001D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint

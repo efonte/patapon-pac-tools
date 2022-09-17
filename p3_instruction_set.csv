@@ -42,7 +42,7 @@
 00;002C;cmd_flgAND;Unk;Unk1: uint, Unk2: COUNT_uint
 00;002D;cmd_flgOR;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 00;002E;cmd_flgZERO;Unk;Unk1: uint, Unk2: COUNT_uint
-00;002F;cmd_inxJmp;Unk;Unk1: uint, Unk2: uint, Unk3: CONTINOUS_uint
+00;002F;cmd_inxJmp;Unk;Unk1: uint, Unk2: uint, Unk3: CONTINUOUS_uint
 00;0030;cmd_stkDec;Unk;
 00;0031;cmd_stkClr;Unk;
 00;0036;cmd_setSleep;Unk;Unk1: uint, Unk2: uint
@@ -219,7 +219,7 @@
 16;000D;multiSetMultiParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
 16;000E;multiAddMapIcon;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;000F;multiAddMapUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-16;0010;multiSetScore;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: CONTINOUS_uint
+16;0010;multiSetScore;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: CONTINUOUS_uint
 16;0011;multiGetScore;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
 16;0012;addGimmickPowerGauge;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
 16;0013;getGimmickPowerGaugePoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
@@ -620,7 +620,7 @@
 1C;000F;getMultiEventUnitHandle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0010;getMultiHeroHandle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0012;addArea;Unk;Unk1: uint, Unk2: uint
-1C;0013;addStage1C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint, Unk26: uint
+1C;0013;addStage1C;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint, Unk26: uint, Unk27: str, Unk28: str, Unk29: str, Unk30: str
 1C;0014;addQuest;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint, Unk21: uint, Unk22: uint, Unk23: uint, Unk24: uint, Unk25: uint
 1C;0015;resetStageParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
 1C;0017;reflectQCompDataToCompData;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint

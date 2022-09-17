@@ -34,7 +34,7 @@ class InstType(Flag):
     V = auto()
     BYTES = auto()
     COUNT = auto()
-    CONTINOUS = auto()
+    CONTINUOUS = auto()
     ENTITY_ID = auto()
     EQUIP_ID = auto()
     KEYBIND_ID = auto()
@@ -127,8 +127,8 @@ def get_instruction_set(file_path="p2_instruction_set.csv") -> List[Instruction]
                         type |= InstType.P
                     elif "COUNT_" in param.type_str:
                         type |= InstType.COUNT
-                    elif "CONTINOUS_" in param.type_str:
-                        type |= InstType.CONTINOUS
+                    elif "CONTINUOUS_" in param.type_str:
+                        type |= InstType.CONTINUOUS
 
                     param.type = type
                     params.append(param)
@@ -392,63 +392,65 @@ def pac(
                                     .decode("shift_jis")
                                     .rstrip("\x00")
                                 )
-                                if (
-                                    i == len(inst.params) - 1
-                                ):  # read variables if str is the last parameter
-                                    text_variables = params_io.read()
-                                    # if len(text_variables) > 0:
-                                    #     if len(text_variables) >= 4:
-                                    #         text += "{"
-                                    #         chunks = [
-                                    #             text_variables[i : i + 4]
-                                    #             for i in range(0, len(text_variables), 4)
-                                    #         ]
-                                    #         chunk_count = 0
-                                    #         for chunk in chunks:
-                                    #             if len(chunk) == 4:
-                                    #                 # if chunk != b"\x00" * 4:
-                                    #                 # text += " ".join([f"{b:02X}" for b in chunk])
-                                    #                 text += " " if chunk_count > 0 else ""
-                                    #                 text += f"{unpack(f'I', chunk)[0]:08X}"
-                                    #                 chunk_count += 1
-                                    #             elif chunk != b"\x00" * len(chunk):
-                                    #                 print("Error 1. Expecting padding")
-                                    #                 exit()
-                                    #         text += "}"
-                                    #         # text += (
-                                    #         #     "{" + " ".join([f"{b:02X}" for b in text_variables]) + "}"
-                                    #         # )
-                                    #     elif text_variables != b"\x00" * len(text_variables):
-                                    #         print("Error 2. Expecting padding")
-                                    #         exit()
-                                    chunks = [
-                                        text_variables[i : i + 4]
-                                        for i in range(0, len(text_variables), 4)
-                                    ]
-                                    if (
-                                        len(chunks) > 0
-                                        and len(chunks[-1]) < 4
-                                        and chunks[-1] == b"\x00" * len(chunks[-1])
-                                    ):
-                                        chunks = chunks[0:-1]
-                                    if len(chunks) > 0:
-                                        text += (
-                                            "{"
-                                            + " ".join(
-                                                [f"{b:02X}" for b in b"".join(chunks)]
-                                            )
-                                            + "}"
-                                        )
-                                else:
-                                    # Read padding
-                                    if params_io.tell() % 4 != 0:
-                                        padding_size = (
-                                            (params_io.tell() // 4) + 1
-                                        ) * 4 - params_io.tell()
-                                        padding = params_io.read(padding_size)
-                                        if padding != b"\x00" * len(padding):
-                                            print("Error. Expecting padding")
-                                            exit()
+                                # if (
+                                #     i == len(inst.params) - 1
+                                # ):  # read variables if str is the last parameter
+                                #     text_variables = params_io.read()
+                                #     # if len(text_variables) > 0:
+                                #     #     if len(text_variables) >= 4:
+                                #     #         text += "{"
+                                #     #         chunks = [
+                                #     #             text_variables[i : i + 4]
+                                #     #             for i in range(0, len(text_variables), 4)
+                                #     #         ]
+                                #     #         chunk_count = 0
+                                #     #         for chunk in chunks:
+                                #     #             if len(chunk) == 4:
+                                #     #                 # if chunk != b"\x00" * 4:
+                                #     #                 # text += " ".join([f"{b:02X}" for b in chunk])
+                                #     #                 text += " " if chunk_count > 0 else ""
+                                #     #                 text += f"{unpack(f'I', chunk)[0]:08X}"
+                                #     #                 chunk_count += 1
+                                #     #             elif chunk != b"\x00" * len(chunk):
+                                #     #                 print("Error 1. Expecting padding")
+                                #     #                 exit()
+                                #     #         text += "}"
+                                #     #         # text += (
+                                #     #         #     "{" + " ".join([f"{b:02X}" for b in text_variables]) + "}"
+                                #     #         # )
+                                #     #     elif text_variables != b"\x00" * len(text_variables):
+                                #     #         print("Error 2. Expecting padding")
+                                #     #         exit()
+                                #     chunks = [
+                                #         text_variables[i : i + 4]
+                                #         for i in range(0, len(text_variables), 4)
+                                #     ]
+                                #     if (
+                                #         len(chunks) > 0
+                                #         and len(chunks[-1]) < 4
+                                #         and chunks[-1] == b"\x00" * len(chunks[-1])
+                                #     ):
+                                #         chunks = chunks[0:-1]
+                                #     if len(chunks) > 0:
+                                #         text += (
+                                #             "{"
+                                #             + " ".join(
+                                #                 [f"{b:02X}" for b in b"".join(chunks)]
+                                #             )
+                                #             + "}"
+                                #         )
+                                # else:
+                                #     # Read padding
+                                #     if params_io.tell() % 4 != 0:
+                                #         padding_size = (
+                                #             (params_io.tell() // 4) + 1
+                                #         ) * 4 - params_io.tell()
+                                #         padding = params_io.read(padding_size)
+                                #         if padding != b"\x00" * len(padding):
+                                #             print(
+                                #                 f"Error. Expecting padding. Found {padding}"
+                                #             )
+                                #             # exit()
 
                                 param.value = text
                                 # break
@@ -486,7 +488,7 @@ def pac(
                                             # )
                                             # exit(1)
                                         break
-                            elif InstType.CONTINOUS in param.type:
+                            elif InstType.CONTINUOUS in param.type:
                                 sub_param_type = InstType.UINT
                                 sub_param_type_str = "UINT"
                                 if InstType.UINT in param.type:
@@ -660,6 +662,24 @@ def pac(
                                     .rstrip("\x00")
                                 ).split("\x00")
                                 outfile.write(f"{offset:08X}  STRING_LIST {text}\n")
+                                # current_offset = inst[0]
+                                # num_read_bytes = 0
+                                # buffer = BytesIO(bytearray(inst[1]))
+                                # while num_read_bytes < len(inst[1]):
+                                #     text = unpack("2s", buffer.read(2))[0].decode(
+                                #         "shift_jis"
+                                #     )
+                                #     num_read_bytes += 2
+                                #     while text[-1] != "\x00":
+                                #         text += unpack("2s", buffer.read(2))[0].decode(
+                                #             "shift_jis"
+                                #         )
+                                #         num_read_bytes += 2
+                                #     text = text.rstrip("\x00")
+                                #     outfile.write(
+                                #         f"{current_offset+num_read_bytes:08X}  STRING {text}\n"
+                                #     )
+                                # print(inst)
                             except UnicodeDecodeError:
                                 try:
                                     chunks = [
