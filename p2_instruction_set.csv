@@ -43,325 +43,325 @@
 00;0030;cmd_break;Unk;arg1: T_1, arg1: V_1, string: str
 00;0031;cmd_string00;Unk;string: str
 00;0032;cmd_print00;Unk;string: str
-00;0035;cmd_sinf;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-00;0036;cmd_cosf;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-00;0037;cmd_abs;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-00;0038;cmd_setLabelId;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-00;0039;cmd_callLabelId;Unk;Unk1: uint, Unk2: uint
+00;0035;cmd_sinf;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+00;0036;cmd_cosf;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+00;0037;cmd_abs;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+00;0038;cmd_setLabelId;Unk;arg1: T_1, arg1: V_1, offset: uint
+00;0039;cmd_callLabelId;Unk;arg1: T_1, arg1: V_1
 00;003B;cmd_mod;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
-00;003C;cmd_memset;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-00;003D;cmd_memcpy;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-00;003E;cmd_flgMemset;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-00;003F;cmd_flgMemcpy;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-00;0040;cmd_stringEnable;Unk;Unk1: uint, Unk2: uint
+00;003C;cmd_memset;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+00;003D;cmd_memcpy;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+00;003E;cmd_flgMemset;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+00;003F;cmd_flgMemcpy;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+00;0040;cmd_stringEnable;Unk;arg1: T_1, arg1: V_1
 00;0041;cmd_srand;Unk;
 01;0001;changeFlag;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
-01;0002;getEventCollideTarget;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+01;0002;getEventCollideTarget;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 01;0004;playGimmickMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
-01;0005;clipGimmickMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0006;stopGimmickMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0009;setGimmickMotionFrame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;000A;getGimmickMotionFrame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-01;000B;addGimmickDamage;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;000C;getGimmickHitPoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;000D;rollbackGimmiskStatus;Unk;Unk1: uint, Unk2: uint
-01;000E;setGimmickActivate;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;000F;gimmickMovePoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+01;0005;clipGimmickMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;0006;stopGimmickMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;0009;setGimmickMotionFrame;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;000A;getGimmickMotionFrame;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+01;000B;addGimmickDamage;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;000C;getGimmickHitPoint;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;000D;rollbackGimmiskStatus;Unk;arg1: T_1, arg1: V_1
+01;000E;setGimmickActivate;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;000F;gimmickMovePoint;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 01;0010;gimmickMovePosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
-01;0011;gimmickStopMove;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0012;getGimmickPositionX;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0013;getGimmickPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0014;gimmickFlipEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0015;setGimmickRenderPriority;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0016;killGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0017;setGimmickCollisionEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0018;gimmickAttachEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, string: str
-01;001A;gimmickKillAttachEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+01;0011;gimmickStopMove;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0012;getGimmickPositionX;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0013;getGimmickPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;0014;gimmickFlipEnable;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0015;setGimmickRenderPriority;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0016;killGimmick;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;0017;setGimmickCollisionEnable;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0018;gimmickAttachEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, string: str
+01;001A;gimmickKillAttachEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
 01;001B;gimmickAttachMessage;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: uint
-01;001D;gimmickSetPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;001F;getPointPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0020;addSquad01;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0021;killSquad01;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0022;setSquadRenderPriority01;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0026;changeWeather;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0027;setWindDirection;Unk;Unk1: uint, Unk2: uint
-01;0028;setWindLevel;Unk;Unk1: uint, Unk2: uint
-01;0029;setRainyLevel;Unk;Unk1: uint, Unk2: uint
-01;002B;setThunderLevel;Unk;Unk1: uint, Unk2: uint
-01;002C;setSnowyLevel;Unk;Unk1: uint, Unk2: uint
-01;002D;itemAdd01;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;002F;itemGetTemporaryNum;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0030;getGimmickMotionEndFrame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-01;0031;gimmickGetNodePositionFromName;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, string: str
-01;0033;gimmickGetStatus;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0034;addGimmickDamageHit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-01;0036;gimmickExtinctionBurning;Unk;Unk1: uint, Unk2: uint
-01;0037;setFogAlphaParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;0039;setGimmickMaxHP;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+01;001D;gimmickSetPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;001F;getPointPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;0020;addSquad01;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0021;killSquad01;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0022;setSquadRenderPriority01;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;0026;changeWeather;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0027;setWindDirection;Unk;arg1: T_1, arg1: V_1
+01;0028;setWindLevel;Unk;arg1: T_1, arg1: V_1
+01;0029;setRainyLevel;Unk;arg1: T_1, arg1: V_1
+01;002B;setThunderLevel;Unk;arg1: T_1, arg1: V_1
+01;002C;setSnowyLevel;Unk;arg1: T_1, arg1: V_1
+01;002D;itemAdd01;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;002F;itemGetTemporaryNum;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0030;getGimmickMotionEndFrame;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+01;0031;gimmickGetNodePositionFromName;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, name: str
+01;0033;gimmickGetStatus;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0034;addGimmickDamageHit;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+01;0036;gimmickExtinctionBurning;Unk;arg1: T_1, arg1: V_1
+01;0037;setFogAlphaParam;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;0039;setGimmickMaxHP;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 01;003A;setActiveCarnivalBase;Unk;
-01;003B;setPositionCarnivalBase;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;003C;setRenderPriorityCarnivalBase;Unk;Unk1: uint, Unk2: uint
+01;003B;setPositionCarnivalBase;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;003C;setRenderPriorityCarnivalBase;Unk;arg1: T_1, arg1: V_1
 01;003D;mapLinkGimmickResetId;Unk;
-01;003E;mapLinkGimmickAddId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-01;003F;mapLinkGimmickGetId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-01;0040;mapLinkGimmickRemoveId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-01;0041;mapLinkGimmickPlayMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint
-01;0042;mapLayerSetWindRenderPriority;Unk;Unk1: uint, Unk2: uint
+01;003E;mapLinkGimmickAddId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+01;003F;mapLinkGimmickGetId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+01;0040;mapLinkGimmickRemoveId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+01;0041;mapLinkGimmickPlayMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9
+01;0042;mapLayerSetWindRenderPriority;Unk;arg1: T_1, arg1: V_1
 01;0044;mapLayerSetBackLayerScrollRate;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 01;0045;gimmickGetMotionId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
-01;0046;setFogLevel;Unk;Unk1: uint, Unk2: uint
-01;0047;setSandLevel;Unk;Unk1: uint, Unk2: uint
-01;0049;setGimmicAlpha;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-01;004A;weatherSetPriority;Unk;Unk1: uint, Unk2: uint
-02;0001;getColonyStartMode;Unk;Unk1: uint, Unk2: uint
+01;0046;setFogLevel;Unk;arg1: T_1, arg1: V_1
+01;0047;setSandLevel;Unk;arg1: T_1, arg1: V_1
+01;0049;setGimmicAlpha;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;004A;weatherSetPriority;Unk;arg1: T_1, arg1: V_1
+02;0001;getColonyStartMode;Unk;arg1: T_1, arg1: V_1
 02;0002;transitionTitle;Unk;
-02;0003;transitionBattle;Unk;Unk1: uint, Unk2: uint
-02;0008;setColonyMode;Unk;Unk1: uint, Unk2: uint
-02;0009;getColonyMode;Unk;Unk1: uint, Unk2: uint
-02;000A;isSelectColonyParts;Unk;Unk1: uint, Unk2: uint
-02;000B;getColonyPartsType;Unk;Unk1: uint, Unk2: uint
-02;000D;buildColonyFacility;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;000F;trashColonyFacility;Unk;Unk1: uint, Unk2: uint
-02;0012;createPerson;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;0013;destoryPerson;Unk;Unk1: uint, Unk2: uint
-02;0014;moveOffsetPerson;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0015;getPersonType;Unk;Unk1: uint, Unk2: uint
-02;0017;setPartsLock;Unk;Unk1: uint, Unk2: uint
-02;0018;setPersonSelect;Unk;Unk1: uint, Unk2: uint
-02;0019;setCameraZoomMode;Unk;Unk1: uint, Unk2: uint
-02;001A;setColonyFacilityStepType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;001B;playColonyFacilityStepMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;001C;waitColonyFacilityStepMotion;Unk;Unk1: uint, Unk2: uint
-02;001E;setPersonActionIdle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;001F;setPersonActionWalk;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
-02;0022;setPersonActionPlayMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-02;0024;setPersonActionPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;0027;setColonyCameraFollowMode;Unk;Unk1: uint, Unk2: uint
-02;0028;setColonyCameraPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0029;setColonyCameraPositionPersonOffset;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;002B;getColonyFacilityPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;0032;addColonyBattleUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-02;0034;getColonyBattleUnitCount;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-02;0037;playColonyEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;0038;getPersonMotionFrame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+02;0003;transitionBattle;Unk;arg1: T_1, arg1: V_1
+02;0008;setColonyMode;Unk;arg1: T_1, arg1: V_1
+02;0009;getColonyMode;Unk;arg1: T_1, arg1: V_1
+02;000A;isSelectColonyParts;Unk;arg1: T_1, arg1: V_1
+02;000B;getColonyPartsType;Unk;arg1: T_1, arg1: V_1
+02;000D;buildColonyFacility;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;000F;trashColonyFacility;Unk;arg1: T_1, arg1: V_1
+02;0012;createPerson;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;0013;destoryPerson;Unk;arg1: T_1, arg1: V_1
+02;0014;moveOffsetPerson;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0015;getPersonType;Unk;arg1: T_1, arg1: V_1
+02;0017;setPartsLock;Unk;arg1: T_1, arg1: V_1
+02;0018;setPersonSelect;Unk;arg1: T_1, arg1: V_1
+02;0019;setCameraZoomMode;Unk;arg1: T_1, arg1: V_1
+02;001A;setColonyFacilityStepType;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;001B;playColonyFacilityStepMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;001C;waitColonyFacilityStepMotion;Unk;arg1: T_1, arg1: V_1
+02;001E;setPersonActionIdle;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;001F;setPersonActionWalk;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
+02;0022;setPersonActionPlayMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+02;0024;setPersonActionPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;0027;setColonyCameraFollowMode;Unk;arg1: T_1, arg1: V_1
+02;0028;setColonyCameraPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0029;setColonyCameraPositionPersonOffset;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;002B;getColonyFacilityPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;0032;addColonyBattleUnit;Unk;offset: uint, arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0034;getColonyBattleUnitCount;Unk;offset: uint, arg1: T_1, arg1: V_1
+02;0037;playColonyEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;0038;getPersonMotionFrame;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 02;0039;waitColonyCameraIdle;Unk;
-02;003F;setColonyFade;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;0040;getColonyPersonPosition2D;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;0041;setColonyPersonAttachModel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;0045;getPersonMessageWindowId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0046;setPersonAppealMessage;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-02;0047;setColonyEventEnvironment;Unk;Unk1: uint, Unk2: uint
-02;004B;setColonyFacilityCivilization;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;004D;setColonyFacilityForcusMode;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;004E;getColonyFacilityType;Unk;Unk1: uint, Unk2: uint
-02;0051;addPersonAppealMessage;Unk;Unk1: uint, Unk2: uint, Unk3: uint
-02;0052;clearPersonAppealMessage;Unk;Unk1: uint, Unk2: uint
-02;0053;getLastMissionId;Unk;Unk1: uint, Unk2: uint
-02;0054;getLastMissionEndType;Unk;Unk1: uint, Unk2: uint
-02;0055;setPersonAppealSe;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;0057;setShopCamera;Unk;Unk1: uint, Unk2: uint
-02;0059;addCapModel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-02;005A;delCapModel;Unk;Unk1: uint, Unk2: uint
-02;005B;getCapCount;Unk;Unk1: uint, Unk2: uint
-02;005C;getCapParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-02;005D;isCapTopBirth;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;005E;setCapMode;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;005F;setColonyPersonForcusMode;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0060;setPersonActionWalkIdleDeath;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
-02;0061;getColonyFacilityMotionFrame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0062;isLifeTreeUnitAddSuccess;Unk;Unk1: uint, Unk2: uint
-02;0063;reawakeDeathUnitCap;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;0064;setCameraAreaLimit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0065;addEnergy02;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0066;setPersonCoordinate;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0067;setKeyGuide;Unk;Unk1: uint, Unk2: uint
-02;0069;setPersonAppealMessageOffset;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;006A;addColonyHeroUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint
-02;006B;getLifeTreeSelectedUnitUniqueId;Unk;Unk1: uint, Unk2: uint
-02;006C;transitionSquadViewer;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;006D;setFakeLastMissionId;Unk;Unk1: uint, Unk2: uint
-02;006E;setFakeLastMissionEndType;Unk;Unk1: uint, Unk2: uint
-02;03E8;execSaveLoad;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;0456;setColonySoundVolumeParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;0457;setColonySoundVolumeScale;Unk;Unk1: uint, Unk2: uint
-02;0458;calcColonySoundVolume;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;07D0;putFestivalItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;09C5;setMissionNameFromVar;Unk;Unk1: uint, Unk2: uint
+02;003F;setColonyFade;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;0040;getColonyPersonPosition2D;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;0041;setColonyPersonAttachModel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;0045;getPersonMessageWindowId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0046;setPersonAppealMessage;Unk;arg1: T_1, arg1: V_1, offset: uint
+02;0047;setColonyEventEnvironment;Unk;arg1: T_1, arg1: V_1
+02;004B;setColonyFacilityCivilization;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;004D;setColonyFacilityForcusMode;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;004E;getColonyFacilityType;Unk;arg1: T_1, arg1: V_1
+02;0051;addPersonAppealMessage;Unk;arg1: T_1, arg1: V_1, offset: uint
+02;0052;clearPersonAppealMessage;Unk;arg1: T_1, arg1: V_1
+02;0053;getLastMissionId;Unk;arg1: T_1, arg1: V_1
+02;0054;getLastMissionEndType;Unk;arg1: T_1, arg1: V_1
+02;0055;setPersonAppealSe;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;0057;setShopCamera;Unk;arg1: T_1, arg1: V_1
+02;0059;addCapModel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+02;005A;delCapModel;Unk;arg1: T_1, arg1: V_1
+02;005B;getCapCount;Unk;arg1: T_1, arg1: V_1
+02;005C;getCapParam;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+02;005D;isCapTopBirth;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;005E;setCapMode;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;005F;setColonyPersonForcusMode;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0060;setPersonActionWalkIdleDeath;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8
+02;0061;getColonyFacilityMotionFrame;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0062;isLifeTreeUnitAddSuccess;Unk;arg1: T_1, arg1: V_1
+02;0063;reawakeDeathUnitCap;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;0064;setCameraAreaLimit;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0065;addEnergy02;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0066;setPersonCoordinate;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0067;setKeyGuide;Unk;arg1: T_1, arg1: V_1
+02;0069;setPersonAppealMessageOffset;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;006A;addColonyHeroUnit;Unk;offset: uint, arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;006B;getLifeTreeSelectedUnitUniqueId;Unk;arg1: T_1, arg1: V_1
+02;006C;transitionSquadViewer;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;006D;setFakeLastMissionId;Unk;arg1: T_1, arg1: V_1
+02;006E;setFakeLastMissionEndType;Unk;arg1: T_1, arg1: V_1
+02;03E8;execSaveLoad;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;0456;setColonySoundVolumeParam;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;0457;setColonySoundVolumeScale;Unk;arg1: T_1, arg1: V_1
+02;0458;calcColonySoundVolume;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;07D0;putFestivalItem;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;09C5;setMissionNameFromVar;Unk;arg1: T_1, arg1: V_1
 02;0BB8;transitionEnding;Unk;
 02;0BB9;transitionAlternativeEnding;Unk;
-02;0BBA;transitionAutoMatching;Unk;Unk1: uint, Unk2: uint
+02;0BBA;transitionAutoMatching;Unk;arg1: T_1, arg1: V_1
 02;0BBB;transitionFileTransfer;Unk;
-02;0FA1;transitionMatching;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;0FA2;transitionHeadQuarters;Unk;Unk1: uint, Unk2: uint
-02;1004;setSoundGameType;Unk;Unk1: uint, Unk2: uint
+02;0FA1;transitionMatching;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;0FA2;transitionHeadQuarters;Unk;arg1: T_1, arg1: V_1
+02;1004;setSoundGameType;Unk;arg1: T_1, arg1: V_1
 02;1005;transitionSoundGame;Unk;arg1: uint
-02;1006;startSoundGame;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+02;1006;startSoundGame;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
 02;1007;endSoundGame;Unk;
-02;1008;playSoundGameModelMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;1009;playSoundGameEvent;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;100C;sendSoundGameCommand;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;100D;notifySoundGameResult;Unk;Unk1: uint, Unk2: uint
-02;100E;getSoundGamePresentItem;Unk;Unk1: uint, Unk2: uint
-02;100F;playSoundGameGroupMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;1010;setSoundGameSkipLabel;Unk;Unk1: uint, Unk2: uint
-02;1068;transitionEvolutionMap;Unk;Unk1: uint, Unk2: uint
+02;1008;playSoundGameModelMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;1009;playSoundGameEvent;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;100C;sendSoundGameCommand;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+02;100D;notifySoundGameResult;Unk;arg1: T_1, arg1: V_1
+02;100E;getSoundGamePresentItem;Unk;arg1: T_1, arg1: V_1
+02;100F;playSoundGameGroupMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;1010;setSoundGameSkipLabel;Unk;arg1: T_1, arg1: V_1, offset: uint
+02;1068;transitionEvolutionMap;Unk;arg1: T_1, arg1: V_1
 02;10CC;transitionSharingServer;Unk;
-02;1130;unlockTips;Unk;Unk1: uint, Unk2: uint
+02;1130;unlockTips;Unk;arg1: T_1, arg1: V_1
 02;1195;loadFlag02;Unk;
-02;1388;startTask;Unk;Unk1: uint, Unk2: uint
-02;13EC;setMiracleId;Unk;Unk1: uint, Unk2: uint
-02;13EE;enableHolyGrail;Unk;Unk1: uint, Unk2: uint
-02;13EF;showDialog;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
-02;13F0;messageBox;Unk;Unk1: uint, Unk2: uint
+02;1388;startTask;Unk;offset: uint, string: str
+02;13EC;setMiracleId;Unk;arg1: T_1, arg1: V_1
+02;13EE;enableHolyGrail;Unk;arg1: T_1, arg1: V_1
+02;13EF;showDialog;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint
+02;13F0;messageBox;Unk;arg1: T_1, arg1: V_1
 02;1770;createSelectWindow;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11
-02;1771;closeSelectWindow;Unk;Unk1: uint, Unk2: uint
-02;1772;setForcusSelectWindow;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;1773;selectEx;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-02;1774;choiceEx;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint
-02;1777;choiceFx2;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint
+02;1771;closeSelectWindow;Unk;arg1: T_1, arg1: V_1
+02;1772;setForcusSelectWindow;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;1773;selectEx;Unk;arg1: T_1, arg1: V_1, offset: uint, arg2: T_2, arg2: V_2
+02;1774;choiceEx;Unk;arg1: T_1, arg1: V_1, offset1: uint, offset2: uint, offset3: uint
+02;1777;choiceFx2;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset1: uint, offset2: uint, arg5: T_3, arg5: V_3, arg6: T_4, arg6: V_4, arg7: uint
 02;177A;choiceFx5;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint
-02;17A2;choiceFxValueDisp;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
-02;1B58;execOnScreenKeyboard;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+02;17A2;choiceFxValueDisp;Unk;arg1: T_1, arg1: V_1, offset1: uint, offset2: uint, arg2: T_2, arg2: V_2, offset3: uint
+02;1B58;execOnScreenKeyboard;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 02;1B59;checkWLANSwitch;Unk;
 02;1F40;clearPlayerLayoutParam;Unk;arg1: uint
 02;1F41;loadSettingData;Unk;
 02;1F42;saveSettingData02;Unk;
-02;2329;startMovie;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-02;232A;setMovieRect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-02;232C;getMovieInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;232D;setMoviePriority;Unk;Unk1: uint, Unk2: uint
-02;232E;setMovieAlphaFade;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-02;232F;setMovieSetPause;Unk;Unk1: uint, Unk2: uint
-02;2330;setMovieEnableRender;Unk;Unk1: uint, Unk2: uint
+02;2329;startMovie;Unk;name: str
+02;232A;setMovieRect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+02;232C;getMovieInfo;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;232D;setMoviePriority;Unk;arg1: T_1, arg1: V_1
+02;232E;setMovieAlphaFade;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+02;232F;setMovieSetPause;Unk;arg1: T_1, arg1: V_1
+02;2330;setMovieEnableRender;Unk;arg1: T_1, arg1: V_1
 03;0001;setChoice;Unk;choice: str
 03;0002;doSelect;Unk;offset: uint, arg2: uint
 03;0003;getPadDirect03;Unk;arg1: T_1, arg1: V_1
 03;0004;getPadStand03;Unk;arg1: T_1, arg1: V_1
 03;0006;doPadWait;Unk;
-03;0007;showWindow;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-03;0009;createWindow;Unk;Unk1: uint, Unk2: uint
-03;000A;setWindow;Unk;Unk1: uint, Unk2: uint
-03;000B;setWindowPos;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-03;000C;sysytemMessage;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint
-03;000D;allocWindow;Unk;Unk1: uint, Unk2: uint
-03;000E;freeWindow;Unk;Unk1: uint, Unk2: uint
+03;0007;showWindow;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+03;0009;createWindow;Unk;arg1: T_1, arg1: V_1
+03;000A;setWindow;Unk;arg1: T_1, arg1: V_1
+03;000B;setWindowPos;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+03;000C;sysytemMessage;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: uint
+03;000D;allocWindow;Unk;arg1: T_1, arg1: V_1
+03;000E;freeWindow;Unk;arg1: T_1, arg1: V_1
 03;0010;keywordClear;Unk;
-03;0011;keywordAdd;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint
+03;0011;keywordAdd;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: uint
 03;0013;messageFromIndex;Unk;arg1: uint
-03;0015;sysytemMessageDirectLocalizeCategory;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+03;0015;sysytemMessageDirectLocalizeCategory;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
 03;0016;messageClose;Unk;
-03;0019;setDefaultSpeed;Unk;Unk1: uint, Unk2: uint
-03;001A;doSelectWait;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-03;001C;setNumberStringVariable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-03;001D;setStringStringVariable;Unk;Unk1: uint, Unk2: uint, Unk3: uint
+03;0019;setDefaultSpeed;Unk;arg1: T_1, arg1: V_1
+03;001A;doSelectWait;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+03;001C;setNumberStringVariable;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+03;001D;setStringStringVariable;Unk;arg1: T_1, arg1: V_1, offset: uint
 04;0001;callScript04;Unk;arg1: T_1, arg1: V_1, arg2: uint
-04;0002;setGameEnd;Unk;Unk1: uint, Unk2: uint
+04;0002;setGameEnd;Unk;arg1: T_1, arg1: V_1
 04;0003;getFlagUnitPos;Unk;arg1: T_1, arg1: V_1
 04;0004;getTroopTopPos;Unk;arg1: T_1, arg1: V_1
 04;0005;getMissionId;Unk;arg1: T_1, arg1: V_1
-04;0006;setSquadStay;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;0006;setSquadStay;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 04;0007;setActivityParamId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9
 04;0008;getActivityParam;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
-04;0009;setSquadCtrlType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+04;0009;setSquadCtrlType;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 04;000A;playEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 04;000B;getScriptLocalValue;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7
 04;000C;setScriptLocalValue;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7
-04;000D;squadMovePosition04;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+04;000D;squadMovePosition04;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 04;000E;getLivingLayoutInfo;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
-04;000F;setNoTrespassing;Unk;Unk1: uint, Unk2: uint
-04;0011;killSquad04;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;0012;setSquadRenderPriority04;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;000F;setNoTrespassing;Unk;arg1: T_1, arg1: V_1
+04;0011;killSquad04;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;0012;setSquadRenderPriority04;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 04;0013;addHp_ToSquadAllUnit;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
-04;0014;setCameraZ;Unk;Unk1: uint, Unk2: uint
-04;0015;setCameraMode;Unk;Unk1: uint, Unk2: uint
-04;0016;setCameraX;Unk;Unk1: uint, Unk2: uint
-04;0017;getCameraX;Unk;Unk1: uint, Unk2: uint
-04;001A;setValue;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;001B;setMaxHitPoint04;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;001E;addVector_ToSquadAllUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;001F;getUnitUniqeId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;0020;setUnitMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
-04;0023;setDefaultMotionid;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;0024;playUnitMotionBaseType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;0025;setUnitCtrlEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;0026;playMotionForce;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-04;0027;addVec_UnitModel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
-04;0029;setMessageWindowPriority;Unk;Unk1: uint, Unk2: uint
+04;0014;setCameraZ;Unk;arg1: T_1, arg1: V_1
+04;0015;setCameraMode;Unk;arg1: T_1, arg1: V_1
+04;0016;setCameraX;Unk;arg1: T_1, arg1: V_1
+04;0017;getCameraX;Unk;arg1: T_1, arg1: V_1
+04;001A;setValue;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;001B;setMaxHitPoint04;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;001E;addVector_ToSquadAllUnit;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;001F;getUnitUniqeId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;0020;setUnitMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
+04;0023;setDefaultMotionid;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;0024;playUnitMotionBaseType;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;0025;setUnitCtrlEnable;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;0026;playMotionForce;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+04;0027;addVec_UnitModel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
+04;0029;setMessageWindowPriority;Unk;arg1: T_1, arg1: V_1
 04;002A;getViewX;Unk;arg1: T_1, arg1: V_1
-04;002B;getPlayerSquadNum;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;002D;allocTroopId;Unk;Unk1: uint, Unk2: uint
-04;002E;getTroopIndex;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;002F;freeTroopId;Unk;Unk1: uint, Unk2: uint
-04;0030;addSquadId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;0031;getSquadId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;002B;getPlayerSquadNum;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;002D;allocTroopId;Unk;arg1: T_1, arg1: V_1
+04;002E;getTroopIndex;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;002F;freeTroopId;Unk;arg1: T_1, arg1: V_1
+04;0030;addSquadId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;0031;getSquadId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 04;0032;beginSquadCheck;Unk;
-04;0033;endSquadCheck;Unk;Unk1: uint, Unk2: uint
+04;0033;endSquadCheck;Unk;arg1: T_1, arg1: V_1
 04;0034;callSquadCheck;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint, arg3: T_3, arg4: V_3
 04;0035;callSquadExec;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint, arg3: T_3, arg4: V_3
-04;0036;callSquadExecDeterminate;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint
+04;0036;callSquadExecDeterminate;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, offset: uint, arg4: T_4, arg4: V_4
 04;0037;setUnitWorkLabel;Unk;arg1: uint
-04;0038;allocUnitWorkBlock;Unk;Unk1: uint, Unk2: uint
-04;0039;freeUnitWorkBlock;Unk;Unk1: uint, Unk2: uint
-04;003A;registUnitWorkBlock;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;003B;setUnitWorkBlockValue;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;003C;getUnitWorkBlockValue;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;003D;callUnitWorkBlockLabel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+04;0038;allocUnitWorkBlock;Unk;arg1: T_1, arg1: V_1
+04;0039;freeUnitWorkBlock;Unk;arg1: T_1, arg1: V_1
+04;003A;registUnitWorkBlock;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;003B;setUnitWorkBlockValue;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;003C;getUnitWorkBlockValue;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;003D;callUnitWorkBlockLabel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
 04;003E;registResultLabel;Unk;arg1: uint
-04;003F;addResultInfo;Unk;Unk1: uint, Unk2: uint
-04;0040;setResultInfoChapter;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;0041;addResultInfoMessage;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;0042;addResultInfoValueMessage;Unk;Unk1: uint, Unk2: CONTINUOUS_uint
-04;0043;getElapsedTime;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;004B;setSquadLineForceSpeed;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;004C;setUnitRendersPriority;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+04;003F;addResultInfo;Unk;arg1: T_1, arg1: V_1
+04;0040;setResultInfoChapter;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;0041;addResultInfoMessage;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;0042;addResultInfoValueMessage;Unk;arg1: uint, arg2: CONTINUOUS_uint
+04;0043;getElapsedTime;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;004B;setSquadLineForceSpeed;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;004C;setUnitRendersPriority;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 04;004D;registLabel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: uint
-04;004F;callLabel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+04;004F;callLabel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 04;0050;watchPlayerSight;Unk;
 04;0051;watchMarch04;Unk;
-04;0052;execFade;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;0054;getCap;Unk;Unk1: uint, Unk2: uint
-04;0055;setUnitRenderEnable;Unk;Unk1: uint, Unk2: uint
-04;0056;setFlagUnitMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;0057;setUnitPos;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-04;0058;setCameraOffsetY;Unk;Unk1: uint, Unk2: uint
-04;005A;setCameraFollow;Unk;Unk1: uint, Unk2: uint
-04;005B;enableCameraControll;Unk;Unk1: uint, Unk2: uint
-04;005C;addSquad04;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
-04;005D;setRenderSquadBar;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;005E;addEnergy04;Unk;Unk1: uint, Unk2: uint
-04;005F;getTemporaryEnergyNum;Unk;Unk1: uint, Unk2: uint
+04;0052;execFade;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;0054;getCap;Unk;arg1: T_1, arg1: V_1
+04;0055;setUnitRenderEnable;Unk;arg1: T_1, arg1: V_1
+04;0056;setFlagUnitMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;0057;setUnitPos;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+04;0058;setCameraOffsetY;Unk;arg1: T_1, arg1: V_1
+04;005A;setCameraFollow;Unk;arg1: T_1, arg1: V_1
+04;005B;enableCameraControll;Unk;arg1: T_1, arg1: V_1
+04;005C;addSquad04;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8
+04;005D;setRenderSquadBar;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;005E;addEnergy04;Unk;arg1: T_1, arg1: V_1
+04;005F;getTemporaryEnergyNum;Unk;arg1: T_1, arg1: V_1
 04;0062;saveFlag04;Unk;
-04;0064;getFlagUnitHp;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;0065;callMsgWndi;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
-04;0066;callFlagUnitMsgWndi;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint
-04;0067;callUnitMsgWndi;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint
-04;0068;setTipsImageId;Unk;Unk1: uint, Unk2: uint
-04;0069;setSquadLevelDamageParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;006A;getActiveMiracleId;Unk;Unk1: uint, Unk2: uint
-04;006B;getMiracleId04;Unk;Unk1: uint, Unk2: uint
-04;006C;setTroopLevelDamageParam;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;0064;getFlagUnitHp;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;0065;callMsgWndi;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, offset: uint
+04;0066;callFlagUnitMsgWndi;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, offset: uint
+04;0067;callUnitMsgWndi;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: uint
+04;0068;setTipsImageId;Unk;arg1: T_1, arg1: V_1
+04;0069;setSquadLevelDamageParam;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;006A;getActiveMiracleId;Unk;arg1: T_1, arg1: V_1
+04;006B;getMiracleId04;Unk;arg1: T_1, arg1: V_1
+04;006C;setTroopLevelDamageParam;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 04;006E;setMissionName04;Unk;arg1: uint
-04;006F;getFlagUnitHpGaugeView;Unk;Unk1: uint, Unk2: uint
-04;0070;getPickupCapCount;Unk;Unk1: uint, Unk2: uint
-04;0072;killUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;0073;setNextMissionId;Unk;Unk1: uint, Unk2: uint
-04;0074;setNextSceneId;Unk;Unk1: uint, Unk2: uint
-04;0076;getSquadInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;0077;setEnablePosCheck04;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;0078;getUnitPos;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+04;006F;getFlagUnitHpGaugeView;Unk;arg1: T_1, arg1: V_1
+04;0070;getPickupCapCount;Unk;arg1: T_1, arg1: V_1
+04;0072;killUnit;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;0073;setNextMissionId;Unk;arg1: T_1, arg1: V_1
+04;0074;setNextSceneId;Unk;arg1: T_1, arg1: V_1
+04;0076;getSquadInfo;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;0077;setEnablePosCheck04;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;0078;getUnitPos;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 04;0079;saveSettingData04;Unk;
-04;007C;getUnitHpGaugeView;Unk;Unk1: uint, Unk2: uint
-04;007E;enableReturnMessageBox;Unk;Unk1: uint, Unk2: uint
-04;007F;setPowerSave;Unk;Unk1: uint, Unk2: uint
-04;0080;unlockTipsImageId;Unk;Unk1: uint, Unk2: uint
+04;007C;getUnitHpGaugeView;Unk;arg1: T_1, arg1: V_1
+04;007E;enableReturnMessageBox;Unk;arg1: T_1, arg1: V_1
+04;007F;setPowerSave;Unk;arg1: T_1, arg1: V_1
+04;0080;unlockTipsImageId;Unk;arg1: T_1, arg1: V_1
 04;0081;unlockTipsImageNoSave;Unk;
-04;0082;callFlagUnitMsgWndiDebug;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+04;0082;callFlagUnitMsgWndiDebug;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
 04;0083;evaluate_reset;Unk;
-04;0084;evaluate_setPoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;0085;evaluate_addPoint;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;0086;evaluate_getId;Unk;Unk1: uint, Unk2: uint
-04;0087;setSquadFogAlphaEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;0088;callUnitEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11, Unk23: uint, Unk24: uint, Unk25: uint, Unk26: uint, Unk27: uint, Unk28: uint, Unk29: uint, Unk30: uint
+04;0084;evaluate_setPoint;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;0085;evaluate_addPoint;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;0086;evaluate_getId;Unk;arg1: T_1, arg1: V_1
+04;0087;setSquadFogAlphaEnable;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;0088;callUnitEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11, arg12: T_12, arg12: V_12, arg13: T_13, arg13: V_13, arg14: T_14, arg14: V_14, arg15: T_15, arg15: V_15
 04;008A;setFlagUnitRendersPriority;Unk;arg1: T_1, arg1: V_1
 04;008B;isExistSquad;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 04;008C;setSyncValue;Unk;arg1: T_1, arg1: V_1, arg2: uint
@@ -369,183 +369,183 @@
 04;008E;setEventComCommand;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 04;008F;setFlagUnitPos;Unk;arg1: T_1, arg1: V_1
 04;0090;resetUnitPosToTarget;Unk;
-04;0093;addAU_Protection;Unk;Unk1: uint, Unk2: uint
-04;0094;addAU_Curet;Unk;Unk1: uint, Unk2: uint
-04;0095;addAU_MinerHeal;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;0096;isHero;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+04;0093;addAU_Protection;Unk;arg1: T_1, arg1: V_1
+04;0094;addAU_Curet;Unk;arg1: T_1, arg1: V_1
+04;0095;addAU_MinerHeal;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;0096;isHero;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 04;0097;treasureItemLabel;Unk;offset: uint
 04;0098;treasureItemGet;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 04;0099;treasureItemSet;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
 04;009A;setMedalConversionRate;Unk;rate: T_1, rate: V_1
-04;009B;variousProcForAllUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
+04;009B;variousProcForAllUnit;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7
 04;009C;addUnitAttacher;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11
-04;009D;setFlyHeightRatio;Unk;Unk1: uint, Unk2: uint
-04;009E;getSquadEthnicGroupId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-04;009F;setAscActorObjToGimmick;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-04;00A0;getFlagUnitPosX;Unk;Unk1: uint, Unk2: uint
-04;00A2;getStockItemId;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;00A3;subStockItem;Unk;Unk1: uint, Unk2: uint
-04;00A4;getSelfPlayerId;Unk;Unk1: uint, Unk2: uint
-04;00A5;getSoundSetting;Unk;Unk1: uint, Unk2: uint
-04;00A6;isEnableJump;Unk;Unk1: uint, Unk2: uint
-04;00A7;setTimeLimit;Unk;Unk1: uint, Unk2: uint
-04;00A8;getTimeLimit;Unk;Unk1: uint, Unk2: uint
-04;00A9;startTimeLimitTimer;Unk;Unk1: uint, Unk2: uint
-04;00AA;getGameEndType;Unk;Unk1: uint, Unk2: uint
-04;00AB;getMissionLevel;Unk;Unk1: uint, Unk2: uint
-04;00AC;checkTipsUnlock;Unk;Unk1: uint, Unk2: uint
-04;00AD;isMulti;Unk;Unk1: uint, Unk2: uint
+04;009D;setFlyHeightRatio;Unk;arg1: T_1, arg1: V_1
+04;009E;getSquadEthnicGroupId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+04;009F;setAscActorObjToGimmick;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+04;00A0;getFlagUnitPosX;Unk;arg1: T_1, arg1: V_1
+04;00A2;getStockItemId;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;00A3;subStockItem;Unk;arg1: T_1, arg1: V_1
+04;00A4;getSelfPlayerId;Unk;arg1: T_1, arg1: V_1
+04;00A5;getSoundSetting;Unk;arg1: T_1, arg1: V_1
+04;00A6;isEnableJump;Unk;arg1: T_1, arg1: V_1
+04;00A7;setTimeLimit;Unk;arg1: T_1, arg1: V_1
+04;00A8;getTimeLimit;Unk;arg1: T_1, arg1: V_1
+04;00A9;startTimeLimitTimer;Unk;arg1: T_1, arg1: V_1
+04;00AA;getGameEndType;Unk;arg1: T_1, arg1: V_1
+04;00AB;getMissionLevel;Unk;arg1: T_1, arg1: V_1
+04;00AC;checkTipsUnlock;Unk;arg1: uint, arg2: uint
+04;00AD;isMulti;Unk;arg1: T_1, arg1: V_1
 04;00AE;stopTimeLimitTimer;Unk;
 04;00AF;clearTipsSelectMask;Unk;
-04;00B1;setTipsSelectMask;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-04;00B2;setTipsSelectMaskMulti;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint
-04;00B3;getCommandBeatCount04;Unk;Unk1: uint, Unk2: uint
-05;0002;getId05;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-05;0003;getStatusInfo05;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-05;0004;getModellInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-05;0005;getActivityInfo;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+04;00B1;setTipsSelectMask;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+04;00B2;setTipsSelectMaskMulti;Unk;arg1: T_1, arg1: V_1, arg2: COUNT_uint
+04;00B3;getCommandBeatCount04;Unk;arg1: T_1, arg1: V_1
+05;0002;getId05;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+05;0003;getStatusInfo05;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+05;0004;getModellInfo;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+05;0005;getActivityInfo;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 05;0007;watch;Unk;
-05;0008;watchMarch05;Unk;Unk1: uint, Unk2: uint
-05;000A;reachTopUnitToFlagUnit;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+05;0008;watchMarch05;Unk;arg1: T_1, arg1: V_1
+05;000A;reachTopUnitToFlagUnit;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 05;000B;setFlagUnitToTopUnit;Unk;
-05;000C;setEnableHeroMode;Unk;Unk1: uint, Unk2: uint
-05;000D;checkEndHeroMode;Unk;Unk1: uint, Unk2: uint
+05;000C;setEnableHeroMode;Unk;arg1: T_1, arg1: V_1
+05;000D;checkEndHeroMode;Unk;arg1: T_1, arg1: V_1
 05;000E;clearAbnormalStatus05;Unk;
-05;0017;standOrder;Unk;Unk1: uint, Unk2: uint
-07;0001;worldMapSetupSymbol;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-07;0003;worldMapSetupWeather;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-07;0004;worldMapSetupMission;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
+05;0017;standOrder;Unk;arg1: T_1, arg1: V_1
+07;0001;worldMapSetupSymbol;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+07;0003;worldMapSetupWeather;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+07;0004;worldMapSetupMission;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8
 07;0005;worldMapChoice;Unk;
 07;0006;worldMapStartSetup;Unk;
 07;0007;worldMapEndSetup;Unk;
-07;0008;worldMapIsSelect;Unk;Unk1: uint, Unk2: uint
-07;0009;worldMapGetSelect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-08;0001;itemAdd08;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-08;0002;itemSub08;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+07;0008;worldMapIsSelect;Unk;arg1: T_1, arg1: V_1
+07;0009;worldMapGetSelect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+08;0001;itemAdd08;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+08;0002;itemSub08;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 08;0003;itemGetBelongNum;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
-08;0004;itemGetBelongSum;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+08;0004;itemGetBelongSum;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 08;0005;initPresentItem;Unk;
-08;0006;addPresentItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-08;0007;addPresentItemEx;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
-08;0009;execPresentMenu;Unk;Unk1: uint, Unk2: uint
+08;0006;addPresentItem;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+08;0007;addPresentItemEx;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+08;0009;execPresentMenu;Unk;arg1: T_1, arg1: V_1
 08;000A;execItemMenu;Unk;
-08;000B;execSelectItemMenu;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-08;000D;allowItem;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+08;000B;execSelectItemMenu;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+08;000D;allowItem;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
 09;0002;getPadDirect09;Unk;arg1: T_1, arg1: V_1
 09;0003;getPadStand09;Unk;arg1: T_1, arg1: V_1
 09;0005;cmd_string09;Unk;arg1: T_1, arg1: V_1, string: str
 09;0006;cmd_print09;Unk;arg1: T_1, arg1: V_1, string: str
-09;0008;dsp_print;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, string: str
-0C;0001;setCommand;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+09;0008;dsp_print;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, string: str
+0C;0001;setCommand;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0C;0003;clearCommand;Unk;
-0C;0004;getAttack;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-0C;0005;getCommand;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0C;0007;getBeatMoto;Unk;Unk1: uint, Unk2: uint
-0C;0009;getAttackTrue;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
+0C;0004;getAttack;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+0C;0005;getCommand;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0C;0007;getBeatMoto;Unk;arg1: T_1, arg1: V_1
+0C;0009;getAttackTrue;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
 0C;000A;setEnableKey;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0C;000B;volumeChangeAtrc;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
-0C;000C;stopBgm;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0C;000D;setRhythmMute;Unk;Unk1: uint, Unk2: uint
-0C;000E;setAttackMute;Unk;Unk1: uint, Unk2: uint
-0C;000F;setBgmMute;Unk;Unk1: uint, Unk2: uint
-0C;0010;setRhythmVoiceMute;Unk;Unk1: uint, Unk2: uint
-0C;0011;setDisableSendSoundCommand;Unk;Unk1: uint, Unk2: uint
+0C;000C;stopBgm;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0C;000D;setRhythmMute;Unk;arg1: T_1, arg1: V_1
+0C;000E;setAttackMute;Unk;arg1: T_1, arg1: V_1
+0C;000F;setBgmMute;Unk;arg1: T_1, arg1: V_1
+0C;0010;setRhythmVoiceMute;Unk;arg1: T_1, arg1: V_1
+0C;0011;setDisableSendSoundCommand;Unk;arg1: T_1, arg1: V_1
 0C;0012;playMidi;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
-0C;0013;playBgmAtrac;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
-0C;0014;setPercussionMuteFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0C;0016;setLoopFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0C;0013;playBgmAtrac;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
+0C;0014;setPercussionMuteFlag;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0C;0016;setLoopFlag;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 0C;0017;startRitual;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
-0C;0018;getRitualScore;Unk;Unk1: uint, Unk2: uint
-0C;0019;getSoundMood;Unk;Unk1: uint, Unk2: uint
-0C;001A;isRhythmMode;Unk;Unk1: uint, Unk2: uint
-0C;001B;sendGong;Unk;Unk1: uint, Unk2: uint
-0C;001C;setDisableSendSoundMissCommand;Unk;Unk1: uint, Unk2: uint
+0C;0018;getRitualScore;Unk;arg1: T_1, arg1: V_1
+0C;0019;getSoundMood;Unk;arg1: T_1, arg1: V_1
+0C;001A;isRhythmMode;Unk;arg1: T_1, arg1: V_1
+0C;001B;sendGong;Unk;arg1: T_1, arg1: V_1
+0C;001C;setDisableSendSoundMissCommand;Unk;arg1: T_1, arg1: V_1
 0C;001D;showHelp;Unk;arg1: T_1, arg1: V_1
 0C;001E;showCameraGide;Unk;arg1: T_1, arg1: V_1
 0C;001F;getCommandBeatCount0C;Unk;arg1: T_1, arg1: V_1
-0C;0020;setAutoCommand;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0C;0020;setAutoCommand;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 0C;0021;isAutoPlay;Unk;arg1: T_1, arg1: V_1
 0C;0022;pushKey;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0C;0023;setTreasureLabel;Unk;offset: uint
 0C;0024;getTreasure;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0C;0025;setTreasure;Unk;arg1: T_1, arg1: V_1
-0C;0027;sendUnitCansel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0C;0027;sendUnitCansel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 0C;0028;showAutoDemo;Unk;arg1: T_1, arg1: V_1
 0C;0029;getCarnivalPlayerValue;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
-0C;002A;carnivalAddMedal;Unk;Unk1: uint, Unk2: uint
-0C;002B;isRitualBackDisplay;Unk;Unk1: uint, Unk2: uint
-0C;002C;carnivalGetMedal;Unk;Unk1: uint, Unk2: uint
+0C;002A;carnivalAddMedal;Unk;arg1: T_1, arg1: V_1
+0C;002B;isRitualBackDisplay;Unk;arg1: T_1, arg1: V_1
+0C;002C;carnivalGetMedal;Unk;arg1: T_1, arg1: V_1
 0D;0001;playSE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0D;0002;stopSE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0D;0004;changeVolumeSE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0E;0001;playActuate;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 0F;0001;generateEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11
-0F;0002;duplicateEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint, Unk17: uint, Unk18: uint, Unk19: uint, Unk20: uint
-0F;0003;killEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;0004;setEffectPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;0005;getEffectPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;0006;setEffectVelocity;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;0007;getEffectVelocity;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;0008;addEffectAngle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0F;000A;playParticle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
-0F;000B;stopAllParticle;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0F;000C;setMotion0F;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;000D;setCollisionEnable;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0F;000E;attachMotion;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint
+0F;0002;duplicateEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10
+0F;0003;killEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+0F;0004;setEffectPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+0F;0005;getEffectPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+0F;0006;setEffectVelocity;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+0F;0007;getEffectVelocity;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+0F;0008;addEffectAngle;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0F;000A;playParticle;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7
+0F;000B;stopAllParticle;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0F;000C;setMotion0F;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+0F;000D;setCollisionEnable;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0F;000E;attachMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
 0F;000F;generateItemEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11
-0F;0010;generateCapEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint, Unk15: uint, Unk16: uint
-0F;0011;stopGroup;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-0F;0012;activateItemBehavior;Unk;Unk1: uint, Unk2: uint
-0F;0013;getHitCount;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0F;0015;attachEffect;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;0016;getHitPosition;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-0F;0017;getTroopType;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0F;0018;setModelAttachFlag;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-0F;001A;setEnableRenderOffSpecialTime;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+0F;0010;generateCapEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8
+0F;0011;stopGroup;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+0F;0012;activateItemBehavior;Unk;arg1: T_1, arg1: V_1
+0F;0013;getHitCount;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0F;0015;attachEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, string: str
+0F;0016;getHitPosition;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+0F;0017;getTroopType;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0F;0018;setModelAttachFlag;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+0F;001A;setEnableRenderOffSpecialTime;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 10;0003;deleteUnit;Unk;
-10;0004;getId10;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-10;0009;getStatusInfo10;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-10;0015;setMoveSpeedRatio10;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+10;0004;getId10;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+10;0009;getStatusInfo10;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+10;0015;setMoveSpeedRatio10;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 10;0018;setVector10;Unk;
-10;001A;callEffect10;Unk;Unk1: uint, Unk2: uint
-10;001B;isMatchName;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
-10;001C;setModelInfo10;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-10;001E;resetModelDirection;Unk;Unk1: uint, Unk2: uint
-10;001F;getAddingParamInfo;Unk;Unk1: uint, Unk2: uint
-10;0020;getNodeDispFromNodeIndex10;Unk;Unk1: uint, Unk2: uint
+10;001A;callEffect10;Unk;arg1: T_1, arg1: V_1
+10;001B;isMatchName;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7
+10;001C;setModelInfo10;Unk;arg1: T_1, arg1: V_1, model_name: str
+10;001E;resetModelDirection;Unk;arg1: T_1, arg1: V_1
+10;001F;getAddingParamInfo;Unk;arg1: T_1, arg1: V_1
+10;0020;getNodeDispFromNodeIndex10;Unk;arg1: T_1, arg1: V_1
 10;0025;10_0025;Unk;Unk1: uint, Unk2: uint
 12;0002;setScriptLabelTable;Unk;offset: uint
-13;0003;setReturnValue_Int;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+13;0003;setReturnValue_Int;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 15;0001;15_0001;Unk;Unk1: uint, Unk2: uint
-16;0003;getId16;Unk;Unk1: uint, Unk2: uint
+16;0003;getId16;Unk;arg1: T_1, arg1: V_1
 16;0005;getStatusInfo16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
-16;0006;getMotionInfo16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
+16;0006;getMotionInfo16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 16;0007;getModelInfo16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
-16;0008;setMotion16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-16;0009;getNodeIndex16;Unk;Unk1: uint, Unk2: uint, string: str
-16;000A;getNodePosFromNodeIndex16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-16;000B;getNodePos16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint
-16;000C;addHit16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint, Unk13: uint, Unk14: uint
+16;0008;setMotion16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+16;0009;getNodeIndex16;Unk;arg1: T_1, arg1: V_1, string: str
+16;000A;getNodePosFromNodeIndex16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+16;000B;getNodePos16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
+16;000C;addHit16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7
 16;000D;resetAttackUniqueId16;Unk;
-16;000E;isHit_Collision16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-16;000F;setEnable_Collision16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint
-16;0010;setMoveSpeedRatio16;Unk;Unk1: uint, Unk2: uint
+16;000E;isHit_Collision16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+16;000F;setEnable_Collision16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
+16;0010;setMoveSpeedRatio16;Unk;arg1: T_1, arg1: V_1
 16;0011;addVector16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 16;0013;setVector16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 16;0014;setModelInfo16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4
-16;0016;setNodeDispFromNodeIndex16;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0016;setNodeDispFromNodeIndex16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 16;0017;callEffect16;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11, arg12: T_12, arg12: V_12
 16;0018;clearAbnormalStatus16;Unk;
-16;0019;enableAbnormalStatus;Unk;Unk1: uint, Unk2: uint
-16;001A;isEnableAbnormalStatus;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-16;001B;addAbnormalStatus;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
+16;0019;enableAbnormalStatus;Unk;arg1: T_1, arg1: V_1
+16;001A;isEnableAbnormalStatus;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+16;001B;addAbnormalStatus;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 16;001C;callActorScript;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
-16;001D;resetCollisionShapeBox;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint, Unk5: uint, Unk6: uint, Unk7: uint, Unk8: uint, Unk9: uint, Unk10: uint, Unk11: uint, Unk12: uint
+16;001D;resetCollisionShapeBox;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6
 16;001E;setSpecialEffectId;Unk;arg1: T_1, arg1: V_1
 16;001F;getSpecialEffectId;Unk;arg1: T_1, arg1: V_1
 16;0020;setFloating;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
-16;0021;setDecay;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-17;0001;getClassLevel;Unk;Unk1: uint, Unk2: uint, Unk3: uint, Unk4: uint
-17;0002;setResult;Unk;Unk1: uint, Unk2: uint
+16;0021;setDecay;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+17;0001;getClassLevel;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+17;0002;setResult;Unk;arg1: T_1, arg1: V_1
 1B;0002;1B_0002;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4
 1F;0001;1F_0001;Unk;

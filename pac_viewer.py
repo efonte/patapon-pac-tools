@@ -203,7 +203,11 @@ def get_str_params(
         str_params += ", " if str_params != "" else ""
 
         if InstType.INT in p.type or InstType.UINT in p.type:
-            str_params += f"{p.name_var}={p.value:X}"
+            if p.value is not None:
+                str_params += f"{p.name_var}={p.value:X}"
+            else:
+                # p2 setSoundGameSkipLabel: the offset arg is optional
+                str_params += f"{p.name_var}=None"
         elif InstType.KEYBIND_ID in p.type:
             try:
                 str_params += f"KB_{keybinds[p.value]}"
@@ -580,10 +584,13 @@ def pac(
                                 try:
                                     param.value = unpack(f"I", params_io.read(4))[0]
                                 except Exception as e:
-                                    print(e)
-                                    print(output)
-                                    print(inst)
-                                    exit()
+                                    # print(e)
+                                    # print(output)
+                                    # print(inst)
+                                    # exit()
+                                    # p2 setSoundGameSkipLabel: the offset arg is optional
+                                    # param.value = -1
+                                    pass
                             elif InstType.INT in param.type:
                                 param.value = unpack(f"i", params_io.read(4))[0]
                             elif InstType.FLOAT in param.type:
@@ -610,7 +617,9 @@ def pac(
                             bytes_parsed = -1
                             break
                         else:
-                            bytes_parsed += 4
+                            if param.value is not None:
+                                # p2 setSoundGameSkipLabel: the offset arg is optional
+                                bytes_parsed += 4
                     if bytes_parsed != -1:
                         if (
                             len(params_bytes) != bytes_parsed
