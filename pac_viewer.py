@@ -159,32 +159,32 @@ def get_inst_raw_bytes(infile, last_offset: int) -> bytearray:
     if infile.tell() < last_offset:
         raw_4_bytes = infile.read(4)
         inst_magic, inst_id, inst_subid = unpack("BBH", raw_4_bytes)
-        if infile.tell() == last_offset:
+        # if infile.tell() == last_offset:
+        #     raw_bytes.extend(raw_4_bytes)
+        # else:
+        # i = 1
+        # while inst_magic != 0x25 and inst_subid != 0x00 and infile.tell() < last_offset:
+        while infile.tell() < last_offset:
+            # print(f"{i}")
+            # i += 1
+            # TODO First get size looking at instructions_set.csv
+            # TODO fix addResultInfoValueMessage offset 0x21820 in DATA_CMN\actor\mission\missionid_10430.bnd\missiondata.bnd\missionscript.pac
+            if (
+                inst_magic == 0x25
+                and inst_id < 0x22
+                and inst_subid != 0x00
+                and inst_subid < 0x2400
+            ):
+                break
             raw_bytes.extend(raw_4_bytes)
-        else:
-            # i = 1
-            # while inst_magic != 0x25 and inst_subid != 0x00 and infile.tell() < last_offset:
-            while infile.tell() < last_offset:
-                # print(f"{i}")
-                # i += 1
-                # TODO First get size looking at instructions_set.csv
-                # TODO fix addResultInfoValueMessage offset 0x21820 in DATA_CMN\actor\mission\missionid_10430.bnd\missiondata.bnd\missionscript.pac
-                if (
-                    inst_magic == 0x25
-                    and inst_id < 0x22
-                    and inst_subid != 0x00
-                    and inst_subid < 0x2400
-                ):
-                    break
-                raw_bytes.extend(raw_4_bytes)
-                raw_4_bytes = infile.read(4)
-                inst_magic, inst_id, inst_subid = unpack("BBH", raw_4_bytes)
-            # if infile.tell() == last_offset:
-            #     raw_bytes.extend(raw_4_bytes)
-            # else:
-            # if len(raw_bytes) > 4:
-            infile.seek(infile.tell() - 4)
-            # print (f"{infile.tell():08X}")
+            raw_4_bytes = infile.read(4)
+            inst_magic, inst_id, inst_subid = unpack("BBH", raw_4_bytes)
+        # if infile.tell() == last_offset:
+        #     raw_bytes.extend(raw_4_bytes)
+        # else:
+        # if len(raw_bytes) > 4:
+        infile.seek(infile.tell() - 4)
+        # print (f"{infile.tell():08X}")
     # print (" ".join([f"{b:02X}" for b in raw_bytes]))
     return raw_bytes
 
@@ -459,27 +459,31 @@ def pac(
                                 value_type_str = "V_" + param.type_str.split("T_")[1]
 
                                 for j in range(len(inst.params)):
-                                    # typedef enum pac_pointer_types {
-                                    #     FLOAT=16,
-                                    #     INTEGER=2,
-                                    #     ADDRESS=1,
-                                    #     POINTER_0x20=32,
-                                    #     POINTER_0x4=4,
-                                    #     POINTER_0x40=64,
-                                    #     POINTER_0x8=8,
-                                    #     UNKNOWN=0
-                                    # }
+                                    # 0x40 - FloatGlobal
+                                    # 0x20 - FloatLocal
+                                    # 0x10 - FloatImm
+                                    # 0x8 - IntGlobal
+                                    # 0x4 - IntLocal
+                                    # 0x2 - IntImm
+                                    # 0x1 - Index
+                                    # 0x0 - None
                                     if inst.params[j].type_str == value_type_str:
-                                        if param.value == 0x10:  # float
+                                        if (
+                                            param.value == 0x10
+                                            or param.value == 0x20
+                                            or param.value == 0x40
+                                        ):  # float
                                             inst.params[j].type |= InstType.FLOAT
                                         elif (
                                             param.value == 0x2
+                                            or param.value == 0x4
+                                            or param.value == 0x8
                                         ):  # int, short, uint, ushort?
                                             inst.params[j].type |= InstType.INT
-                                        elif (
-                                            param.value == 0x20
-                                        ):  # int, short, uint, ushort?
-                                            inst.params[j].type |= InstType.UINT
+                                        # elif (
+                                        #     param.value == 0x20
+                                        # ):  # int, short, uint, ushort?
+                                        #     inst.params[j].type |= InstType.UINT
                                         else:  # 0x4, 0x8, 0x40
                                             inst.params[j].type |= InstType.INT
                                             # TODO
@@ -500,6 +504,7 @@ def pac(
                                 elif InstType.FLOAT in param.type:
                                     sub_param_type = InstType.FLOAT
                                     sub_param_type_str = "FLOAT"
+                                name_var = param.name_var
                                 inst.params.remove(param)
                                 params_last_offset = get_last_offset(params_io)
                                 num_params = (
@@ -509,7 +514,8 @@ def pac(
                                     sub_param = InstParam()
                                     sub_param.type = sub_param_type
                                     sub_param.type_str = sub_param_type_str
-                                    sub_param.name = f"Continous {c+1}"
+                                    # sub_param.name = f"continuous{c+1}"
+                                    sub_param.name = f"{name_var}_{c+1}"
                                     if sub_param_type == InstType.UINT:
                                         sub_param.value = unpack(
                                             f"I", params_io.read(4)
@@ -525,7 +531,7 @@ def pac(
                                             )
                                         )
                                     else:
-                                        print(f"Error Continous unk {sub_param_type=}")
+                                        print(f"Error Continuous unk {sub_param_type=}")
                                         exit()
                                     inst.params.append(sub_param)
                                 break
@@ -548,7 +554,8 @@ def pac(
                                     sub_param = InstParam()
                                     sub_param.type = sub_param_type
                                     sub_param.type_str = sub_param_type_str
-                                    sub_param.name = f"Count {c+1}"
+                                    # sub_param.name = f"count{c+1}"
+                                    sub_param.name = f"{param.name_var}_{c+1}"
                                     if sub_param_type == InstType.UINT:
                                         sub_param.value = unpack(
                                             f"I", params_io.read(4)
@@ -680,6 +687,32 @@ def pac(
                                 #         f"{current_offset+num_read_bytes:08X}  STRING {text}\n"
                                 #     )
                                 # print(inst)
+                                try:
+                                    chunks = [
+                                        inst[1][i : i + 4]
+                                        for i in range(0, len(inst[1]), 4)
+                                    ]
+                                    bytes_str = ""
+                                    skip_offsets = False
+                                    for chunk_count, chunk in enumerate(chunks):
+                                        if chunk_count != 0:
+                                            bytes_str += ", "
+                                        offs = unpack("I", chunk)[0]
+                                        if (
+                                            offs > 0xC0000
+                                        ):  # size of p2 unitbase = 0xB8A8C
+                                            skip_offsets = True
+                                            continue
+                                        bytes_str += f"{offs:X}"
+                                    if not skip_offsets:
+                                        outfile.write(
+                                            f"{offset:08X}  OFFSETS {bytes_str}\n"
+                                        )
+                                except Exception:
+                                    bytes_str = " ".join([f"{b:02X}" for b in inst[1]])
+                                    outfile.write(
+                                        f"{offset:08X}  RAW_BYTES {bytes_str}\n"
+                                    )
                             except UnicodeDecodeError:
                                 try:
                                     chunks = [
@@ -692,7 +725,7 @@ def pac(
                                             bytes_str += ", "
                                         bytes_str += f"{unpack('I', chunk)[0]:X}"
                                     outfile.write(
-                                        f"{offset:08X}  RAW_BYTES {bytes_str}\n"
+                                        f"{offset:08X}  OFFSETS {bytes_str}\n"
                                     )
                                 except Exception:
                                     bytes_str = " ".join([f"{b:02X}" for b in inst[1]])
