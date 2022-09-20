@@ -17,20 +17,20 @@
 00;0012;cmd_iand;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 00;0013;cmd_ior;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 00;0014;cmd_ixor;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
-00;0015;cmd_ifEQ;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
+00;0015;cmd_ifEQ;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
 00;0016;cmd_ifNE;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
-00;0017;cmd_ifLSE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;0018;cmd_ifLBE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;0019;cmd_ifLS;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;001A;cmd_ifLB;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;001B;cmd_ifAND;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;001D;cmd_ifCallEQ;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;001E;cmd_ifCallNE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;001F;cmd_ifCallLSE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;0020;cmd_ifCallLBE;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;0021;cmd_ifCallLS;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;0022;cmd_ifCallLB;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
-00;0023;cmd_ifCallAND;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, offset: uint
+00;0017;cmd_ifLSE;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;0018;cmd_ifLBE;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;0019;cmd_ifLS;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;001A;cmd_ifLB;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;001B;cmd_ifAND;Unk;arg1: T_1, arg1: V_1, key_pressed: T_2, key_pressed: V_2_KEYBIND_ID, offset: uint
+00;001D;cmd_ifCallEQ;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;001E;cmd_ifCallNE;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;001F;cmd_ifCallLSE;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;0020;cmd_ifCallLBE;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;0021;cmd_ifCallLS;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;0022;cmd_ifCallLB;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
+00;0023;cmd_ifCallAND;Unk;arg1: T_1, arg1: V_1, value: T_2, value: V_2, offset: uint
 00;0025;cmd_flgSet;Unk;arg1: uint, offset: uint
 00;0026;cmd_flgClr;Unk;arg1: uint, offset: uint
 00;0029;cmd_flgMov;Unk;arg1: uint, offset: uint
@@ -89,7 +89,7 @@
 01;0029;setRainyLevel;Unk;arg1: T_1, arg1: V_1
 01;002B;setThunderLevel;Unk;arg1: T_1, arg1: V_1
 01;002C;setSnowyLevel;Unk;arg1: T_1, arg1: V_1
-01;002D;itemAdd01;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
+01;002D;itemAdd01;Unk;item: T_1, item: V_1_LOOT_ID, arg2: T_2, arg2: V_2
 01;002F;itemGetTemporaryNum;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 01;0030;getGimmickMotionEndFrame;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 01;0031;gimmickGetNodePositionFromName;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, name: str
@@ -491,7 +491,7 @@
 0F;000B;stopAllParticle;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
 0F;000C;setMotion0F;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3
 0F;000D;setCollisionEnable;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2
-0F;000E;attachMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5
+0F;000E;attachMotion;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, string: str
 0F;000F;generateItemEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8, arg9: T_9, arg9: V_9, arg10: T_10, arg10: V_10, arg11: T_11, arg11: V_11
 0F;0010;generateCapEffect;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4, arg5: T_5, arg5: V_5, arg6: T_6, arg6: V_6, arg7: T_7, arg7: V_7, arg8: T_8, arg8: V_8
 0F;0011;stopGroup;Unk;arg1: T_1, arg1: V_1, arg2: T_2, arg2: V_2, arg3: T_3, arg3: V_3, arg4: T_4, arg4: V_4

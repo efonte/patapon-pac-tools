@@ -77,7 +77,7 @@ def get_ids(csv_path: Path) -> Dict[int, str]:
             id_col,
             name_col,
         ) in r:
-            ids[int(id_col, 16)] = name_col.replace(" ", "_").upper()
+            ids[int(id_col, 16)] = name_col  # .replace(" ", "_").upper()
     return ids
 
 
@@ -121,7 +121,7 @@ def get_instruction_set(file_path="p2_instruction_set.csv") -> List[Instruction]
                     elif "LOOT_ID" in param.type_str:
                         type = InstType.LOOT_ID
                     else:
-                        print(f"Invalid type: {param.type_str }")
+                        print(f'Invalid type: {param.type_str} at "{param.name}"')
                         exit(1)
                     if "_P" in param.type_str:
                         type |= InstType.P
@@ -129,6 +129,14 @@ def get_instruction_set(file_path="p2_instruction_set.csv") -> List[Instruction]
                         type |= InstType.COUNT
                     elif "CONTINUOUS_" in param.type_str:
                         type |= InstType.CONTINUOUS
+                    elif "KEYBIND_ID" in param.type_str:  # V_X_KEYBIND_ID
+                        type |= InstType.KEYBIND_ID
+                    elif "ENTITY_ID" in param.type_str:
+                        type |= InstType.ENTITY_ID
+                    elif "EQUIP_ID" in param.type_str:
+                        type |= InstType.EQUIP_ID
+                    elif "LOOT_ID" in param.type_str:
+                        type |= InstType.LOOT_ID
 
                     param.type = type
                     params.append(param)
@@ -202,35 +210,34 @@ def get_str_params(
             continue
         str_params += ", " if str_params != "" else ""
 
-        if InstType.INT in p.type or InstType.UINT in p.type:
+        if InstType.KEYBIND_ID in p.type:
+            try:
+                str_params += f'{p.name_var}="{keybinds[p.value]}"'
+            except KeyError:
+                str_params += f'{p.name_var}="KB_{p.value:X}"'
+        elif InstType.ENTITY_ID in p.type:
+            try:
+                # str_params += f'{p.name_var}="{entities[p.value]}"'
+                str_params += f'{p.name_var}="ENT_{p.value:X}"'
+            except KeyError:
+                str_params += f'{p.name_var}="ENT_{p.value:X}"'
+        elif InstType.EQUIP_ID in p.type:
+            try:
+                # str_params += f'{p.name_var}="{equipment[p.value]}"'
+                str_params += f'{p.name_var}="EQP_{p.value:X}"'
+            except KeyError:
+                str_params += f'{p.name_var}="EQP_{p.value:X}"'
+        elif InstType.LOOT_ID in p.type:
+            try:
+                str_params += f'{p.name_var}="{loot[p.value]}"'
+            except KeyError:
+                str_params += f'{p.name_var}="LOOT_{p.value:X}"'
+        elif InstType.INT in p.type or InstType.UINT in p.type:
             if p.value is not None:
                 str_params += f"{p.name_var}={p.value:X}"
             else:
                 # p2 setSoundGameSkipLabel: the offset arg is optional
                 str_params += f"{p.name_var}=None"
-        elif InstType.KEYBIND_ID in p.type:
-            try:
-                str_params += f"KB_{keybinds[p.value]}"
-            except KeyError:
-                str_params += f"{p.name_var}=KB_{p.value:X}"
-        elif InstType.ENTITY_ID in p.type:
-            try:
-                # str_params += f"ENT_{entities[p.value]}"
-                str_params += f"{p.name_var}=ENT_{p.value:X}"
-            except KeyError:
-                str_params += f"{p.name_var}=ENT_{p.value:X}"
-        elif InstType.EQUIP_ID in p.type:
-            try:
-                # str_params += f"EQP_{equipment[p.value]}"
-                str_params += f"{p.name_var}=EQP_{p.value:X}"
-            except KeyError:
-                str_params += f"{p.name_var}=EQP_{p.value:X}"
-        elif InstType.LOOT_ID in p.type:
-            try:
-                str_params += f"LOOT_{loot[p.value]}"
-                # str_params += f"{p.name_var}=LOOT_{p.value:X}"
-            except KeyError:
-                str_params += f"{p.name_var}=LOOT_{p.value:X}"
         elif InstType.FLOAT in p.type:
             # str_params += f"{p.value:3f}"
             str_params += f"{p.name_var}={p.value}"
@@ -462,7 +469,28 @@ def pac(
                                 param.value = unpack(f"I", params_io.read(4))[0]
                                 value_type_str = "V_" + param.type_str.split("T_")[1]
 
-                                for j in range(len(inst.params)):
+                                # eg: V_2_KEYBIND_ID
+                                value_index = next(
+                                    (
+                                        i_el
+                                        for i_el, el in enumerate(inst.params)
+                                        if el.type_str.startswith(value_type_str + "_")
+                                    ),
+                                    None,
+                                )
+                                # eg: V_2
+                                if value_index is None:
+                                    value_index = next(
+                                        (
+                                            i_el
+                                            for i_el, el in enumerate(inst.params)
+                                            if el.type_str == value_type_str
+                                        ),
+                                        None,
+                                    )
+
+                                # If V_2_KEYBIND_ID or V_2
+                                if value_index is not None:
                                     # 0x40 - FloatGlobal
                                     # 0x20 - FloatLocal
                                     # 0x10 - FloatImm
@@ -471,31 +499,30 @@ def pac(
                                     # 0x2 - IntImm
                                     # 0x1 - Index
                                     # 0x0 - None
-                                    if inst.params[j].type_str == value_type_str:
-                                        if (
-                                            param.value == 0x10
-                                            or param.value == 0x20
-                                            or param.value == 0x40
-                                        ):  # float
-                                            inst.params[j].type |= InstType.FLOAT
-                                        elif (
-                                            param.value == 0x2
-                                            or param.value == 0x4
-                                            or param.value == 0x8
-                                        ):  # int, short, uint, ushort?
-                                            inst.params[j].type |= InstType.INT
-                                        # elif (
-                                        #     param.value == 0x20
-                                        # ):  # int, short, uint, ushort?
-                                        #     inst.params[j].type |= InstType.UINT
-                                        else:  # 0x4, 0x8, 0x40
-                                            inst.params[j].type |= InstType.INT
-                                            # TODO
-                                            # print(
-                                            #     f"{offset:08X} {inst.type_name} Unknown Type 0x{param.value:X}"
-                                            # )
-                                            # exit(1)
-                                        break
+                                    if (
+                                        param.value == 0x10
+                                        or param.value == 0x20
+                                        or param.value == 0x40
+                                    ):  # float
+                                        inst.params[value_index].type |= InstType.FLOAT
+                                    elif (
+                                        param.value == 0x1
+                                        or param.value == 0x2
+                                        or param.value == 0x4
+                                        or param.value == 0x8
+                                    ):  # int, short, uint, ushort?
+                                        inst.params[value_index].type |= InstType.INT
+                                    # elif (
+                                    #     param.value == 0x20
+                                    # ):  # int, short, uint, ushort?
+                                    #     inst.params[value_index].type |= InstType.UINT
+                                    else:  # 0x4, 0x8, 0x40
+                                        inst.params[value_index].type |= InstType.INT
+                                        # TODO
+                                        print(
+                                            f"{offset:08X} {inst.type_name} Unknown Type 0x{param.value:X}"
+                                        )
+                                        # exit(1)
                             elif InstType.CONTINUOUS in param.type:
                                 sub_param_type = InstType.UINT
                                 sub_param_type_str = "UINT"
@@ -677,25 +704,25 @@ def pac(
                                     .decode("shift_jis")
                                     .rstrip("\x00")
                                 ).split("\x00")
-                                outfile.write(f"{offset:08X}  STRING_LIST {text}\n")
+                                outfile.write(f"{offset:08X}  STRING_TABLE {text}\n")
                                 # current_offset = inst[0]
                                 # num_read_bytes = 0
                                 # buffer = BytesIO(bytearray(inst[1]))
                                 # while num_read_bytes < len(inst[1]):
-                                #     text = unpack("2s", buffer.read(2))[0].decode(
-                                #         "shift_jis"
+                                #     text_bytes = b""
+                                #     text_byte = b""
+                                #     while text_byte != b"\x00":
+                                #         text_byte = buffer.read(1)
+                                #         num_read_bytes += 1
+                                #         text_bytes += text_byte
+                                #     text = (
+                                #         unpack(f"{len(text_bytes)}s", text_bytes)[0]
+                                #         .decode("shift_jis")
+                                #         .rstrip("\x00")
                                 #     )
-                                #     num_read_bytes += 2
-                                #     while text[-1] != "\x00":
-                                #         text += unpack("2s", buffer.read(2))[0].decode(
-                                #             "shift_jis"
-                                #         )
-                                #         num_read_bytes += 2
-                                #     text = text.rstrip("\x00")
                                 #     outfile.write(
-                                #         f"{current_offset+num_read_bytes:08X}  STRING {text}\n"
+                                #         f"{current_offset+num_read_bytes-len(text_bytes):08X}  STRING {text}\n"
                                 #     )
-                                # print(inst)
                                 try:
                                     chunks = [
                                         inst[1][i : i + 4]
@@ -715,7 +742,7 @@ def pac(
                                         bytes_str += f"{offs:X}"
                                     if not skip_offsets:
                                         outfile.write(
-                                            f"{offset:08X}  OFFSETS {bytes_str}\n"
+                                            f"{offset:08X}  JUMP_TABLE {bytes_str}\n"
                                         )
                                 except Exception:
                                     bytes_str = " ".join([f"{b:02X}" for b in inst[1]])
@@ -734,7 +761,7 @@ def pac(
                                             bytes_str += ", "
                                         bytes_str += f"{unpack('I', chunk)[0]:X}"
                                     outfile.write(
-                                        f"{offset:08X}  OFFSETS {bytes_str}\n"
+                                        f"{offset:08X}  JUMP_TABLE {bytes_str}\n"
                                     )
                                 except Exception:
                                     bytes_str = " ".join([f"{b:02X}" for b in inst[1]])
